@@ -1,0 +1,28 @@
+.img1
+{
+   width:250px;
+}
+
+.img2
+{
+   width:250px;
+   border: solid black;
+}
+
+.img3
+{
+   width:250px;
+   border: 10px solid black;
+}
+
+.img4
+{
+   width:180px;
+   height: 35px;
+}
+
+.img5
+{
+   width:250px;
+   margin-left: 20px;
+}

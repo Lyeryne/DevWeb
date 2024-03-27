@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="exo3.css">
+        <title>exercice 3</title>
+    
+    </head>
+<body>
+<p1> Client</p1>
+
+<table id="t2">
+    <tr>
+        <th id="t3">Civilité</th>
+        <td id="t1">
+            <form>
+                <input type="radio" name="gender" value="Mademoiselle" checked> <p2>M.</p2>  
+                <input type="radio" name="gender" value="Madame"> <p3>Mme</p3> 
+                <input type="radio" name="gender" value="Monsieur"> <p3>Mlle</p3> 
+            </form>
+            <br>
+    </tr>
+    <tr>
+        <th id="t3">Nom/Prenom</th>
+        <td id="t1">
+            <form>
+                <input id="t5" type="text" name="Nom/Prenom">
+            </form>
+        </td>
+    </tr>
+
+    <tr>
+        <th id="t3">Adresse</th>
+        <td id="t1">
+                <form>
+                    <textarea id="t6" name="message" rows="3" cols="25">Rue No boite postale
+                    </textarea>
+                    </form>
+        </td>
+    </tr>
+    
+    <tr>
+        <th id="t3"><br> N° postal/localité</th>
+        <td id="t1">
+            <form>
+                <br>
+                <input id="t7" type="text" name="Code_Postal"><form>
+                <input id="t8" type="text" name="Code_Postal", value="Lausanne">
+        </td>
+    </tr>
+
+    <tr>
+        <th id="t3"><br>Pays</th>
+        <td id="t1">
+            <form>
+                <br>
+                <select id="t3"name="Pays">
+                    <option value="suisse">suisse</option>
+                    <option value="France">France</option>
+                    <option value="autre">autre</option>
+                </select>
+                </form>
+        </td>
+    </tr>
+    <tr>
+        <th id="t3"><br>Plateform(s)</th>
+        <td id="t1">
+            <form>
+                <br>
+                <input type="checkbox" name="text" value="Windows"> <p2>Windows</p2>  
+                <input type="checkbox" name="text" value="Macintosh"> <p3>Macintosh</p3> 
+                <input type="checkbox" name="text" value="Unix"> <p3>Unix</p3> 
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <th id="t3">Application(s)</th>
+        <td id="t1">
+            <br>
+            <select multiple id="t3"name="Pays">
+                <option value="Bureautique">Bureautique</option>
+                <option value="DAO">DAO</option>
+                <option value="Statistiques">Statistiques</option>  
+                <option value="SGBD">SGBD</option>
+                <option value="Internet">Internet</option>
+
+            </select>   
+        </td>
+    </tr>
+
+</table>
+
+
+<form >
+    <input id="t9" type="submit" value="Soumettre formulaire">
+    <input type="reset" value="Effacer">
+</form>
+
+</body> </html>

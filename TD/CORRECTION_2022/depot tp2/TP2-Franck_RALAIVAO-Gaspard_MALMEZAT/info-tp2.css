@@ -1,0 +1,199 @@
+
+
+.menu ul
+{
+    display: flex;
+    padding: 0;
+    width: 375px;
+    background-color: black;
+}
+
+
+.menu li 
+{
+    list-style-type: none;
+}
+
+
+.menu a 
+{
+    display:block;
+    min-width:75px;
+    
+    margin: 0.5rem;
+    padding: 0.2rem;
+    color:white;
+    text-decoration: none;
+}
+
+
+.header
+{
+    color: white;
+    background-color: slategrey;
+    padding-bottom: 25px;
+}
+
+.tetegauche
+{
+    float: left;
+    margin: 5px;
+}
+
+
+.tetedroit
+{
+    float: right;
+    margin: 5px;
+}
+
+
+
+.margin
+{
+    background-color: #80cbcb;
+    width: 100px;
+    height: 400px;
+    position: absolute;
+}
+.body
+{
+    background-color: #ffe5a9;
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    height: 400px;
+
+}
+
+.footer
+{
+    color: white;
+    text-align: center;
+    background-color: slategrey;
+    vertical-align: center;
+    line-height: 45px;    
+}
+
+
+
+.dauphine 
+{
+    display: inline-block;
+
+}
+
+
+.img1
+{
+    width:200px;
+
+}
+
+
+.img2
+{
+    width:200px;
+    border: solid black;
+}
+
+
+.img3
+{
+    width:200px;
+    border: 10px solid black;
+}
+
+
+.img4
+{
+    width:180px;
+    height: 35px;
+}
+
+
+.img5
+{
+    width:200px;
+    margin-left: 20px;
+}
+
+
+.img6
+{
+    width:200px;
+    border:  solid purple;
+}
+
+
+.signe
+{
+    background-color: red;
+    width: 150px;
+    height: 8px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+.menuexo {
+list-style-type:none;
+margin:0px;
+padding: 0px;
+}
+
+
+.menuexo ul {
+margin: 0px;
+padding: 0px;
+display: none;
+}
+
+.menuexo li {
+float: left;
+position: relative; 
+background: linear-gradient(to right, grey, orange);
+display: block;
+border-bottom: 2px solid black;    
+}
+
+.menuexo a {
+display:inline-block;
+width: 130px;
+height: 30px;
+line-height: 30px;
+padding: 3px 10px;
+text-align: center;
+text-decoration: none;
+color: black;
+}
+
+.menuexo li:hover ul {
+display: block;
+position: absolute;
+left: 0px;
+top: 37.9px;
+}
+
+.menuexo ul li {
+background: linear-gradient(to right, white, orange);
+display: none;
+position: relative;
+left: 0px;
+top: 0px;
+}
+
+
+
+ul li > ul .sousmenu li {
+position: relative;
+top: -37.9px;
+left: 150px;
+}
+
+ul li:hover > ul > li {
+display: block;
+border-bottom: 2px solid black;
+}
+
+

@@ -1,0 +1,23 @@
+ a {
+    text-decoration:none;
+    color: white;
+    pointer-events: none;
+}
+
+li {
+    display: inline;
+    padding-left: 15px;
+}
+
+ul {
+    background-color: black;
+    width: 260px;
+    padding: 6px;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    height: 30px;
+}
+
+menu {
+    height: 5px;
+}

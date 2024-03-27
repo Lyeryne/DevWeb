@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exrcice 1</title>
+  </head>
+  <body>
+    <p id="P1">Hello World.</p>
+    <button onclick="changerParagraphe()">Cliquez ici</button>
+
+    <script>
+      function changerParagraphe() {
+        var p = document.getElementById("P1");
+        p.innerHTML = "Hello World.";
+        p.style.color = "red";
+        p.style.fontSize = "20px";
+        p.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

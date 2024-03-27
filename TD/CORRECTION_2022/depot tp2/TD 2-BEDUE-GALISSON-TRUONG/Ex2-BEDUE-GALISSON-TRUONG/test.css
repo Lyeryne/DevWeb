@@ -1,0 +1,71 @@
+.navbar { 
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+a {
+  padding: 10px;  
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+li {
+  
+  width: 160px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  border-radius: 10% 10% 0 0; 
+  background: linear-gradient(to right, grey, orange);
+  border-bottom: 2px solid black;
+  display: block;
+}
+
+ul li >  ul li
+{
+	display: none;
+  position: relative;
+  left: -40px;
+  top: 14px;
+}
+
+ul li >  ul .sous-sous-menu li {
+  position: relative;
+  left: 120px;
+  top: -38px;
+}
+
+ul li:hover > ul > li 
+{
+  width: 160px;
+  text-align: center;
+  
+  background: linear-gradient(to right, white, orange);
+  border-radius: 0 0 10px 10px ;
+  border-bottom: 2px solid black;
+	display:block;
+}
+
+.botom
+{
+  width: 160px;
+  text-align: center;
+  
+  background: linear-gradient(to right, white, orange);
+  border-radius: 0 0 10px 10px ;
+  border-bottom: 2px solid black;
+	display:block;
+}
+
+.autre
+{
+  width: 160px;
+  text-align: center;
+  background: linear-gradient(to right, white, orange);
+  border-bottom: 2px solid black;
+	display:block;
+}

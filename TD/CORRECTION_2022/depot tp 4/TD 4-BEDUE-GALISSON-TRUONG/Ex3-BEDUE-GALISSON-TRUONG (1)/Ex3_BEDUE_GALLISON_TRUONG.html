@@ -1,0 +1,39 @@
+<!-- Ce programme affiche une suite de terme aléatoire et la même suite ordonnée  -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <button type="Reload" onclick="Reload()">New tab</button> <!-- Bouton de rechargement  -->
+        <p id="firstfield"></p>
+        <p id="secondfield"></p>
+
+        <!-- Le script génère des nombres au hasard entre 1 et 100. Il les affiche ensuite. la variable "valeur2" est un tableau contenant
+        les nombres remis dans l'ordre avec ".sort(compareNumbers)", puis affiché dans l'ordre.  -->
+        <script>
+            var valeur = [getRandomInt(100),getRandomInt(100),getRandomInt(100),getRandomInt(100),getRandomInt(100),getRandomInt(100),getRandomInt(100),getRandomInt(100),getRandomInt(100),getRandomInt(100)];
+            var text1 = valeur[0] + "-" + valeur[1] + "-" + valeur[2] + "-" + valeur[3] + "-" + valeur[4] + "-" + valeur[5] + "-" + valeur[6] + "-" + valeur[7] + "-" + valeur[8] + "-" + valeur[9];
+
+            function getRandomInt(max) {
+                return Math.floor(Math.random() * max);
+            }
+            
+            document.getElementById("firstfield").innerHTML = text1;//affichage
+            
+            function compareNumbers(a, b) { //permet la compraraison d'entier
+                return a - b;
+            }
+
+            var valeur2 = valeur.sort(compareNumbers);
+
+            var text1 = valeur2[0] + "-" + valeur2[1] + "-" + valeur2[2] + "-" + valeur2[3] + "-" + valeur2[4] + "-" + valeur2[5] + "-" + valeur2[6] + "-" + valeur2[7] + "-" + valeur2[8] + "-" + valeur2[9];
+
+            document.getElementById("secondfield").innerHTML = text1;//affichage
+            
+            function Reload() { //recharge la page
+                location.reload();
+			}
+        </script>
+
+    </body>
+
+
+</html>

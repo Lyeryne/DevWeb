@@ -1,0 +1,11 @@
+.mi {
+    text-align: center;
+}
+
+.fon{
+    border: 30px white;
+    background-color: yellow;
+    padding: 0.5rem;
+    flex-direction: column;
+}
+

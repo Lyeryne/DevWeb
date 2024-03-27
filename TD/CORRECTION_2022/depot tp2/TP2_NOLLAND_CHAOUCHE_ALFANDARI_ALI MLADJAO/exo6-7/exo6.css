@@ -1,0 +1,26 @@
+.pasnormal {
+    height: 64px;
+    width: 256px;
+}
+
+p {
+    font-size: large;
+}
+
+#petitbord {
+    border: black solid;
+}
+
+#grosbord {
+    border: black solid 10px;
+}
+
+#miniature {
+    width: 180px;
+    height: 35px;
+}
+
+#gauche {
+    margin-right: 20px;
+    padding-left: 10px;
+}

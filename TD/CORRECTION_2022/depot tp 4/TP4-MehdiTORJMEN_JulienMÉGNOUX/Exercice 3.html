@@ -1,0 +1,54 @@
+<!-- HTML file -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice 3</title>
+    <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png" alt="Le logo de CY Tech"
+        width="132" height="70">
+    <h1 align="center"><u>Informatique 4</u> : TP 4</h1>
+    <br>
+    <p align="right"><i>Mehdi TORJMEN</i> - <i>Julien MÉGNOUX</i></p>
+    <p align="right">PréIng 2 - MI</p>
+
+    <script>
+
+        /* Function that generates a random number between a minimum and a maximum value
+           min: minimum value
+           max: maximum value (not inluded in the interval) */
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        // Function that generates a random array in unsorted and sorted versions
+        function createArray() {
+            let randomArray = [];
+            let randomString = "";
+            for (let i = 0; i < 10; ++i) {
+                randomArray.push(getRandomInt(0, 100));
+            }
+            randomString = randomArray.toString();
+            let hyphenString = randomString.replaceAll(",", "-");
+            document.getElementById("unsortedArray").innerHTML = "Liste non-triée : " + hyphenString;
+
+            randomArray.sort(function (a, b) { return a - b });
+            let sortedRandomString = randomArray.toString();
+            let sortedHyphenString = sortedRandomString.replaceAll(",", "-");
+            document.getElementById("sortedArray").innerHTML = "Liste triée : " + sortedHyphenString;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1><u>Exercice 3</u></h1>
+    <p id="unsortedArray"></p>
+    <p id="sortedArray"></p>
+
+    <button onclick="createArray()">Créer une liste aléatoire</button>
+</body>
+
+</html>

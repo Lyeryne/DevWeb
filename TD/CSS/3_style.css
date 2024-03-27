@@ -1,0 +1,11 @@
+/* Version TD : Tous les élèments <li> dont l'id est "cpt" placés dans un élèment <ol> appartenant à la classe "capital" seront en ~chiffre romain~ */
+ol.capital li#cpt
+{
+   list-style-type: upper-roman; 
+}
+
+/* Version TD : Tous les élèments <li> dont l'id est "lt" placés dans un élèment <ol> appartenant à la classe "letter" seront en ~Lettre~ */
+ol.letter li#lt
+{
+    list-style-type:upper-alpha;
+}

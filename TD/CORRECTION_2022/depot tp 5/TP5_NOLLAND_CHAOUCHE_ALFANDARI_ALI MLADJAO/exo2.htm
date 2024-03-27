@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"></meta>
+    <script>
+
+    </script>
+    <style>
+      h1,p
+      {
+        text-align: center;
+      }
+      figure
+      {
+        display:inline-block;
+        margin: 0%;
+        margin-left: 2%;
+        padding: 0%;
+
+      }
+      figcaption
+      {
+        max-width: 90px;
+        max-height: 2px;
+        max-block-size: 9px;
+        max-lines: 1px;
+        display:table-caption;
+        caption-side:bottom;
+      }
+      div
+      {
+        display: block;
+        margin-right: 50px;
+        background-color: white;
+      }
+
+      img
+      {
+        width : 90px;
+        height : auto;
+      }
+
+      #main
+      { 
+        display: flex;
+        background-color: steelblue;
+        width:100% ;
+        height:500px;
+      }
+      #source
+      {
+        width: 33%;
+        height: 50%;
+        margin-top: 160px;
+        margin-left: 10px;
+        background-color: green;
+        border: red solid;
+      }
+      #cart
+      {
+        width: 30%;
+        height: 40%;
+        margin-top: 10px;
+        background-color: gray;
+        border: black solid;
+      }
+      #destination
+      {
+        width: 37%;
+        height: 50%;
+        margin-top: 160px;
+        background-color: red;
+        border: black solid;
+      }
+
+      #prix
+      {
+        color: yellow;
+      }
+    </style>
+
+    <script>
+      function isclick(id)
+      {
+        var img = document.getElementById(id);
+
+        if (img.className == "avcfig") {
+          tosource(id);
+          img.className = "pasfig";
+
+        } else {
+          todest(id);
+          img.className = "avcfig";
+        }
+
+        prix();
+      }
+
+      function prix()
+      {
+        var parent = document.getElementById('prix');
+        var dest = document.getElementById('destination');
+        let n = dest.childElementCount - 1;
+
+        parent.innerHTML = n * 7.5 + "€";
+      }
+
+      function todest(id)
+      {
+          var dest = document.getElementById('destination');
+          var img = document.getElementById(id);
+
+          var figure = document.createElement("figure");
+          figure.appendChild(img);
+          var caption = document.createElement("figcaption");
+          var txt = document.createTextNode(id.replace(/_/g, " "));
+          caption.appendChild(txt);
+          figure.appendChild(caption);
+
+          dest.appendChild(figure);
+      }
+
+      function tosource(id)
+      {
+        var source = document.getElementById('source');
+        var img = document.getElementById(id);
+
+        img.parentNode.remove();
+        img.nextSibling.remove();
+        
+
+        source.appendChild(img);
+
+      }
+      
+        
+    </script>
+</head>
+<body>
+
+  <script>
+    
+  </script>
+
+<div id="main">
+<div id="source">
+    <h1>Albums disponibles</h1>
+    <img src="images/2001.jpg" id="2001" class="pasfig" onclick="isclick('2001')">
+    <img src="images/damn.jpg" id="damn" class="pasfig" onclick="isclick('damn')">
+    <img src="images/dangerous.jpg" id="dangerous" class="pasfig" onclick="isclick('dangerous')">
+    <img src="images/man_on_the_moon.jpg" id="man_on_the_moon" class="pasfig" onclick="isclick('man_on_the_moon')">
+    <img src="images/party_all_the_time.jpg" id="party_all_the_time" class="pasfig" onclick="isclick('party_all_the_time')">
+    <img src="images/super_freak.jpg" id="super_freak" class="pasfig" onclick="isclick('super_freak')">
+    <!--
+    les img sont la au depart
+    ici tu mets img sans figcaption 
+    modele d'une img:
+    <img src="images/tkt.png" id="jspsiilenfautune" onclick="enleve le noeud et le deplace ou refait dans destination(avc figcaption) + prix">
+    (faut changer le span id=prix avc node aussi)
+    -->
+</div>
+<div id="cart">
+    <h1>Magasin de disque</h1>
+    <p>Tous les disques à 7€50!!! <br>
+    cliquez sur l'image pour (dé)sélectionner un album <br>
+    Montant du panier:<span id="prix">0€</span></p>
+</div>
+<div id="destination">
+    <h1>Albums choisis</h1>
+    
+    <!--
+    faut faire les trcs ici avc node js
+    ici tu mets img avc une figcaption
+    modele d'une img
+    <img src="images/tkt.png" id="jspsiilenfautune" onclick="enleve le noeud et le deplace ou refait dans destination + prix">
+    <figcaption>nomalbum</figcaption>
+    (faut changer le span audessus avc node aussi)
+    -->
+</div>
+
+</div>
+
+<!--
+    <img src="images/no.png" id="change" onmouseover="this.src='images/yes.png'" onmouseout="this.src='images/no.png'">
+    commentaire 
+-->
+
+</body>
+</html>

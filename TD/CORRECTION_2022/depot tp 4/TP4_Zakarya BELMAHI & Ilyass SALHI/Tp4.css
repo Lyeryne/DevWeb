@@ -1,0 +1,46 @@
+.Tout {
+	width: 50%;
+	color: limegreen;
+	text-align: center;
+	margin: auto;
+	border : 2px dashed greenyellow;
+	font-family: Helvetica;
+	background-color: #031B58;
+}
+
+#r {
+	width: 50%;
+	color: white;
+	text-align: center;
+	margin: auto;
+	border : 2px dashed greenyellow;
+	font-family: Helvetica;
+	background-color: #1586B4;
+}
+
+.Paragraphe{
+    color:whitesmoke;
+    border: dashed greenyellow; 
+    text-align: center; 
+    background-color: #1586B4; 
+    width: 25em; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.b{
+    font-weight: bold;
+  }
+
+.image{
+	text-align: center;
+	height: auto;
+	width: 90px;
+	
+}
+
+.table{
+	margin: auto;
+}
+
+

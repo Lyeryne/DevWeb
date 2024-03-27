@@ -1,0 +1,58 @@
+/*EX 1*/
+.entryBox{
+    background-color: grey;
+    border: solid black 2px;
+    color: greenyellow;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/*EX 2*/
+#source{
+    border: red 2px solid;
+    background-color:rgb(0, 68, 0);
+    margin: 0 0 0 5px;
+    width: 500px;
+    height: 275px;
+    position: absolute;
+}
+
+#cart{
+    border: black 2px solid;
+    background-color:grey;
+    width: 430px;
+    height: 130px;
+    margin: 0 auto 5px;
+    top: 5px;
+    position: relative;
+}
+
+#destination{
+    border: black 2px solid;
+    background-color:red;
+    margin-right: 5px;
+    width: 500px;
+    height: 275px;
+    position: relative;
+    margin-left: auto;
+}
+
+#source, #destination, #cart{
+    text-align:center;
+}
+
+#price{
+    color: yellow;
+    font-size:20px;
+}
+
+.albumImg{
+    width: 70px;
+    margin-top: 25px;
+}
+
+.albumImgInCart{
+    max-height: 70px;
+    max-width: 70px;
+    margin: 0 2px 0;
+}

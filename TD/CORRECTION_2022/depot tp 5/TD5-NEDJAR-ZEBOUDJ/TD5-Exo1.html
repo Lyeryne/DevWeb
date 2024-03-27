@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>TD5_exo1</title>
+    <style>
+        #list div{
+            border: 2px solid black;
+            background-color: grey;
+            color: green;
+            margin-top: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercise 1: Student List</h1>
+    <button id="add">Add</button>
+    <button id="delete">Delete</button>
+    <button id="reset">Reset</button>
+    <div id="list"></div>
+    
+    <script>
+    const add = document.getElementById("add");
+    const supp = document.getElementById("delete");
+    const reset = document.getElementById("reset");
+    const List = document.getElementById("list");
+
+    add.onclick = function(){
+        const lastName = prompt("Please enter your last name:");
+        if (lastName) {
+        const user = navigator.userAgent;
+        const platform = navigator.platform;
+        const student = document.createElement("div");
+        student.innerHTML = `<p>Hello <i>${lastName}</i>! You are a student in <b>Bachelor2</b> at <b>CYTech</b></p>
+        <p>Your browser is: <i>${user}</i></p>
+        <p>Your operating system is: <i>${platform}</i></p>`;
+        List.appendChild(student);
+        }
+    }
+
+    supp.onclick = function(){
+        const last = List.lastElementChild;
+        List.removeChild(last); 
+    }
+
+    reset.onclick = function(){
+        List.innerHTML="";
+    }
+    </script>
+</body>
+</html>

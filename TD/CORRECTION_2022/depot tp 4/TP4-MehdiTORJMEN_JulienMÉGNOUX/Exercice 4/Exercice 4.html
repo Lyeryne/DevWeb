@@ -1,0 +1,67 @@
+<!-- HTML file -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice 4</title>
+    <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png" alt="Le logo de CY Tech"
+        width="132" height="70">
+    <h1 align="center"><u>Informatique 4</u> : TP 4</h1>
+    <br>
+    <p align="right"><i>Mehdi TORJMEN</i> - <i>Julien MÉGNOUX</i></p>
+    <p align="right">PréIng 2 - MI</p>
+
+    <script>
+
+        // Function that changes the image when the mouse cursor is over it
+        function showColor() {
+            document.getElementById("imageId").src = "Images/Einstein_couleur.jpg";
+        }
+
+        // Function that resets the image to its initial state when the cursor is no longer over it
+        function showBlackAndWhite() {
+            document.getElementById("imageId").src = "Images/Einstein.jpg";
+        }
+
+        /* Function that generates a random number between a minimum and a maximum value
+           min: minimum value
+           max: maximum value (not inluded in the interval) */
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        // Function that changes an image according to a randomly generated number
+        function randomPicture() {
+            let picturesArray = ["Images/Curie.jpg", "Images/Darwin.jpg", "Images/Galilée.jpg", "Images/Tesla.jpg", "Images/Khawarizmi.jpg", "Images/Newton.jpg"];
+            let randomNumber = getRandomInt(0, picturesArray.length);
+            document.getElementById("imageId").src = picturesArray[randomNumber];
+        }
+
+        // Function that displays the informations of an image: source and size
+        function showInformations() {
+            let pictureSource = document.getElementById("imageId").attributes[3].textContent;
+            let fullPictureSource = document.getElementById("imageId").src;
+            let sitePictureWidth = document.getElementById("imageId").clientWidth;
+            let sitePictureHeight = document.getElementById("imageId").clientHeight;
+            let originalPictureWidth = document.getElementById("imageId").naturalWidth;
+            let originalPictureHeight = document.getElementById("imageId").naturalHeight;
+            window.alert("Source : " + pictureSource + "\n\nFull source : " + fullPictureSource + "\n\nSize of picture in website : " + sitePictureWidth +
+                " x " + sitePictureHeight + "\n\nSize of original picture : " + originalPictureWidth + " x " + originalPictureHeight);
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1><u>Exercice 4</u></h1>
+    <img id="imageId" width="300px" height="350px" src="Images/Einstein.jpg" onmouseover="showColor()"
+        onmouseout="showBlackAndWhite()" />
+    <br><br>
+    <input type="button" id="idbouton" name="generate" value="Generate" onclick="randomPicture()" />
+    <input type="button" id="idbouton2" name="information" value="Information" onclick="showInformations()" />
+</body>
+
+</html>

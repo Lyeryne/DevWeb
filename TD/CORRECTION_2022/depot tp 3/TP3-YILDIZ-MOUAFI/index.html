@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>EX1 -------------------------------------</p>
+    <p>Enregistrement d'un utilisateur</p>
+    <table>
+      <tr>
+        <tr>
+            <td align="left"><label for="Nom">Nom</label></td>
+            <td align="left"><input id="Nom" type="text" required></td>
+        </tr>
+        <tr>
+            <td align="left"><label for="Prénom">Prénom</label></td>
+            <td align="left"><input id="Prénom" type="text" required></td>
+        </tr>
+      <tr>
+        <td align="left">Sexe</td>
+        <td align="left">    
+            <label>Homme :</label>
+            <input type="radio" name="gender">
+          <br>
+            <label >Femme :</label>
+            <input type="radio" name="gender">
+          </br>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">Fonction</td>
+        <td align="left">
+          <select>
+            <option align="left">Enseignant</option>
+            <option align="left">Eleve</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">Commentaires</td>
+        <td align="left">
+            <textarea placeholder="Tapez ici vos commentaires"cols="30" rows="5"></textarea>
+        </td>
+      </tr>
+    </table>
+    <button style="width: 100px; height: 30px;">Envoyer</button>
+<p>EX2 -------------------------------------</p>
+    <form>
+        <p style="margin-left: 140px;">Veuillez saisir vos coordonnées dans le formulaire ci-dessous</p>
+        <input type="radio" name="gender">M. 
+        <input type="radio" name="gender">Mme 
+        <input type="radio" name="gender">Mlle
+        <br><br>
+        Nom : <input size="17px">
+        Prénom : <input size="17px">
+        Société : <input size="17px">
+        <br><br>
+        N° et rue : <input size="64px">
+        <br><br>
+        Code Postal : <input size="5">
+        Ville : <input size="42">
+        <select style="margin-left: 15px;">
+            <option>Angleterre</option>
+            <option>Allemagne</option>
+            <option>Australie</option>
+            <option>France</option>
+            <option>Italie</option>
+            <option>Japon</option>
+            <option>USA</option>
+            <option>Autre</option>
+        </select>
+        <br><br>
+        Votre Message <textarea rows="6" cols="45"></textarea>
+        <br><br>
+        Adresse E-Mail <input size="30">
+        <button onclick="alert('Vous nous avez transmis vos coordonnées avec succès !')" style="margin-left: 15px; width: 65px;">Valider</button>
+        <input style="width: 65px;" type="reset" value="Effacer">
+    </form>
+<p>EX3 -------------------------------------</p>
+    <form>
+            <fieldset style="padding: 10px; line-height: 0px; width: 1200px;">
+            <legend><b>Client</b></legend>
+            <table style="background-color: yellow; margin: 15px 40px; width: 1115px; line-height: 30px;">
+                <tr>
+                    <td><b>Civilité</b></td>
+                    <td>
+                        <input type="radio" name="Civilité">Mademoiselle
+                        <input type="radio" name="Civilité">Madame
+                        <input type="radio" name="Civilité">Monsieur
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Nom / Prénom</b></td>
+                    <td>
+                        <textarea rows="1" style="width: 400px; resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Adresse</b></td>
+                    <td>
+                        <textarea rows="4" placeholder="Rue No Boîte postale" style="width: 500px; resize: none;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>No postal / Localité</b></td>
+                    <td>
+                        <textarea rows="1" cols="6" maxlength="4" style="resize: none;"></textarea>
+                        <textarea rows="1" style="width: 200px; resize: none;">Lausanne</textarea>
+                    </td>                    
+                </tr>
+                <tr>
+                    <td><b>Pays</b></td>
+                    <td>
+                        <select>
+                            <option>Suisse</option>
+                            <option>France</option>
+                            <option>Turquie</option>
+                            <option>Maroc</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Plateforme(s)</b></td>
+                    <td>
+                        <input type="checkbox">Windows
+                        <input type="checkbox">Macintosh
+                        <input type="checkbox">Unix
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Application(s)</b></td>
+                    <td>
+                        <select multiple style="width: 100px; height: 110px;">
+                            <option>Bureautique</option>
+                            <option>DAO</option>
+                            <option>Statistiques</option>
+                            <option>SGBD</option>
+                            <option>Internet</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <p style="margin-left: 500px;">
+            <button style="width: 160px;">Soumettre formulaire</button>
+            <input style="width: 65px;" type="reset" value="Effacer">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!-- HTML file -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice 2</title>
+    <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png" alt="Le logo de CY Tech"
+        width="132" height="70">
+    <h1 align="center"><u>Informatique 4</u> : TP 4</h1>
+    <br>
+    <p align="right"><i>Mehdi TORJMEN</i> - <i>Julien MÉGNOUX</i></p>
+    <p align="right">PréIng 2 - MI</p>
+
+    <script>
+
+        /* Function that calculates the value of a rank of the Fibonacci sequence
+           n : value of the calculated rank */
+        function fibonacci(n) {
+            let prev = 0;
+            let next = 1;
+            let sum = 1;
+            for (let i = 1; i < n; ++i) {
+                sum = prev + next;
+                prev = next;
+                next = sum;
+            }
+            return sum;
+        }
+    </script>
+
+    <style>
+        .menu {
+            background-color: brown;
+            border-color: yellow;
+            border-style: dotted;
+            color: orange;
+            text-align: center;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><u>Exercice 2</u></h1>
+    <div class="menu">
+        <p id="menu"></p>
+    </div>
+
+    <script>
+        let rank = prompt("In which rank do you want to calculate the Fibonacci sequence ?");
+        let result = fibonacci(rank);
+        let date = new Date();
+        let hour = String(date.getHours()).padStart(2, "0");
+        let minute = String(date.getMinutes()).padStart(2, "0");
+        let message = "At " + hour + " hours " + minute + ", the " + rank.italics() + " th term of the Fibonacci sequence is " + "<big><b>" + result + "<b><big>";
+        document.getElementById("menu").innerHTML = message;
+    </script>
+</body>
+
+</html>

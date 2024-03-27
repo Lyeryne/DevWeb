@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>TP5</title>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p>EX1 -------------------------------------</p>
+    <button onclick="addEntry()">Add</button>
+    <button onclick="delFirstEntry()">Delete one entry</button>
+    <button onclick="clearEntries()">Delete all entries</button>
+    <br>
+    <div id="entries"></div>
+
+    <p>EX2 -------------------------------------</p>
+    <div style="width: auto; height: 620px; padding: 0px; background-color:rgb(102, 102, 154)">
+        <div id="cart">
+            <h2>Magasin de disques</h2>
+            <p style="font-size: smaller;">Tous les disques à 7€50!!!<br>
+            cliquez sur l'image pour (dé)sélectionner un album<br>
+            Montant du panier: <b id="price">0.0€</b></p>
+        </div>
+        <div id="source"><p> <h3>Albums disponibles</h3>
+            <img title="Jul-La Zone en Personne" alt="Jul_album" class="albumImg" src="img/Jul-La_Zone_en_Personne.jpg" onclick="addToCart('Jul-La_Zone_en_Personne')">
+
+            <img title="Jul-Extraterrestre" alt="Jul_album" class="albumImg" src="img/Jul-Extraterrestre.jpg" onclick="addToCart('Jul-Extraterrestre')">
+
+            <img title="Jul-Indépendance" alt="Jul_album" class="albumImg" src="img/Jul-Indépendance.jpg" onclick="addToCart('Jul-Indépendance')">
+
+            <img title="Jul-Rien100Rien" alt="Jul_album" class="albumImg" src="img/Jul-Rien100Rien.jpg" onclick="addToCart('Jul-Rien100Rien')">
+            
+            <img title="Jul-Cest pas des lol" alt="Jul_album" class="albumImg" src="img/Jul-Cest_pas_des_lol.jpg" onclick="addToCart('Jul-Cest_pas_des_lol')">
+        </div>
+        <div id="destination">
+            <h3>Albums choisis</h3>
+            <p style="margin-top: 5px;" id="listOfAlbumsInCart">Panier vide</p>
+        </div>
+    </div>
+
+</body>
+</html>

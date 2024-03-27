@@ -1,0 +1,34 @@
+<!-- Le programme calcule le terme souhaité de la suite de Fibonacci  -->
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Ex2 BEDUE GALISSON TRUONG</title>
+    <script type="text/javascript" src="ex2.js"></script> <!-- Le scipt réalise le calcul  -->
+</head>
+
+<!-- CSS  -->
+<style>
+    .fibo{
+        background-color: rgb(146, 68, 45);
+        border: 2px;
+        border-style: dotted;
+        border-color: yellow;
+
+        color: orange;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="fibo"> <!-- Message affiché avec le terme de la suite de Fibonacci voulu -->
+        <p>For the given number the value of the Fibonacci sequence is</p> 
+        <b><em><p id="result" style="font-size: larger;"></p></em></b>
+    </div>
+    <!-- Message affiché au début  -->
+    <script>
+        var number = prompt("What rank of the Fibonacci sequence do you want to see ?");
+        document.getElementById("result").innerHTML = Fibonacci( number );
+    </script>
+</body>
+</html>

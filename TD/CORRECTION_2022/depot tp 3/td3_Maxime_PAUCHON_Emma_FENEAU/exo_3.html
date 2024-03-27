@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="exo_3.css">
+    <title>td3 exo_3</title>
+</head>
+<body>
+    <fieldset class="box">
+        <legend>Client</legend>
+    <table>
+        <tr>
+            <td class="gauche">Civilité</td>
+            <td class="droit">
+                <input type="radio" name="gender" id="mademoiselle"> <label for="mademoiselle">Mademoiselle</label>
+                <input type="radio" name="gender" id="madame"> <label for="madame">Madame</label>
+                <input type="radio" name="gender" id="monsieur"> <label for="monsieur">Monsieur</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="gauche">Nom/Prénom</td>
+            <td class="droit"><input type="text" name="Nom/prenom" size="50"></td>
+        </tr>
+        <tr>
+            <td class="gauche">Adresse</td>
+            <td class="droit"><textarea name="message"  cols="70" rows="4">Rue No Boîte postale</textarea></td>
+        </tr>
+        <tr>
+            <td class="gauche">No postal/Localité</td>
+            <td class="droit">
+                <input type="text" name="number" size="5">
+                <input type="text" name="localite" size="20" placeholder="Lausanne">
+            </td>
+        </tr>
+        <tr>
+            <td class="gauche">Pays</td>
+            <td class="droit">
+                <select name="Pays">
+                <option value="Suisse">Suisse</option>
+                <option value="Angleterre">Angleterre</option>
+                <option value="Allemagne">Allemagne</option> 
+                <option value="Australie">Australie</option>
+                <option value="France">France</option>
+                <option value="Italie">Italie</option>
+                <option value="Japon">Japon</option>
+                <option value="USA">USA</option>
+                <option value="Autre">Autre</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="gauche">Plateforme(s)</td>
+            <td class="droit">
+                <input type="checkbox" name="platefome" value="windows">Windows
+                <input type="checkbox" name="platefome" value="macintosh">Macintosh
+                <input type="checkbox" name="platefome" value="unix">Unix
+            </td>
+        </tr>
+        <tr>
+            <td class="gauche">Application(s)</td>
+            <td class="droit">
+                <select name="Application" size="5">
+                <option value="Bureautique">Bureautique</option>
+                <option value="DAO">DAO</option>
+                <option value="Statistiques">Statistiques</option>
+                <option value="SGBD">SGBD</option>
+                <option value="Internet">Internet</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    </fieldset>
+    <div class="bouton">
+        <input type="button" value="Soumettre formulaire">
+        <input type="button" value="Effacer">
+    </div>
+    
+</body>
+</html>

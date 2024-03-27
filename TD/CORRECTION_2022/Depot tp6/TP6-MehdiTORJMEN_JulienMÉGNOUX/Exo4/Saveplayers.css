@@ -1,0 +1,52 @@
+/* Styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    /* Set the font family to Arial or a sans-serif font */
+    background-color: #f2f2f2;
+    /* Set the background color to a light gray shade */
+    margin: 0;
+    /* Remove any default margin */
+    padding: 20px;
+    /* Add padding around the body content */
+    text-align: center;
+    /* Center align the text within the body */
+}
+
+
+/* Styles for the container */
+.container {
+    max-width: 500px;
+    /* Set the maximum width of the container */
+    margin: 0 auto;
+    /* Center align the container horizontally */
+    background-color: #fff;
+    /* Set the background color to white */
+    padding: 20px;
+    /* Add padding around the container content */
+    border-radius: 5px;
+    /* Add rounded corners to the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a box shadow for a subtle elevation effect */
+}
+
+/* Styles for the heading */
+h1 {
+    color: #cc0000;
+    /* Set the text color to a dark red */
+}
+
+/* Styles for the success message */
+.success-message {
+    color: #cc0000ad;
+    /* Set the text color to a translucent dark red */
+    margin-bottom: 20px;
+    /* Add margin at the bottom of the success message */
+}
+
+/* Styles for the return link */
+.return-link {
+    display: block;
+    /* Display the link as a block element */
+    margin-top: 20px;
+    /* Add margin at the top of the link */
+}

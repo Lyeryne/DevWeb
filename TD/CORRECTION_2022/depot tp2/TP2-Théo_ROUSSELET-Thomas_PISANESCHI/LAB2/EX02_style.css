@@ -1,0 +1,68 @@
+
+
+* {
+list-style-type:none;
+margin:0px;
+padding: 0px;
+}
+
+
+.menuprincipal ul {
+margin: 0px;
+padding: 0px;
+display: none;
+}
+
+.menuprincipal li {
+float: left;
+position: relative;
+background: linear-gradient(to right, grey, orange);
+display: block;
+border-bottom: 2px solid black;
+}
+
+.menuprincipal a {
+display:inline-block;
+width: 130px;
+height: 30px;
+line-height: 30px;
+padding: 3px 10px;
+text-align: center;
+text-decoration: none;
+color: black;
+}
+
+.menuprincipal li:hover ul {
+display: block;
+position: absolute;
+left: 0px;
+top: 37.9px;
+}
+
+.menuprincipal ul li {
+background: linear-gradient(to right, white, orange);
+display: none;
+position: relative;
+left: 0px;
+top: 0px;
+}
+
+.tete {
+  border-radius: 10px 10px 0 0;
+  border-left: 4px solid white;
+}
+
+ul li > ul .sousmenu li {
+position: relative;
+top: -37.9px;
+left: 150px;
+}
+
+ul li:hover > ul > li {
+display: block;
+border-bottom: 2px solid black;
+}
+
+.pied{
+  border-radius: 0 0 10px 10px ;
+}

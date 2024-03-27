@@ -1,0 +1,61 @@
+<!-- HTML file -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercice 1</title>
+	
+	<style>
+		.message {
+			color: green;
+			border: 2px solid black;
+			background-color: lightgray;
+			padding: 10px;
+			margin: 10px;
+		}
+	</style>
+
+	<script>
+		var messages = []
+
+		// Fonction qui rajoute un éléve sur la page
+		function ajouterEtudiant() {
+			var nom = prompt("Entrez votre nom :");
+			var browser = window.navigator.appName;
+			var os = window.navigator.platform;
+			var message = "<b>Hello</b> <i>" + nom + "<i>!\n<b>You are a student in Bachelor2 at CYTech\nYour browser is: </b><i>" + browser + "</i><b>\nYour operating system is: </b><i>" + os + "</i>";
+			var messageElement = document.createElement("pre");
+			messageElement.innerHTML = message;
+			messageElement.classList.add("message");
+			document.body.appendChild(messageElement);
+			messages.push(messageElement);
+		}
+
+		// Fonction qui supprime le dernier élève ajouté sur la page
+		function supprimerEtudiant() {
+			var lastMessage = messages.pop();
+			if (lastMessage) {
+				lastMessage.parentNode.removeChild(lastMessage);
+			}
+		}
+
+		// Fonction qui supprime tous les étudiants sur la page
+		function supprimerTousLesEtudiants() {
+			for (var i = 0; i < messages.length; i++) {
+				var message = messages[i];
+				message.parentNode.removeChild(message);
+			}
+			messages = [];
+		}
+	</script>
+</head>
+
+<body>
+	<button onclick="ajouterEtudiant()">Ajouter un étudiant</button>
+	<button onclick="supprimerEtudiant()">Supprimer le dernier étudiant</button>
+	<button onclick="supprimerTousLesEtudiants()">Supprimer tous les étudiants</button>
+	<div></div>
+</body>
+
+</html>

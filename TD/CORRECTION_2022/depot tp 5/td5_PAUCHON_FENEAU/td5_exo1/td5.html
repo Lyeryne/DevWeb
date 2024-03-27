@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+  
+<button id="but1" type="button" onclick="addStudent()">Ajouter un étudiant</button> 
+<button  id="but2" type="button" onclick="deleteStudent()">Supprimer un étudiant</button> 
+<button  id="but3" type="button" onclick="reset()">Reset</button> 
+
+<div id="students" >
+</div>
+
+<script>
+
+function createBlock(parent, myName, myBrowser, myOs) {
+
+    let myDiv = createDiv(parent, counter);
+    createP(myDiv,`Hello ${myName}!`);
+    createP(myDiv,'You are a student in Préing2 in CyTech')
+    createP(myDiv,`Your is browser is: ${myBrowser}`)
+    createP(myDiv,`Your operating system is: ${myOs}`)
+
+    counter++;
+}
+
+function createP(parent, textInput){
+    let newP = document.createElement('p');
+    newP.innerHTML = textInput;
+    parent.appendChild(newP);
+}
+
+function createDiv(parent, id){
+    let newDiv = document.createElement('div');
+    newDiv.id = id;
+    newDiv.style ="border:2px black solid; background-color: gray; color: green;"
+    console.log(parent);
+    console.log(newDiv);
+    parent.appendChild(newDiv);
+  
+    return newDiv;
+}
+
+function addStudent() {
+    let name = prompt("Entrez votre prénom");
+    let navig = navigator.appCodeName;
+    let os = navigator.platform;
+    createBlock(studentsDiv, name, navig, os);
+} 
+
+function deleteStudent(){
+    studentsDiv.removeChild(studentsDiv.lastElementChild);
+}
+
+function reset(){
+    while (studentsDiv.firstChild) {
+        studentsDiv.removeChild(studentsDiv.firstChild);
+    }
+}
+
+let counter = 1;
+let studentsDiv = document.getElementById('students');
+
+</script>
+</body>
+</html>

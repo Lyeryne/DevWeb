@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myChange() {
+  document.getElementsByClassName("change")[0].innerHTML = "salut";
+}
+function myDisapear(){
+    document.getElementsByClassName("change")[0].innerHTML = "";
+}
+</script>
+</head>
+<body>
+<h1>Exercice 1</h1>
+<p class="change">coucou</p>
+<button type="button" onclick="myChange()">change content</button>
+<button type="button" onclick="myDisapear()">make disapear</button>
+</body>
+</html>

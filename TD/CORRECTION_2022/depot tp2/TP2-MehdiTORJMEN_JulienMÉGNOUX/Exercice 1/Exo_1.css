@@ -1,0 +1,30 @@
+/* CSS file */
+
+a{
+    color: white;
+    font-size: 30px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+
+ul li{
+    display : inline-block;
+}
+
+
+.menu{
+       cursor: default;
+       pointer-events: none;    
+}
+
+
+div{
+    width:500px;
+    height:60px;
+    background-color: black;
+    text-align: justify;
+    display: table-cell;
+    vertical-align: middle;
+}
+

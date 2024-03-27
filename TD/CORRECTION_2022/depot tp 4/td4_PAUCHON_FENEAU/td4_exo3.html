@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+<h1>Exercice 3</h1>
+<p id="tab1"></p>
+<p id="tab2"></p>
+
+<script>
+
+    var tab1 = [];
+    var tab2 = [];
+    var tabStr1 = "";
+    var tabStr2 = "";
+
+    function createTab(){
+        for (var i = 0; i < 10; i++) {
+            tab1[i] = Math.floor(Math.random(100) * 100);
+            console.log(tab1[i]);
+            tabStr1 += tab1[i].toString();
+            if (i < 9){
+                tabStr1 += "-";
+            }
+
+        }
+        var p1 = document.getElementById("tab1");
+        p1.innerHTML = tabStr1;
+        console.log(tabStr1);
+    }
+
+    function sortTab(){
+        tab2 = tab1; 
+        tab2.sort();
+        tabStr2 = tab2.join("-");
+        var p2 = document.getElementById("tab2");
+        p2.innerHTML = tabStr2;
+        console.log(tabStr2);
+    }
+
+  createTab();
+  sortTab();
+       
+</script>
+</body>
+</html>

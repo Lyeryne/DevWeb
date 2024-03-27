@@ -1,0 +1,20 @@
+table
+{
+    background-color: rgb(117, 117, 237);
+}
+
+select:hover, input[type="text"]:hover
+{
+    background-color: rgb(224, 103, 103);
+}
+
+button:focus
+{
+    font-size: 32px;
+}
+
+th
+{
+    font-size: 32px;
+    font-weight: bold;
+}

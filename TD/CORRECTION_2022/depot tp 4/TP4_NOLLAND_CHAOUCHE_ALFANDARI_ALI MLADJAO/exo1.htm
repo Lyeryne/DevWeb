@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"></meta>
+    <script>
+            function nsty()
+            {
+                const tagp = document.getElementsByTagName("P");
+
+                tagp[0].innerHTML = "rouge";
+                tagp[1].innerHTML = "vert";
+                tagp[2].innerHTML = "bleue";
+
+                tagp[0].style.color = 'red';
+                tagp[1].style.color = 'green';
+                tagp[2].style.color = 'blue';
+            }
+
+            function hide()
+            {
+                const tagp = document.getElementsByTagName("P");
+                
+                tagp[0].hidden = true;
+                tagp[1].hidden = true;
+                tagp[2].hidden = true;
+            }
+    </script>
+</head>
+<body>
+
+<p id="p1">ligne 1</p>
+<p id="p2">ligne 2</p>
+<p id="p3">ligne 3</p>
+
+<button onclick="nsty();">Changer le style du texte</button>
+<button onclick="hide();">Cacher le texte</button>
+
+<!-- 
+    1.faire un bouton pr changer le style et content
+    faire un autre bouton pour supprimer le paragraphe
+
+    commentaire 
+-->
+
+</body>
+</html>

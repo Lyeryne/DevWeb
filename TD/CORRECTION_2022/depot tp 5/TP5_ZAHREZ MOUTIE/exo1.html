@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exo1TP5</title>
+    <style>
+        .etudiant {
+            border: 1px solid black;
+            background-color: gray;
+            color: green;
+            padding: 10px;
+            margin: 10px;
+        }
+        .etudiant b {
+            font-weight: bold;
+        }
+        .etudiant i {
+            font-style: italic;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var btnAdd = document.getElementById("btnAdd");
+            var btnDelete = document.getElementById("btnDelete");
+            var btnReset = document.getElementById("btnReset");
+            var studentContainer = document.getElementById("studentContainer");
+
+            btnAdd.addEventListener("click", function() {
+                var name = prompt("Please enter your last name");
+                var navigatorName = navigator.userAgent;
+                var osName = navigator.platform;
+
+                var studentBlock = document.createElement("div");
+                studentBlock.classList.add("etudiant");
+                studentBlock.innerHTML = '<b>Hello</b> <i>' + name + 
+                    '</i>! <b>You are a student in Bachelor2 at CYTech. Your browser is:</b> <i>' + 
+                    navigatorName + '</i>. <b>Your operating system is:</b> <i>' + osName + '</i>.';
+
+                studentContainer.appendChild(studentBlock);
+            });
+
+            btnDelete.addEventListener("click", function() {
+                if(studentContainer.lastChild)
+                    studentContainer.removeChild(studentContainer.lastChild);
+            });
+
+            btnReset.addEventListener("click", function() {
+                studentContainer.innerHTML = "";
+            });
+        };
+    </script>
+</head>
+<body>
+    <button id="btnAdd">Ajouter un étudiant</button>
+    <button id="btnDelete">Effacer un étudiant</button>
+    <button id="btnReset">Restaurer tous les étudiants</button>
+    <div id="studentContainer"></div>
+</body>
+</html>

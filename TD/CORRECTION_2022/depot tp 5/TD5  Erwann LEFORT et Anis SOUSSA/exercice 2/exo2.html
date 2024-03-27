@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="exo2.css">
+    <title>exercice 2</title>
+
+</head>
+<html>
+    <div id="style1">
+
+        <div class="cart-block" id="cart-block">
+            <h2>Magasin de disques</h2>
+            <p1  id="t2">Tous les disques à 7€50!!! <br> cliquez sur l'image pour (dé)sélectionner un album<br></p1>
+            <p>Montant du panier : <p4 id="prix">0 €</p4></p>
+          </div>
+
+<div class="source-block">
+    <h2>Albums disponibles</h2>
+    <img title="Les étoiles vagabondes" alt="Disque 1" src="image/Disque 1.jpg" onclick="addToCart('Les étoiles vagabondes  x1', 7.5)">
+    <img title="Deux frère" alt="Disque 2" src="image/Disque 2.jpg" onclick="addToCart('Deux frère   x1', 7.5)">
+    <img title="Feu" alt="Disque 3" src="image/Disque 3.jpg" onclick="addToCart('Feu   x1', 7.5)">
+    <img title="Cyborg" alt="Disque 4" src="image/Disque 4.jpg"  onclick="addToCart('Cyborg   x1', 7.5)">  
+  </div>
+  
+  <div class="destination-block" id="destination">
+    <h2>Albums Choisis</h2>
+    <ul style="list-style-type: none;"></ul>
+  </div>
+  
+
+</div> 
+  <script>
+    var total = 0;
+
+
+    function addToCart(title, price) {
+
+      var discElement = document.createElement("li");
+      discElement.textContent = title;
+      discElement.setAttribute("onclick", "removeFromCart(this, " + price + ")");
+      document.getElementById("destination").getElementsByTagName("ul")[0].appendChild(discElement);
+      
+      // Increase the total amount in the cart block
+      total += price;
+        document.getElementById("cart-block").getElementsByTagName("p4")[0].textContent =  + total + " €";
+        document.getElementById("cart-block").getElementsByTagName("p4")[0].style.color = "yellow";
+        document.getElementById("cart-block").getElementsByTagName("p4")[0].style.fontWeight = "bold";
+    }
+    
+    function removeFromCart(element, price) {
+      // Remove the disc from the destination block
+      element.parentNode.removeChild(element);
+      
+      // Decrease the total amount in the cart block
+      total -= price;
+      document.getElementById("cart-block").getElementsByTagName("p4")[0].textContent = + total + " €";
+      document.getElementById("cart-block").getElementsByTagName("p4")[0].style.color = "yellow";
+      document.getElementById("cart-block").getElementsByTagName("p4")[0].style.fontWeight = "bold";
+    }
+  </script>
+  
+      
+</html>

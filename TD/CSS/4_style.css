@@ -1,0 +1,93 @@
+table
+{
+    width: 95%;
+
+    /* Versions Longues */
+    /* border-top-style: solid;
+    border-top-color: red;
+    border-top-width: 1.5px;
+
+    border-bottom: double;
+    border-bottom-style: solid;
+    border-bottom-color: blue;
+    border-bottom-width: 1.5px;
+
+    border-right: double;
+    border-right-style: solid;
+    border-right-color: black;
+    border-right-width: 1.5px; */
+    
+    
+    /* Versions Courtes */
+    /* Le tableau occupera 95% de la zone horizontale d'affichage, la bordure du haut doit être
+"solide" et rouge, tandis que la couleur de la bordure en bas doit être "double", bleue et
+solide et noire à droite. */
+    border-top: 1.5px solid red;
+    border-bottom: 1.5px double blue;
+    border-right: 1.5px double black;
+    border-left: 1.5px double black;
+
+    /*Les marges droite et gauche du tableau doivent être à 25px */
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+/* Les cellules d'entête seront centrées et écrites en gras, taille 48px et en blanc sur fond marron, et la première lettre de chaque mot est majuscule*/
+.th1
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    background-color: brown;
+    text-transform: capitalize;
+}
+
+
+/* L’espace en haut et en bas entre le contenu des cellules d'entête et leurs bordures doit être de
+64px. */
+th
+{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+
+/* Les cellules du corps seront en vert clair */
+.tb
+{
+    background-color: green;
+}
+
+/* La bordure des cellules impaires doit être en pointillés et colorée en bleu */
+.tb td:nth-child(2n+1)
+{
+    border: 2px dashed blue;
+}
+
+/* La bordure des cellules paires doit être en solide et colorée en rouge */
+.tb td:nth-child(2n)
+{
+    border: 2px solid red; 
+}
+
+
+/* Le texte des lignes paires doit être alignés à droite, gras, italique, souligné, taille 32px et la
+distance entre les mots doit être de 32px */
+.tb tr:nth-child(2n+1) 
+{
+    text-align: right;
+    font-weight: bold; 
+    font-style: italic;
+    text-decoration: underline;
+    font-size:32px;
+    word-spacing: 32px;
+}
+
+
+/* Texte de la première colonne en majuscules et aligné à droite */
+.tb td:nth-child(1) {
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+    text-align: right; /* Aligner le texte à droite */
+}

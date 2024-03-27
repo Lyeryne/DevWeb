@@ -1,0 +1,49 @@
+.menu > li{
+  list-style: none;
+  display: inline-block;
+  background: linear-gradient(to right, grey, orange);
+  border-bottom: 2px solid black;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius:10px 10px 0 0;
+}
+.sous-menu{
+  display: none;
+  padding-top: 2px;
+  padding-left: 0;
+}
+.sous-menu > li > ul{
+  display: none;
+  margin-top: -30.25px;
+}
+.sous-menu  li{
+  list-style: none;
+  background: linear-gradient(to right, white, orange);
+  border-bottom: 2px solid black;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+}
+.menu > li:hover > ul{
+  position: absolute;
+  display: block;
+}
+.sous-menu > li:hover > ul{
+  position: absolute;
+  display: block;
+  margin-left: 120px;
+  padding: 0;
+  width: 120px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.bottom{
+  border-radius:0 0 10px 10px;
+}
+
+

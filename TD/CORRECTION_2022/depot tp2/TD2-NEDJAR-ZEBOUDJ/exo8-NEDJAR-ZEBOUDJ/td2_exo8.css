@@ -1,0 +1,43 @@
+
+
+#cell_l{
+    width: 300px;
+    padding: 30px;
+}
+
+#txt_one{
+    text-align:justify;
+    font: Arial;
+}
+
+#img_one{
+    border:3px solid black;
+}
+
+.img_two{
+    border: 5px solid black;
+}
+
+#mid_table{
+    width:140px;
+}
+
+#top_line{
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#bottom_line{
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#mid{
+    padding:3px;
+}
+
+#link{
+    border:2px solid purple;
+}

@@ -1,0 +1,38 @@
+div{
+    border: 0px solid;
+    border-color: white;
+    }
+
+ul{
+    list-style-type:square;
+    }
+
+.main{
+    background-color: paleturquoise;
+    padding-left: 100px;
+    margin-right: 20px;
+    }
+.main_content {
+    width:100%;
+    border-width: 0px 10px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 25px;
+    background-color: lemonchiffon; 
+    }
+
+.headfoot {
+    display: flex;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+    background-color: darkcyan;
+    color: #fff;
+}
+
+.foot_left{
+    width: 43%;
+ }
+
+.head_center{
+    width: 87%;
+ }

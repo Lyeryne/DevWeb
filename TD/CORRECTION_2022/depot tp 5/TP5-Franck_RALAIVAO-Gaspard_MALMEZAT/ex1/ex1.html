@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Boutons et div JS</title>
+  </head>
+  <body>
+    <button id="btn1">Saisir un nom</button>
+    <button id="btn2">Supprimer</button>
+    <button id="btn3">Réinitialiser</button>
+    <div id="myDiv"></div>
+    <script>
+      const btn1 = document.getElementById('btn1');
+      const btn2 = document.getElementById('btn2');
+      const btn3 = document.getElementById('btn3');
+      const myDiv = document.getElementById('myDiv');
+      // Gestionnaire d'événement pour le premier bouton
+      btn1.addEventListener('click', function() {
+        const nom = prompt("Entrez un nom:");
+        const newDiv = document.createElement('div');
+        newDiv.innerHTML = '<strong>Informations: Bonjour </strong> ' + nom.italics() + '<strong> ! Vous êtes élève en CPI2 à CyTech. Votre navigateur est : </strong>' + navigator.userAgent.italics() + '<strong>. Votre système d`exploitation est :</strong> ' + navigator.platform.italics();
+        myDiv.appendChild(newDiv);
+      });
+      // Gestionnaire d'événement pour le deuxième bouton
+      btn2.addEventListener('click', function() {
+        const lastDiv = myDiv.lastChild;
+        if (lastDiv) {
+          myDiv.removeChild(lastDiv);
+        }
+      });
+      // Gestionnaire d'événement pour le troisième bouton
+      btn3.addEventListener('click', function() {
+        myDiv.innerHTML = '';
+      });
+    </script>
+  </body>
+</html>

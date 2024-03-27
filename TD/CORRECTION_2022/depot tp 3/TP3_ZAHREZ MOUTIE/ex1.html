@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exo 1 TP3</title>
+    <style>
+        .formelements {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 3px;
+        }
+        .formelements label {
+            width: 100px;
+            margin-right: 4px;
+        }
+        .elementsexe {
+            display: flex;
+            flex-direction: column;
+        }
+        .sexeoption {
+            display: flex;
+            align-items: center;
+        }
+        .sexeoption label {
+            order: 2;
+            margin: 0 3px;
+        }
+        .sexeoption input {
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>Enregistrement d'un utilisateur</p>
+    <form>
+        <div class="formelements">
+            <label for="nom">Nom </label>
+            <input type="text" id="nom"  required>
+        </div>
+
+        <div class="formelements">
+            <label for="prenom">Prénom </label>
+            <input type="text" id="prenom" required>
+        </div>
+
+        <div class="formelements">
+            <label>Sexe </label>
+            <div class="elementsexe">
+                <div class="sexeoption">
+                    <input type="radio" id="homme"  value="homme" required>
+                    <label for="homme">Homme</label>
+                </div>
+                <div class="sexeoption">
+                    <input type="radio" id="femme"  value="femme" required>
+                    <label for="femme">Femme</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="formelements">
+            <label for="fonction">Fonction </label>
+            <select id="fonction"  required>
+                
+                <option value="option1">Enseignant</option>
+                <option value="option2">Ingénieur</option>
+                <option value="option3">Médecin</option>
+                <option value="option4">Autre</option>
+            </select>
+        </div>
+
+        <div class="formelements">
+            <label for="commentaires">Commentaires </label>
+            <textarea id="commentaires"  rows="4" cols="25">Tapez ici vos commentaires</textarea>
+        </div>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+
+        <script>
+            
+            
+            function new_style()
+            {
+                document.getElementById("p").innerHTML = "new content";
+                document.getElementById("p").style.fontFamily = 'Comic sans MS'
+                document.getElementById("p").style.fontSize = '25px'
+                document.getElementById("p").style.color = "purple";
+            }
+            
+            
+            function hide()
+            {
+                document.getElementById("p").hidden = true;
+            }
+            
+            
+            function reload()
+            {
+                location.reload();
+            }
+            
+
+            
+        </script>
+
+
+    </head>
+    <body>
+
+        <p id="p">content</p>
+        
+        <button onclick="new_style();">STYLE</button>
+        <button onclick="hide();">HIDE</button>
+        <button onclick="reload();">RELOAD</button>
+
+    </body>
+</html>

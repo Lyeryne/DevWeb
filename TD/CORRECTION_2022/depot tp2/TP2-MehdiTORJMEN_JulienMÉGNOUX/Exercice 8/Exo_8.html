@@ -1,0 +1,58 @@
+<!-- HTML file -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice 8</title>
+    <link rel="stylesheet" type="text/css"href="Exo_8.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td style="width: 300px"> <!-- cellule de gauche de 300 pixels -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png" alt="Le logo de CY Tech" width="130" style="margin-left: 130px; border: 2px solid black; text-align: center; padding: 2px">
+        </td>
+        <td style="font-family: Arial; text-align: justify; width: 300px; font-size: 16px"> 
+          <p>Ceci est le logo de CY Tech avec du texte aligné à gauche du logo. Pour réussir cet effet, utilisez un tableau avec la cellule de gauche de 300 pixels, le texte est en Arial et son alignement est justifié.</p>
+        </td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png" alt="Le logo de CY Tech" width="130" style="border: 4px solid black; padding: 2px">
+      <div class="line-wrapper">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png" alt="Le logo de CY Tech" width="130" style="border: 4px solid black; padding: 2px">
+    </div>
+
+    <br>
+
+    <div style="display: flex; align-items: center;">
+      <p> Ceci est un lien sur le logo de CY Tech</p>
+      <a href="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png" alt="Le logo de CY Tech" width="130" style="margin-left: 20px; border: 3px solid #720073; padding : 2px">
+      </a>
+    </div>
+
+    <br>
+
+    <div style="display: flex; align-items: center">
+      <table>
+        <tr>
+          <td style="width: 200px">
+            <p>Ceci est un lien sans la bordure ajoutée par défaut par le navigateur aux images servant de lien</p>
+          </td>
+          <td style="width: 300px">
+            <a href="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png"alt="Le logo de CY Tech" width="130" style="margin-left: 20px;">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

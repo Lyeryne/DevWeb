@@ -1,0 +1,47 @@
+/* Styles for the body */
+body {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+    height: 100vh;
+    /* Set the height of the body to full viewport height */
+    background-color: aliceblue;
+    /* Set the background color */
+    font-family: Arial, sans-serif;
+    /* Set the font family */
+}
+
+/* Styles for the container */
+.container {
+    text-align: center;
+    /* Center align the content within the container */
+    max-width: 500px;
+    /* Set the maximum width of the container */
+    background-color: #ffe6e6;
+    /* Set the background color of the container */
+    padding: 20px;
+    /* Add padding to the container */
+    border-radius: 5px;
+    /* Add border radius to the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a box shadow to the container */
+}
+
+/* Styles for the heading */
+h1 {
+    color: #cc0000;
+    /* Set the color of the heading */
+    margin-bottom: 20px;
+    /* Add margin at the bottom of the heading */
+}
+
+/* Styles for the success message */
+.success-message {
+    color: #cc0000ad;
+    /* Set the color of the success message */
+    margin-bottom: 20px;
+    /* Add margin at the bottom of the success message */
+}

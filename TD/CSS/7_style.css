@@ -1,0 +1,32 @@
+/* Modifiez la couleur d'arrière-plan des cellules fusionnées pour une couleur que vous préférez */
+.fusioner
+{
+    background-color: red;
+}
+
+/* Changez la couleur d'arrière-plan des cellules non fusionnées en jaune.  */
+tr
+{
+    background-color: rgb(255, 196, 0);
+}
+
+/* Changez la taille de la police de la première ligne à 32px et en gras.  */
+tr:nth-child(1)
+{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* Changez la taille de la police de la première colonne à 32px et en italique.  */
+td:nth-child(1)
+{
+    font-size: 32px;
+    font-style: italic;
+}
+
+/* Changez la taille de la police de la légende à 32px et en italique.  */
+caption
+{
+    font-style: italic;
+    font-size: 32px;
+}

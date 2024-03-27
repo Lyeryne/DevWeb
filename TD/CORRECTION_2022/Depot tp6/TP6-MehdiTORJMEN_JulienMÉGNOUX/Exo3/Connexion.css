@@ -1,0 +1,92 @@
+/* Styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    /* Font family for the entire document */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+    height: 100vh;
+    /* Set the height of the body to full viewport height */
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Styles for the heading */
+h2 {
+    text-align: center;
+    /* Center align the heading */
+}
+
+/* Styles for the form */
+form {
+    width: 300px;
+    /* Set the width of the form */
+    margin: 0 auto;
+    /* Center align the form horizontally */
+    padding: 20px;
+    /* Add padding to the form */
+    border: 1px solid grey;
+    /* Add a border to the form */
+    border-radius: 5px;
+    /* Add border radius to the form */
+    background-color: #82adad;
+    /* Set the background color of the form */
+}
+
+/* Styles for the labels */
+label {
+    display: block;
+    /* Display labels as block elements */
+    margin-bottom: 10px;
+    /* Add margin at the bottom of labels */
+}
+
+/* Styles for the input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    /* Set the width of the input fields */
+    padding: 5px;
+    /* Add padding to the input fields */
+    margin-bottom: 10px;
+    /* Add margin at the bottom of the input fields */
+    border: 1px solid grey;
+    /* Add a border to the input fields */
+    border-radius: 3px;
+    /* Add border radius to the input fields */
+}
+
+/* Styles for the submit button */
+input[type="submit"] {
+    width: 100%;
+    /* Set the width of the submit button */
+    padding: 10px;
+    /* Add padding to the submit button */
+    background-color: rgb(5, 82, 61);
+    /* Set the background color of the submit button */
+    color: #fff;
+    /* Set the text color of the submit button */
+    border: none;
+    /* Remove the border of the submit button */
+    border-radius: 3px;
+    /* Add border radius to the submit button */
+    cursor: pointer;
+    /* Change the cursor to a pointer on hover */
+}
+
+/* Styles for the hover state of the submit button */
+input[type="submit"]:hover {
+    background-color: #45a088;
+    /* Change the background color of the submit button on hover */
+}
+
+/* Styles for the error message */
+.error-message {
+    color: rgb(172, 15, 15);
+    /* Set the text color of the error message */
+    margin-bottom: -5px;
+    /* Adjust the margin at the bottom of the error message */
+}

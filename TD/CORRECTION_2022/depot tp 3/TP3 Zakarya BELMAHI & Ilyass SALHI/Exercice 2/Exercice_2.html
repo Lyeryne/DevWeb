@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP3</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<form>
+    <fieldset style="width: 620px;">
+        <legend>Exercice 2</legend>
+            <p style="text-align: center; margin-bottom: 0px;";>Veuillez saisir vos coordonnées dans le formulaire ci-dessous</p>
+            <input type="radio" name="gender" value="M.">M.
+            <input type="radio" name="gender" value="Mme">Mme
+            <input type="radio" name="gender" value="Mlle">Mlle <br><br>
+            Nom : <input type="text" name="lastname" style="width: 130px;">
+            Prénom : <input type="text" name="firstname" style="width: 130px;">
+            Société : <input type="text" name="society" style="width: 130px;"> <br><br>
+            N° et rue : <input type="text" name="adress" style="width: 470px;"> <br><br>
+            Code Postal : <input type="text" name="adress2" style="width: 50px;">
+            Ville : <input type="text" name="city" style="width: 280px;"> &nbsp; &nbsp;
+            <select name="country">
+                <option value="Angleterre">Angleterre</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Australie">Australie</option>
+                <option value="France" selected="selected">France</option>
+                <option value="Italie">Italie</option>
+                <option value="Japon">Japon</option>
+                <option value="USA">USA</option>
+                <option value="Autre">Autre</option>
+            </select> <br><br>
+            Votre Message <textarea style="resize: none;" rows="5" cols="30" name="message"></textarea>
+            <br><br>
+            Adresse E-Mail <input type="email" name="email"> &nbsp; &nbsp; <input type="submit" value="Valider"> <input type="reset" value="Effacer">
+    </fieldset>
+    </form>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.student
+			{
+				border: 1px solid black;
+				background-color: rgb(129, 169, 255);
+				color: green;
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+		</style>
+		<script>
+			function addStudent() {
+				  	var prénom = prompt("Entrez votre prénom:"); 	// alert to ask for name
+          			var promotion  = prompt("Entrez votre promotion:"); 	// alert to ask for class promotion
+				  	if (prénom !== null && prénom !== "" && promotion !== null && promotion !== "") {  //if given information isn't null
+						var student = document.createElement("div");	// create a div
+						student.classList.add("student");	// change the new div's class to the student class
+						student.innerHTML = "<b>Hello " + prénom + "!</b><br>You are a student in " + promotion +" at CYTech.<br>Your browser is: <i>" + navigator.appName + "</i><br>Your operating system is: <i>" + navigator.platform + "</i>";
+						//add content to the div using given information, navigator information and operating system information 
+						document.getElementById("students").appendChild(student);	//link the new div to the existing parent div
+					}
+			}
+			function deleteStudent() {	// delete lastest student profile
+				  var students = document.getElementsByClassName("student");
+				  if (students.length > 0) {
+					students[students.length - 1].remove();
+					  
+				}
+			}
+			function reset() {	// empty the parent div to reset the page
+				  document.getElementById("students").innerHTML = "";
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="addStudent()">Ajouter un étudiant</button>	<!-- Create and add student profiles -->
+		<button onclick="deleteStudent()">Supprimer un étudiant</button>	<!-- Remove student profiles -->
+		<button onclick="reset()">Reset</button> <!-- Reset the page -->
+		<div id="students"></div> <!-- Student profiles will be shown in this div -->
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice 2</title>
+    <link rel="shortcut icon" href="../../icon_CY.png" />
+    <meta name="keywords" content="Exercice2" html,learning″ />
+    <meta name="description" content="A" formulaire d'inscription />
+    <style>
+        .color1 {
+            background-color: rgb(244, 208, 118);
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" cellspacing="2" cellpadding="0" width="400">
+
+        <head>
+            <tr>
+                <th colspan="2" class="color1">Formulaire d'inscription</th>
+            </tr>
+        </head>
+        <form action="" enctype="multipart/form-data" method="post">
+            <tr>
+                <td class="color1">Nom :</td>
+                <td class="color1">
+                    <input type="surname" name="Surname" size="20" maxlength="30" style="width: 90%;" required />
+                </td>
+
+            </tr>
+            <tr>
+                <td class="color1">Prénom :</td>
+                <td class="color1">
+                    <input type="name" name="Name" size="20" maxlength="30" style="width: 90%;" required />
+                </td>
+            </tr>
+            <tr>
+                <td class="color1">Numéro étudiant :</td>
+                <td class="color1">
+                    <input type="text" id="Number" name="Number" size="20" maxlength="30" style="width: 90%;"
+                        pattern="[0-9]*" required />
+                </td>
+            </tr>
+            <tr>
+                <td class="color1">
+                    Groupe :
+                </td>
+                <td class="color1">
+                    <select id="letter">
+                        <option value="A" selected="selected">A</option>
+                        <option value="B">B</option>
+                        <option value="B">C</option>
+                        <option value="B">D</option>
+                        <option value="B">E</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="color1">
+                    Photo :
+                </td>
+                <td class="color1">
+
+                    <input type="file" id="myPicture" name="myPicture" accept="image/*" required>
+
+                </td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="2" style="text-align: center;" class="color1">
+                        <button type=" submit">S'inscrire
+                            <img src=" ../Icon_CY.png" width="25" height="20" class="highlight2" alt="(CY)">
+                        </button>
+                    </td>
+                </tr>
+            </tfoot>
+        </form>
+    </table>
+</body>
+
+</html>

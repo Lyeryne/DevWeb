@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="td3_exo1.css">
+	<title>td 3_exo1</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="2" style="text-align: left;">Enregistrement d'un utilisateur</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td >Nom</td>
+                <td><input type="text" name="nom"></td>
+            </tr>
+            <tr>
+                <td>Prénom</td>
+                <td><input type="text" name="prenom"></td>
+            </tr>
+            <tr>
+                <td>Sexe</td>
+                <td><label for="Homme">Homme :</label> <input for="Femme" type="radio" name="genre"><br>
+                    <label>Femme :</label> <input type="radio" name="genre">
+                </td>
+            </tr>
+            <tr>
+                <td>Fonction</td>
+                <td><select name= "fonction">
+                        <option value="Enseignant">Enseignant</option>
+                        <option value="Etudiant">Etudiant</option>
+                        <option value="Technicien">Technicien</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Commentaires</td>
+                <td><textarea name="commentaires" style="height: 80px; width: 200px;">Tapez ici vos
+commentaires</textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="submit" value="Envoyer"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+

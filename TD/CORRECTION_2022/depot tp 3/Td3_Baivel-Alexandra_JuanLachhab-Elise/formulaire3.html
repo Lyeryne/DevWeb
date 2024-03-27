@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <title>Formulaires HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="formulaire3.css">
+        </head>
+
+    <body>
+        <form>
+            <fieldset ><legend>Client</legend>
+
+            <div class="fon">
+                <label for="Civilité">Civilité : </label>
+                <input type="radio" name="sex" value="Mlle" > Medemoiselle
+                <INPUT type="radio" name="sex" value="Mme"> Madame 
+                <input type="radio" name="sex" value="M" > Monsieur    
+                <br> <br>
+                
+                <label for="nom">Nom/Prenom : </label> 
+                <input type="text" name="nom" id="nom"  required> <br><br>
+
+                <label for="message">Adresse: </label> 
+                <textarea name="adresse" id="adresse" rows="5" cols="30" placeholder="Rue No Boite Postal"> </textarea> <br><br>
+
+                <label for="Postal">No Postal/Localité : </label> 
+                <input type="text" name="Postal" id="Postal"  required> 
+                <input type="text" name="Postal" id="Postal" placeholder="Lausanne"  required> <br> <br>
+
+                <label for="Pays">Pays</label> 
+                <select name="Pays" id="Pays">
+                    <option value="Suisse">Suisse</option>
+                </select> <br> <br>
+
+                <label for="Appli">Application(s)</label> 
+                <select name="Appli" id="Appli">
+                    <option value="Bureautique">Bureautique</option>
+                    <option value="DAO">DAO</option>
+                    <option value="Statistique">Statistique</option>
+                    <option value="SGBD">SGBD</option>
+                    <option value="Internet">Internet</option>
+                </select>
+            </div>
+            </fieldset>
+
+            <p class="mi">
+                <input  type="submit" value="Soumettre formulaire">
+                <input  type="submit" value="effacer" > </div>
+            </p>
+        </form>
+    </body>

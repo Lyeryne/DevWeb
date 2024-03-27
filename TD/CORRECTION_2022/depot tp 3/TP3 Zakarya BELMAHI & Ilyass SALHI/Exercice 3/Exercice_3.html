@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP3</title>
+    <meta charset="UTF-8">
+    <style>
+        .Exercice3 th{
+            text-align:left;
+            width:170px;
+        }
+
+        .Exercice3 td{
+            padding-bottom: 10px;
+        }
+        
+        .Exercice3 {
+            margin-left:30px;
+            background-color:yellow;
+            width: 810px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <fieldset style="width: 900px;">
+        <legend>Exercice 3</legend>
+        <fieldset>
+            <legend><b>Client</b></legend>
+            <table class="Exercice3">
+                <tr>
+                    <th>Civilité</th>
+                    <td><input type="radio" name="gender" value="Mademoiselle">Mademoiselle<input type="radio" name="gender" value="Madame">Madame<input type="radio" name="gender" value="Monsieur">Monsieur</td>
+                </tr>
+                <tr>
+                    <th>Nom / Prénom</th>
+                    <td><input type="text" name="fullname" style="width:320px;"></td>
+                </tr>
+                <tr>
+                    <th>Adresse</th>
+                    <td><textarea style="resize: none;" rows="5" cols="50" name="message" placeholder="Rue No Boîte postale"></textarea></td>
+                </tr>
+                <tr>
+                    <th>No postal / Localité</th>
+                    <td>
+                        <input type="text" name="postal" maxlength="4" style="width:40px;">
+                        <input type="text" name="locality" value="Lausanne" style="width:140px;">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Pays</th>
+                    <td>
+                        <select name="country">
+                            <option value="Allemagne">Allemagne</option>
+                            <option value="Angleterre">Angleterre</option>
+                            <option value="Australie">Australie</option>
+                            <option value="France">France</option>
+                            <option value="Italie">Italie</option>
+                            <option value="Japon">Japon</option>
+                            <option value="Suisse" selected="selected">Suisse</option>
+                            <option value="USA">USA</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Plateforme(s)</th>
+                    <td><input type="checkbox" name="plateform">Windows <input type="checkbox" name="plateform">Macintosh <input type="checkbox" name="plateform">Unix</td>
+                </tr>
+                <tr>
+                    <th>Application(s)</th>
+                    <td>
+                        <select name="application" size="5" multiple>
+                            <option value="Bureautique">Bureautique</option>
+                            <option value="DAO">DAO</option>
+                            <option value="Statistiques">Statistiques</option>
+                            <option value="SGBD">SGBD</option>
+                            <option value="Internet">Internet</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br>
+        <div style="text-align: center;"><input type="submit" value="Soumettre formulaire"> <input type="reset" value="Effacer"></div><br>
+    </fieldset>
+</form><br><br><br>
+
+</body>
+</html>

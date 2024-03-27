@@ -1,0 +1,153 @@
+<!-- HTML file -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice 2</title>
+
+    <style>
+        table {
+            margin-left: 5%;
+            padding-top: 5%;
+        }
+
+        img {
+            height: 90px;
+            width: 90px;
+        }
+
+        disc {
+            padding: 10px;
+            position: relative;
+        }
+
+        discTitle {
+            color: #1e0834;
+            font-weight: bold;
+            font-style: italic;
+            position: absolute;
+            bottom: 105px;
+            left: 0;
+            right: 0;
+        }
+
+        .background {
+            background-color: #66669a;
+            width: 99.5%;
+            height: 620px;
+        }
+
+        #price {
+            color: yellow;
+        }
+
+        #source {
+            background-color: #013300;
+            border: 3px solid #e61922;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #destination {
+            background-color: #e61922;
+            border: 3px solid #013300;
+            text-align: center;
+        }
+
+        #cart {
+            background-color: #969696;
+            border: 3px solid #010007;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+
+    <script>
+
+        // Function that updates the total amount of the cart
+        function priceUpdate() {
+            let oldPrice = document.getElementById('price');
+            let destinationElement = document.getElementById('destination');
+            let size = destinationElement.childElementCount - 1;
+            let newPrice = 7.5 * size;
+            oldPrice.innerHTML = newPrice + "€";
+        }
+
+        /* Function that moves a disc from source (available albums) to destination (selected albums)
+           id : id of the moved image */
+        function moveToDestination(id) {
+            let album = document.getElementById(id);
+            let destinationElement = document.getElementById("destination");
+            let discElement = document.createElement("disc");
+            discElement.append(album);
+            let discTitleElement = document.createElement("discTitle");
+            let titleContent = document.createTextNode(id);
+            discTitleElement.append(titleContent);
+            discElement.append(discTitleElement);
+            destinationElement.append(discElement);
+        }
+
+        /* Function that moves a disc from destination (selected albums) to source (available albums)
+           id : id of the moved image */
+        function moveToSource(id) {
+            let album = document.getElementById(id);
+            let sourceElement = document.getElementById("source");
+            album.parentNode.remove();
+            sourceElement.append(album);
+        }
+
+        /* Function triggered by a click on an image that decides how to move it
+           id : id of the moved image */
+        function clickSwitch(id) {
+            let album = document.getElementById(id);
+            if (album.className == "inSource") {
+                moveToDestination(id);
+                album.className = "inDestination"
+            } else {
+                moveToSource(id);
+                album.className = "inSource"
+            }
+            priceUpdate();
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="background">
+        <table>
+            <tr>
+                <td></td>
+                <td id="cart">
+                    <h2>Magasin de disques</h2>
+                    <p>Tous les disques à 7€50 !!!<br>cliquez sur l'image pour (dé)sélectionner un album<br>Montant du
+                        panier : <span id="price">0€</span></p>
+
+                <td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="source">
+                    <h2>Albums disonibles<h2>
+                            <img class="inSource" id="Daft Punk" src="images/punk.jpg"
+                                onclick="clickSwitch('Daft Punk')">
+                            <img class="inSource" id="Eiffel 65" src="images/eiffel65.jpg"
+                                onclick="clickSwitch('Eiffel 65')">
+                            <img class="inSource" id="The Police" src="images/police.jpg"
+                                onclick="clickSwitch('The Police')">
+                            <img class="inSource" id="ATC" src="images/atc.jpg" onclick="clickSwitch('ATC')">
+                            <img class="inSource" id="The Beatles" src="images/beatles.jpg"
+                                onclick="clickSwitch('The Beatles')">
+                </td>
+                <td></td>
+                <td id="destination">
+                    <h2>Albums choisis</h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>TP4</title>
+    <meta charset="UTF-8">
+</head>
+<body onload="calculateFib(); displayArraysOfIntegers()">
+    <script src="script.js"></script>
+    <p>EX1 -------------------------------------</p>
+    <p class="pEx1">first text</p>
+    <p class="pEx1">second text</p>
+    <p class="pEx1">third text</p>
+    <button onclick="changeAnyPContent()">Change content of any tag p</button>
+    <button onclick="changeAnyPStyle()">Change style of any tag p</button>
+    <button onclick="hideAnyPContent()">Hide content of any tag p</button>
+
+    <p>EX2 -------------------------------------</p>
+    <p id="fib"></p>
+
+    <p>EX3 -------------------------------------</p>
+    <p id="array"></p>
+    <p id="sorted_array"></p>
+
+    <p>EX4 -------------------------------------</p>
+    <img onmouseover="changePic(2)" onmouseout="changePic(1)" src="img/1.jpg" width="500px" id="first_pic" title="sea">
+
+    <img style="margin-left: 50px;" onclick="changePic(3)" src="img/3.jpg" width="500px" id="second_pic" title="Hill">
+</body>
+</html>

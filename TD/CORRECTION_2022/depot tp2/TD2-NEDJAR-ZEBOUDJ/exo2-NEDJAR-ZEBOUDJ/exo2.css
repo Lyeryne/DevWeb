@@ -1,0 +1,100 @@
+ul {
+    list-style: none;
+    padding: 0;
+  }
+a {
+    text-decoration: none;
+    color: #333;
+}
+  .menu {
+    position: relative;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 105px;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(to right, grey, orange);
+    margin-right: 2px;
+    padding: 0px;
+    padding-top: 10px;
+    border-bottom: 1.5px solid #333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+/*ss-menu*/
+nav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul{
+    display: block;
+    box-sizing: border-box;
+    width: 105px;
+    background: linear-gradient(to right, white, orange);
+    margin: 0px;
+    padding: 5px;
+}
+
+.ss-menu{
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 8px;
+    border-top: 1.5px solid #333;
+}
+
+.menu ul:last-child{
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.ss-menu:first-child{
+    border-top: 0px;
+}
+
+
+/*ss-ss-menu*/
+
+.ss-menu ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+}
+.ss-menu:hover ul{
+    display: block;
+    margin: 0px;
+}
+
+nav ul ul ul{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    top: 30%;
+    left: 100%;
+    width: 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1.5px solid black;
+}
+
+.ss-ss-menu {
+    text-align: center;
+    width: 100px;
+    box-sizing: border-box;
+    border-top: 1.5px solid #333;
+    padding-top: 5px;
+  }
+
+.ss-ss-menu:first-child{
+    border-top: 0px;
+}
+
+.ss-ss-menu:last-child{
+    width: 100px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }

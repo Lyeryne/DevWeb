@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function change_contenu() {
+				document.getElementById("p1").innerHTML = "Goodbye everyone";
+			}
+			function change_couleur() {
+				document.getElementById("p2").style.color = "red";
+			}
+			function disparaitre() {
+				document.getElementById("p3").style.display="none";
+			}
+		</script>
+	</head>
+	<body>
+		<p id="p1">Hello world</p>
+		<button type="button" onclick="change_contenu()">Changer le texte</button>
+		<p id="p2">Salut le monde</p>
+		<button type="button" onclick="change_couleur()">Changer la couleur</button>
+		<br>
+		<p id="p3">Hallo Welt</p>
+		<button type="button" onclick="disparaitre()">Faire disparaitre le texte</button>
+	</body>
+</html>

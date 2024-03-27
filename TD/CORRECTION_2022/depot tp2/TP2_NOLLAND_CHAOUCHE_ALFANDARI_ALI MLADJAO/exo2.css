@@ -1,0 +1,70 @@
+#nav {
+    list-style:none inside;
+    margin:0;
+    padding:0;
+    text-align:center;
+    }
+
+#nav li {
+    border-radius: 25px;
+    display:block;
+    position:relative;
+    float:left;
+    background-image: linear-gradient(.25turn, grey, 50%, orange);
+    border: solid;
+    border-radius: 15px 15px 0px 0px;
+    border-width: 0px;
+    border-bottom-width: 3px;
+    border: bottom color #000;
+    }
+
+#nav li a {
+    display:block;
+    padding:0;
+    text-decoration:none;
+    width:200px; /* this is the width of the menu items */
+    line-height:35px; /* this is the hieght of the menu items */
+    color: #000;
+    }
+
+/*--- Sublist Styles ---*/
+#nav ul {
+    position:absolute;
+    padding:0;
+    left:0;
+    display:none; /* hides sublists */
+    }
+
+#nav li:hover ul ul {
+    display:none;
+} /* hides sub-sublists */
+
+#nav li:hover ul {
+    display:block;  
+    } /* shows sublist on hover */
+
+#nav li li:hover ul {
+    display:block; /* shows sub-sublist on hover */
+    margin-left:200px; /* this should be the same width as the parent list item */
+    margin-top:-35px; /* aligns top of sub menu with top of list item */
+    }
+
+#nav .souslien {
+    background-image: linear-gradient(.25turn, white, 50%, orange);
+    border-radius: 0px 0px 0px 0px;
+}
+
+#nav #lastsub {
+    border-radius: 0px 0px 15px 15px;
+}
+
+#nav #firstsub {
+    border-width: 0px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border: bottom color #000;
+}
+
+
+
+

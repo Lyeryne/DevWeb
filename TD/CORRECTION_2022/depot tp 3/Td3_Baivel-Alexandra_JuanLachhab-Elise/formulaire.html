@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Formulaires HTML</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="formulaire.css">
+        </head>
+
+    <body>
+        <p>Enregistrement d'un utilisateur</p>
+
+        <form>
+                <label for="nom">Nom </label> 
+                <input type="text" name="nom" id="nom"  required> <br> <br>
+
+                <label for="prenom">Prénom  </label> 
+                <input type="text" name="prenom" id="prenom"  required> <br> <br>
+
+                <table>
+                    <tr>
+                        <td rowspan="2"> Sexe</td>
+                        <td > Homme :  <input  type="radio" name="sex" value="H" > </td>  
+                    </tr>
+                    <td > Femme  : <INPUT type="radio" name="sex" value="F"></td>
+                </table> <br>
+                <p>
+                    <label for="grade">Fonction</label> 
+                    <select name="grade" id="grade">
+                        <option value="assistant">enseignant</option>
+                    </select>
+                </p> <br>
+
+
+                <label for="Commentaire">Commentaire </label> 
+                <textarea name="Tapez ici vous commentaire" id="commmntaire"> </textarea> <br><br>
+
+                <div class="button">
+                    <button type="submit">Envoyer</button>
+                </div>
+        </form>   
+    </body>
+
+            

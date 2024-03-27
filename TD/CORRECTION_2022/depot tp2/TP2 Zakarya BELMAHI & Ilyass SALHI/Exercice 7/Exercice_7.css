@@ -1,0 +1,23 @@
+img {
+    max-width: 150px;
+    height: auto;
+}
+
+img[scope="1"]{
+    max-width: 150px;
+    height: auto;
+    border: 2px solid black;
+}
+
+img[scope="2"]{
+    max-width: 150px;
+    height: auto;
+    border: 5px solid black;
+}
+img[scope="3"]{
+    max-width: 180px;
+    height: 35px;
+}
+img[scope="4"]{
+    margin-right: 20px;
+}

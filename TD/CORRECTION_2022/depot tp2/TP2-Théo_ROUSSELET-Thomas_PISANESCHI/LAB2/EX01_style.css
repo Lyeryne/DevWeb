@@ -1,0 +1,28 @@
+
+
+ul {
+  list-style-type: none;
+}
+
+li{
+  display:block;
+  float:left;
+}
+
+a{
+  padding: 20px 25px;
+  margin: 0px;
+  color: White;
+  background-color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+a:hover{
+  padding: 20px 25px;
+  margin: 0px;
+  color: White;
+  background-color:darkgrey;
+  font-size: 25px;
+  text-decoration: none;
+}

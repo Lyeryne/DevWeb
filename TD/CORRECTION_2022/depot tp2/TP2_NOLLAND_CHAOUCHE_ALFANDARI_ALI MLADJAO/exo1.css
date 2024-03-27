@@ -1,0 +1,24 @@
+.menu {
+    width: 17%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 9px 0px;
+    background-color: black;
+   }
+   
+
+li {
+    text-align: left;
+    display: inline;
+}
+
+li a {
+    color: white;
+    padding: 9px 17px;
+    text-decoration: none;
+}
+
+/* commentaire */

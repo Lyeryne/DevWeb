@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercice 3</title>
+  </head>
+  <body>
+    <script>
+      var tableau = [];
+      for (var i = 0; i < 10; i++) {
+        tableau.push(Math.floor(Math.random() * 100));   
+        }
+    document.write("tableau non trié :  ");
+    document.write(tableau.join("-"));
+
+    tableau.sort();
+    document.write("<br><br>");
+    document.write("tableau trié : ");
+    document.write(tableau.join("-"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <title>Formulaires HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="formulaire2.css">
+        </head>
+
+    <body>
+        <p class="mi">Veuillez saisir vos coordonnées dans le formulaire ci dessous </p>    <br>
+
+
+        <form>
+            <p>
+                
+                <input type="radio" name="sex" value="M" > M.
+                <INPUT type="radio" name="sex" value="Mme"> Mme 
+                <input type="radio" name="sex" value="Mlle" > Mlle <br><br>
+            </p>   
+            
+            <label for="nom"> Nom : </label> 
+            <input type="text" name="nom" id="nom" required> 
+
+            <label for="prenom">Prénom : </label> 
+            <input type="text" name="prenom" id="prenom"  required>
+
+            <label for="prenom">Societe : </label> 
+            <input type="text" name="Societe" id="societe"  required> <br><br>
+
+            <label for="adresse"> N et rue  : </label> 
+            <input  class="taille" type="text" name="adresse" id="adresse" required> <br><br>
+
+            <label for="nom"> Code Postal  : </label> 
+            <input type="text" name="CP" id="CP" required> 
+
+            <label for="prenom">Ville : </label> 
+            <input class="taille2" type="text" name="Ville" id="Ville"  required>
+
+                
+            <select name="Pays" id="Pays">
+                <option value="Angleterre">Angleterre</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Australie">Australie</option>
+                <option value="France">France</option>
+                <option value="Italie">Italie</option>
+                <option value="Japon">Japon</option>
+                <option value="USA">USA</option>
+                <option value="Autre">Autre</option>
+            </select> <br><br>
+
+            <label for="message">Votre Message: </label> 
+            <textarea name="message" id="message" rows="5" cols="30"> </textarea> <br><br>
+
+            <label for="mail"> Adresse email : </label> 
+            <input type="email" name="user_mail" id="mail"  required> 
+
+            <input  type="submit" value="Valider">
+            <input  type="submit" value="Sauvegarder" > 
+        </form>
+    </body>
+
+
+                
+
+

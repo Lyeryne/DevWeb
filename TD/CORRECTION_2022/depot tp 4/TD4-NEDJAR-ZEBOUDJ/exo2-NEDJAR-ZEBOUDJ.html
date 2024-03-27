@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<title>exo2</title>
+</head>
+
+<body>
+    <h1>Exercice 2</h1>
+    <p id="sentence" style="font-size: 30px; text-align: center;background-color: brown; border: 4px dotted yellow;color: orange;"></p>
+    <script>
+            var num = prompt("Enter the rank of the Fibonacci number:");
+            var txt = document.getElementById("sentence");
+            function fibo(n) {
+                if (n<=1){
+                    return n;
+                }
+                return fibo(n-1) + fibo(n-2);
+
+            }
+            var now = new Date();
+            var h = now.getHours();
+            var m = now.getMinutes();
+            txt.innerHTML=`At ${h} hours ${m}, the <i>${num}th</i> term of the Fibonacci sequence is <b style="font-size: 40px">${fibo(num)}</b>`;
+    </script>
+
+</body>
+
+</html>

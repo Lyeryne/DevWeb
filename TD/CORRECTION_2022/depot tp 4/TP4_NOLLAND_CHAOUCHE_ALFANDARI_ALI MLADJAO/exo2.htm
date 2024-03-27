@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"></meta>
+    <script>
+      function fibo(n)
+      {
+        var n1 = 0;
+        var n2 = 1;
+        var somme = 0;
+ 
+        for(var i = 2; i <= n; i++){
+          somme = n1 + n2; 
+          n1 = n2; 
+          n2 = somme; 
+        }
+ 
+        return somme;
+      }
+    </script>
+    <style>
+      #demo
+      {
+        background-color: brown;
+        border: dotted yellow;
+        color: orange;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+  document.querySelector('input')
+
+  var n = prompt("Enter n:");
+  var currentdate = new Date();
+
+  var fib = fibo(n);
+
+  var text = "At " + currentdate.getHours() + "hours" + currentdate.getMinutes() 
+  + ", the " + n.italics() + " th term of the Fibonnacci sequence is ... " + "<b><big>" + fib + "</big></b>";
+
+
+  document.getElementById("demo").innerHTML = text;
+
+</script>
+
+<!--
+    commentaire 
+-->
+
+</body>
+</html>

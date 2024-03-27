@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"></meta>
+    <script>
+      function ita(itext)
+      {
+        var ita = document.createElement("i");
+        var inode = document.createTextNode(itext);
+        ita.appendChild(inode);
+        return ita;
+      }
+      function bol(btext)
+      {
+        var bol = document.createElement("b");
+        var bnode = document.createTextNode(btext);
+        bol.appendChild(bnode);
+        return bol;
+      }
+      function brl()
+      {
+        var brl = document.createElement("br");
+        return brl;
+      }
+      function adddiv()
+      {
+        var last_name = prompt("Enter your last name:");
+        
+        var para = document.createElement("p");
+        var node = document.createTextNode("");
+        para.appendChild(node);
+        para.appendChild(bol("Hello "));
+        para.appendChild(ita(last_name));
+        para.appendChild(bol("!"));
+        para.appendChild(brl());
+        para.appendChild(bol("You are a student in Bachelor2 at CYTech"));
+        para.appendChild(brl());
+        para.appendChild(bol("Your browser is: "));
+        para.appendChild(ita(navigator.userAgent));
+        para.appendChild(brl());
+        para.appendChild(bol("Your operating system is: "));
+        para.appendChild(ita(navigator.platform));
+
+        var element = document.getElementById("dv");
+        element.appendChild(para);
+      }
+
+
+      function rmv()
+      {
+        var elem = document.getElementById("dv").lastChild;
+        elem.remove();
+      }
+
+      function rmvall()
+      {
+        var childs = document.getElementById("dv").childNodes;
+        var elem = childs[0];
+        for(let i = childs.length-1; i >= 0; i--)
+        {
+          elem = childs[i];
+          elem.remove();
+        }
+      }
+      
+    </script>
+    <style>
+      p
+      {
+        background-color: lightgray;
+        border: solid black thin;
+        color: green;
+      }
+    </style>
+</head>
+<body>
+
+  <script>
+    
+  </script>
+
+<input type="button" id="idbouton"  value="Ajouter nouveau étudiant" onclick="adddiv()">
+<input type="button" id="idbouton2" value="Supprimer dernier étudiant" onclick="rmv()">
+<input type="button" id="idbouton3" value="Supprimer tout les étudiants" onclick="rmvall()">
+
+<div id="dv"></div>
+
+<!--
+    commentaire 
+-->
+
+</body>
+</html>

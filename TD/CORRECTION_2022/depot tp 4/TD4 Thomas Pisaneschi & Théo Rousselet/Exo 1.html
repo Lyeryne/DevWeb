@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <style>
+
+    .hidden {
+
+      display: none;
+
+    }
+
+  </style>
+
+  <script>
+
+    function changeContent() {
+
+      var paragraph = document.getElementById("myParagraph");
+
+      paragraph.innerHTML = "Message secret ! ";
+
+    }
+
+   
+
+    function changeStyle() {
+
+      var paragraph = document.getElementById("myParagraph");
+
+      paragraph.style.color = "red";
+
+      paragraph.style.fontSize = "20px";
+
+    }
+
+   
+
+    function hideContent() {
+
+      var paragraph = document.getElementById("myParagraph");
+
+      paragraph.classList.add("hidden");
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <h1>Exo 1</h1>
+
+  <p id="myParagraph">Hello ! </p>
+
+  <button onclick="changeContent()">Clique ici</button>
+
+  <button onclick="changeStyle()">Ou ici</button>
+
+</body>
+
+</html>
+
+

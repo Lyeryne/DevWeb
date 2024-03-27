@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<button onclick="creerListe()">Afficher la liste</button>
+		<p id="text"></p>
+		<button onclick="afficher_tri()">Afficher la liste triée</button>
+		<p style="display:none;" id="liste_trie"></p>
+		<script>
+			function creerListe(){
+				var liste=[];
+				var texte="";
+				for (i=0;i<10;i++){
+					liste[i]=Math.floor(Math.random() * 100);
+					texte+=liste[i];
+					if (i<9){
+						texte+='-';
+					}
+				}
+				document.getElementById("text").innerHTML=texte;
+				var liste_trie=liste.sort((a, b) => a - b);
+				document.getElementById("liste_trie").innerHTML=liste_trie;
+				
+			}
+			function afficher_tri(){
+				document.getElementById("liste_trie").style.display="block";
+			}
+		</script>
+	</body>
+</html>

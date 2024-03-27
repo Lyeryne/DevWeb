@@ -1,0 +1,50 @@
+#paragraphe_2 {
+    border: solid black 3px;
+}
+
+#paragraphe_3 {
+    border: solid black 10px;
+}
+
+#paragraphe_5 {
+    width: 180px;
+    height: 35px;
+
+}
+
+#paragraphe_7 {
+    margin-right:20px;
+}
+
+#logo_1{
+  border: black solid 3px;
+  margin-right: 20px;
+}
+
+#texte_1{
+    width: 300px;
+    font-family: Arial;
+    text-align: justify;
+    font-weight:lighter;
+  }
+
+  #logo_2{
+    border: black solid 10px;
+
+  }
+
+  #logo_3{
+    border: black solid 10px;
+
+  }
+
+a#logo_4:link > img{
+    border: purple solid 3px;
+}
+
+#texte_2{
+ width: 200px;
+ text-align: justify;
+ font-weight:lighter;
+ margin-right: 20px;
+}

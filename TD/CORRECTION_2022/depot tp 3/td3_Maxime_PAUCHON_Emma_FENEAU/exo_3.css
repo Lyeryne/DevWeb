@@ -1,0 +1,16 @@
+table{
+    background-color: yellow;
+    width: 100%;
+}
+.gauche{
+    width: 30%;
+    font-style: bold;
+}
+.droit{
+    width: 80%;
+}
+.bouton{
+    text-align: center;
+    margin-top: 10px;
+}
+

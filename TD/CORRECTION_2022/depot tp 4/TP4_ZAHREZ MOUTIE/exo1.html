@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex1TP3</title>
+
+        <style>
+            #texte {
+                color: black;
+                
+            }
+        </style>
+
+        <script>
+            function contenu() {
+                document.getElementById("texte").textContent = "Bonjouuuuurrr!";
+            }
+
+            function style() {
+                document.getElementById("texte").style.color = "blue";
+                document.getElementById("texte").style.fontWeight = "bold";
+            }
+
+            function visibilité() {
+                document.getElementById("texte").style.visibility = "hidden";
+            }
+        </script>
+    </head>
+
+    <body>
+        <p id="texte">HELLO WORLD ! </p>
+
+        <button onclick="contenu()">Change le contenu</button>
+        <button onclick="style()">Change le style</button>
+        <button onclick="visibilité()">cache le contenu</button>
+    </body>
+</html>

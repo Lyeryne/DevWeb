@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"></meta>
+    <style>
+        #center{
+            text-align: center;
+        }
+        table {
+            background-color: yellow; 
+            margin-left: 1%;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+<fieldset>
+    <legend><b>Client</b></legend>
+
+<table width="98%">
+    <tr>
+        <td>
+            <b>Civilité</b>
+        </td>
+        <td>
+            <input type="radio" name="gender" value="Mlle" id="Mlle">
+            <label for="Mlle">Mademoiselle</label>
+    
+            <input type="radio" name="gender" value="Mme" id="Mme" checked>
+            <label for="Mme">Madame</label>
+              
+            <input type="radio" name="gender" value="M." id="M.">
+            <label for="M.">Monsieur</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <b>Nom/Prénom</b>
+        </td>
+        <td>
+            <input type="text" name="nom" size="40%">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <b>Adresse</b>
+        </td>
+        <td>
+            <textarea name="commentaire" cols="45" rows="5" placeholder="Rue No Boîte postale"></textarea>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <b>No postal/Localité</b>
+        </td>
+        <td>
+            <input type="text" name="num" maxlength="4" size="4">
+            <input type="text" name="region" value="Lausanne">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <b>Pays</b>
+        </td>
+        <td>
+            <select name="pays">
+                <option value="Angleterre">Angleterre</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Australie">Australie</option>
+                <option value="Australie">France</option>
+                <option value="Italie">Italie</option>
+                <option value="Japon">Japon</option>
+                <option value="France" selected="selected">Suisse</option>
+                <option value="USA">USA</option>
+                <option value="Autre">Autre</option>
+            </select>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <b>Plateforme(s)</b>
+        </td>
+        <td>
+            <input type="checkbox" name="plateform" value="Windows" id="Windows" checked>
+            <label for="Windows">Windows</label>
+    
+            <input type="checkbox" name="plateform" value="Macintosh" id="Macintosh" checked>
+            <label for="Macintosh">Macintosh</label>
+              
+            <input type="checkbox" name="plateform" value="Unix" id="Unix">
+            <label for="Unix">Unix</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <b>Application(s)</b>
+        </td>
+        <td>
+            <select name="applications" size="5" multiple>
+                <option value="Bureautique">Bureautique</option>
+                <option value="DAO">DAO</option>
+                <option value="Statistiques">Statistiques</option>
+                <option value="SGBD">SGBD</option>
+                <option value="Internet">Internet</option>
+            </select>
+        </td>
+    </tr>
+
+</table>
+
+</form>
+</fieldset>
+
+<br>
+
+<div id="center">
+    <button type="submit">Soumettre formulaire</button>
+    <button onclick="location.href='exo3.htm'" type="button">Effcaer</button>
+</div>
+
+<!-- commentaire -->
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+Belmahi;Zakarya;800;2min
+Belmahi;Zakarya;9000;60min
+Belmahi;Zakarya;9000;60min

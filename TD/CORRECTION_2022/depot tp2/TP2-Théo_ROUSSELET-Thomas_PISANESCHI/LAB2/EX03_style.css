@@ -1,0 +1,50 @@
+.tete
+{
+    color: white;
+    background-color: slategrey;
+    padding-bottom: 25px;
+}
+
+.tetegauche
+{
+    float: left;
+    margin: 5px;
+}
+
+
+.tetedroit
+{
+    float: right;
+    margin: 5px;
+}
+
+
+
+.margin
+{
+    background-color: #80cbcb;
+    width: 100px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+.corps
+{
+    background-color: #ffe5a9;
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    height: 400px;
+
+}
+
+.pied
+{
+    color: white;
+    text-align: center;
+    background-color: slategrey;
+    vertical-align: center;
+    line-height: 45px;
+}

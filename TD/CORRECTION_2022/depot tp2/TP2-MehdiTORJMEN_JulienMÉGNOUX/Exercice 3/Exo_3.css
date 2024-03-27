@@ -1,0 +1,57 @@
+/* CSS file */
+
+.intro{
+	width: 1260px;
+    height: 50px;
+	background-color: #668285;
+}
+
+
+#test{
+
+	color: white;
+	word-spacing: 1064px;
+	padding: 3px;
+}
+
+
+.objectif{
+	text-indent: 5px;
+	width: 1123px;
+    height: 450px;
+	background-color: #f4ebc2;
+}
+
+
+.adresse{
+	color: white;
+	width: 1260px;
+    height: 40px;
+	background-color: #668285;
+
+}
+
+.adresse p{
+	text-align: center;
+	padding: 10px;
+}
+
+
+.middle{
+
+	background-color: white;
+	width: 1%;
+	height: 450px;
+}
+
+
+.left {
+  background-color: #b9d7d9;
+  width: 8%;
+  height: 450px;
+}
+
+
+.container {
+  display: flex;
+}

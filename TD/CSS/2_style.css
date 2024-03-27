@@ -1,0 +1,38 @@
+body
+{   
+    color: red
+}
+
+div#div1 > p 
+{
+    color:red
+}
+
+div#div1 > a
+{
+    color:red
+}
+
+div > a
+{
+    color:red
+}
+
+[type]
+{
+    color:black
+}
+
+form.form1
+{
+    background-color:red
+}
+
+form > input:nth-child(2n) 
+{
+    background-color:red
+}
+
+input:nth-child(2n+1) {
+    background-color:red
+} 

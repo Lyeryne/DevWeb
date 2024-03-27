@@ -1,0 +1,13 @@
+<?php
+$menuCoach = array(
+    array("label" => "Add Statistics", "url" => "addStatistics.php"),
+    array("label" => "Add Player", "url" => "addPlayer.php")
+);
+?>
+
+<!-- Display the menu -->
+<ul>
+    <?php foreach ($menuCoach as $item) : ?>
+        <li><a href="<?php echo $item['url']; ?>"><?php echo $item['label']; ?></a></li>
+    <?php endforeach; ?>
+</ul>

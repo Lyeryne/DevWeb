@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex3 BEDUE GALISSON TRUONG</title> <!-- Programme affichant un formulaire complet. -->
+    </head> 
+    <!-- CSS  -->
+    <style> 
+        .setup{
+            padding: 1%;
+            margin: 0%;
+            top: 0%;
+            left: 0%;
+            background-color: aquamarine;
+            width: 100%;
+        }
+
+        .field{
+            top: 0%;
+        }
+
+    </style>
+
+    <body>
+        <form action="/action_page.php">
+            <fieldset class="field">
+            <legend><b>Client</b></legend>
+            <table class="setup"> <!-- On place les différents compartiments dans un tableau  -->
+                <tr>
+                    <td style="width: 350px;"><b>Civilitee</b></td>
+                    <td>
+                    <input type="radio" name="Civilitee" value="Mademoiselle"> Mademoiselle
+                    <input type="radio" name="Civilitee" value="Madame"> Madame
+                    <input type="radio" name="Civilitee" value="Monsieur"> Monsieur
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 350px;"><b>Nom / Prenom</b></td>
+                    <td>
+                    <textarea type="text" name="Nom/Prenom" rows="1" style="resize: none; width: 60%"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 350px;"><b>Adresse</b></td>
+                    <td>
+                        <textarea type="text" name="Adresse" rows="4" placeholder="Rue No Boite Postal" style="resize: none; width: 70%;"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 350px;"><b>N° Postal / Localitee</b></td>
+                    <td>
+                        <textarea type="text" name="N° Postal" rows="1" cols="4" maxlength="4" style="resize: none;"></textarea>
+                        <textarea type="text" name="Localitee" rows="1" style="resize: none; width: 30%;">Lausanne</textarea>
+                    </td>                    
+                </tr>
+
+                <tr>
+                    <td style="width: 350px;"><b>Pays</b></td>
+                    <td>
+                    <select name="Pays">
+                        <option value="Suisse">Suisse</option>
+                        <option value="France">France</option>
+                        <option value="Italie">Italie</option>
+                        <option value="Espagne">Espagne</option>
+                    </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 350px;"><b>Plateforme(s)</b></td>
+                    <td>
+                        <input type="checkbox" name="Plateforme(s)" value="Windows"> Windows
+                        <input type="checkbox" name="Plateforme(s)" value="Mac"> Mac
+                        <input type="checkbox" name="Plateforme(s)" value="Unix"> Unix
+                        </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 350px;"><b>Application(s)</b></td>
+                    <td>
+                    <select name="Pays"multiple>
+                        <option value="Bureautique">Bureautique</option>
+                        <option value="DAO">DAO</option>
+                        <option value="Statistiques">Statistiques</option>
+                        <option value="SGBD">SGBD</option>
+                        <option value="Internet">Internet</option>
+                    </select>
+                    </td>
+                </tr>
+
+            </table>
+            </fieldset>
+            <p> <CENTER> <button>Soumettre formulaire</button> <input type="reset" value="Effacer"></CENTER></p> <!-- Le bouton envoi le formulaire à ./action_page.php  -->
+        </form>
+    </body>
+</html>

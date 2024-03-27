@@ -1,0 +1,48 @@
+<!-- Change le texte contenu dans une balise en autre chose -->
+<!DOCTYPE html>
+<!-- CSS  -->
+<style>
+    .tomate{
+        color: pink ;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+    }
+    .patate{
+        
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:blue ;
+    }
+</style>
+
+<html>
+	<body>
+        <h1>Ex 1</h1> <!-- Les 3 boutons  -->
+        <button type="Style" onclick="Style()">Style</button>
+        <button type="Reload" onclick="Reload()">Reload</button>
+        <button type="Del" onclick="del()">Del</button>
+        
+		<P class="tomate" id="tomate" >
+			tomate
+        </P>
+        <p class="patate" id="patate" style="display:none">
+			patate
+        </p>
+        
+		<!-- Le scipt java remplace le contenu par celui désiré -->
+		<script>
+			function Style() {
+                document.getElementById("tomate").innerHTML = "";
+                document.getElementById("patate").style.display='block';
+				 
+			}
+            function del() {
+				document.getElementById("tomate").innerHTML = "";
+                document.getElementById("patate").innerHTML = "";
+				 
+			}
+            function Reload() {
+                location.reload();
+			}
+		</script>
+	</body>
+</html>

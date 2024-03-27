@@ -1,0 +1,11 @@
+.bouton {
+    margin-right: 10px;
+}
+
+.eleve{
+    border: solid black 3px;
+    background-color: #969696;
+    color: #003300;
+    width: 500px;
+    margin-bottom: 10px;
+    }

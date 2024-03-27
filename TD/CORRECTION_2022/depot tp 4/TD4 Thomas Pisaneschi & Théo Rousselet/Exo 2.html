@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <style>
+
+    .fibonacci-area {
+
+      background-color: brown;
+
+      border: 2px dotted yellow;
+
+      width: 300px;
+
+      height: 200px;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+    }
+
+   
+
+    .fibonacci-text {
+
+      color: orange;
+
+      font-size: 24px;
+
+      text-align: center;
+
+      font-style: italic;
+
+      font-weight: bold;
+
+    }
+
+  </style>
+
+  <script>
+
+    function fibonacci(n) {
+
+      if (n <= 1) {
+
+        return n;
+
+      } else {
+
+        return fibonacci(n - 1) + fibonacci(n - 2);
+
+      }
+
+    }
+
+
+    window.onload = function() {
+
+      var rank = prompt("Enter the rank of the Fibonacci number:");
+
+      var nthTerm = fibonacci(parseInt(rank));
+
+     
+
+      var date = new Date();
+
+      var hours = date.getHours();
+
+      var minutes = date.getMinutes();
+
+
+      var resultText = "At " + hours + " hours " + minutes + " minutes, the " + "<span class='fibonacci-number'>" + rank + "</span>" + "th term of the Fibonacci sequence is " + "<span class='fibonacci-number'>" + nthTerm + "</span>";
+
+      var output = document.getElementById("fibonacci-output");
+
+      output.innerHTML = resultText;
+
+    };
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="fibonacci-area">
+
+    <p id="fibonacci-output" class="fibonacci-text"></p>
+
+  </div>
+
+</body>
+
+</html>
+
+

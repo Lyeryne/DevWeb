@@ -1,0 +1,60 @@
+/* apparaître le <li> sur la même ligne  */
+ul {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    border: 1.5px solid black;
+    border-radius: 10px 10px 1px 1px;  
+}
+/* ~~~~~~~~~~~~~~~~~~~~~ */
+
+/* bordure, des couleurs et un espacement */
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+.l1
+{
+    background-color: yellow;
+}
+
+.l2
+{
+    background-color: green;
+}
+
+.l3
+{
+    background-color: blue;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* Lorsque la souris passe sur un élément, il prend une autre couleur  */
+.l1:hover
+{
+    background-color: rgba(255, 255, 0, 0.389);
+}
+
+.active:hover
+{
+    background-color: gray;
+}
+
+.l2:hover
+{
+    background-color: rgb(19, 255, 19);
+}
+
+.l3:hover
+{
+    background-color: rgb(97, 97, 249);
+}

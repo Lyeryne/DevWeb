@@ -1,0 +1,36 @@
+<!-- Un programme composé de deux modules : le premier affiche une image qui disparait lorsque l'on passe le curseur dessus.
+Le deuxième affiche une image aléatoire parmi une bibliothèque prédéfini d'image.   -->
+<!DOCTYPE html>
+
+<html>
+    <h1>Ex 4</h1>
+    <body>
+    <img onmouseover="affichenuit()" onmouseout="affichejour()" width="800px" height="450px" src="Jour.jpg" id="image1">
+    <!-- L'image est visible, sauf quand le curseur passe dessus  -->
+    <script>
+                                function affichenuit() {//affiche un ecran noir
+                            document.getElementById("image1").src="Nuit.jpg"            
+        }
+                    function affichejour() {//affiche l'image
+                            document.getElementById("image1").src="Jour.jpg"            
+        }
+    </script>
+
+    
+    <br>
+    <button onclick="photo()">Afficher une Image</button><!-- Permet de recharger une nouvelle image  -->
+    
+    <div id="photo"></div><!-- L'image se charge dans la balise  -->
+    <script>
+   
+    function photo(){//cherche une image dans le dossier courant et l'affiche
+        var x=document.getElementById("photo")
+        
+        x.innerHTML="<img src=\"im"+Math.floor((Math.random()*6)+1)+".jpg\" width=\"560\" height=\"400\"/>"
+    }
+            
+    </script>
+    </body> 
+    
+</html>
+    

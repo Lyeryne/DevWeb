@@ -1,0 +1,74 @@
+#t1{
+    margin-top: 5px;
+}
+
+#t2{
+font-size: smaller;
+}
+
+.source-block{
+    position: absolute;
+    border: 2px solid red ;
+    background-color:green;
+    margin: 0 0 0 5px;
+    width: 400px;
+    height: 250px;
+    text-align:center;
+}
+
+.cart-block{
+    border: black 2px solid;
+    background-color:grey;
+    width: 430px;
+    height: 160px;
+    margin: 0 auto 5px;
+    top: 5px;
+    position: relative;
+    text-align:center;
+}
+
+.destination-block{
+    border: black 2px solid;
+    background-color:red;
+    margin-right: 5px;
+    width: 500px;
+    height: 275px;
+    position: relative;
+    margin-left: auto;
+    text-align:center;
+}
+
+
+#price{
+    color: yellow;
+    font-size:20px;
+}
+
+.albumImg{
+    width: 70px;
+    margin-top: 25px;
+}
+
+.albumImgInCart{
+    max-height: 70px;
+    max-width: 70px;
+    margin: 0 2px 0;
+}
+
+#style1{
+    width: auto;
+     height: 620px;
+      padding: 0px;
+       background-color:rgb(102, 102, 154);
+}
+
+#prix{
+    font-weight: bold;
+  color: yellow;
+}
+
+.source-block img {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}

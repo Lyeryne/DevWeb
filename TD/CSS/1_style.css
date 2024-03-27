@@ -1,0 +1,60 @@
+/* Tous les éléments <p> appartenant à la classe pars et placés dans un élément <div> appartenant à la classe divs.*/
+/* selecteur de classe + de descendants(avec l'espace) */
+div.divs p.pars 
+{
+
+}
+
+/* Tous les éléments <abbr> qui possèdent un attribut title. */
+abbr[title]
+{
+
+}
+
+/* Tous les éléments dont l'attribut width vaut 300. */
+*[width=300]
+{
+
+}
+
+/* Tous les éléments <a> dont l'attribut href a été défini et qui sont situés dans un élément <nav> appartenant à la classe nav1. */
+nav.nav1 a[href] 
+{
+
+}
+
+/* Tous les éléments <p> qui sont enfants d'un élément <div> de la classe divs. */
+
+div.divs > p{
+
+}
+
+/* Tous les éléments <img> de classe images placés dans un élément <p> dont l'id est id1. */
+p#id1 img.images
+{
+
+}
+
+/* Tous les éléments <img> fils de rang impair d'un élément quelconque du document html. */
+img:nth-child(2n+1)
+{
+
+}
+
+/* Tous les éléments <img> dont la src est un fichier d'extension .jpg. */
+img[src$=".jpg"]
+{
+
+}
+
+/* Les éléments <div> de la classe div2 qui sont le premier frère (suivant) d'un élément <div> de classe div1.*/
+div.div1 + div.div2
+{
+
+}
+
+/* Toutes les lignes de rang pair situées dans le corps d'une table. */
+table tr:nth-child(2n)
+{
+
+}

@@ -1,0 +1,44 @@
+fieldset
+{
+    border-radius: 5px;
+    border-color: red;
+}
+
+legend
+{
+    background-color: rgba(128, 128, 128, 0.711);
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.div1, .div2 {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+}
+
+.champ
+{
+    border-width: 1px;
+    border-radius: 3px;
+    width: 115px;
+    height: 20px;
+}
+
+.champ:hover
+{
+    background: rgb(206, 206, 206);
+}
+
+input[name=sinscrire]
+{
+    background-color: rgb(254, 89, 0);
+    color: white;
+    height: 25px;
+}
+
+input[name=sinscrire]:hover{
+    background-color: rgb(172, 54, 11);
+}

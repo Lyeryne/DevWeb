@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<title>exo1</title>
+</head>
+
+<body>
+    <h1>Exercice 1</h1>
+    <p style="color:blue;font-size: 30px;" id="change"> Here's the content of the page</p>
+    <button type="button" onclick="changestyle()">Change</button>
+    <button type="button" onclick="hidecontent()">Hide</button>
+
+    <script>
+        function changestyle() {
+            var element= document.getElementById("change");
+            element.innerHTML= "This is the new style"
+            element.style.color= "red";
+            element.style.fontStyle = "italic";
+        }
+        function hidecontent(){
+            var element= document.getElementById("change");
+            element.style.display="none";
+        }
+    </script>
+
+</body>
+
+</html>

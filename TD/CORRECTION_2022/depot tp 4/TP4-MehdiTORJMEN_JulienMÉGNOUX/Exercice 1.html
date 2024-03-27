@@ -1,0 +1,92 @@
+<!-- HTML file -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice 1</title>
+    <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png" alt="Le logo de CY Tech"
+        width="132" height="70">
+    <h1 align="center"><u>Informatique 4</u> : TP 4</h1>
+    <br>
+    <p align="right"><i>Mehdi TORJMEN</i> - <i>Julien MÉGNOUX</i></p>
+    <p align="right">PréIng 2 - MI</p>
+    <script>
+
+        // Function that changes the content of the text
+        function changeContent() {
+            document.getElementById("HTML").innerHTML = ".htm";
+            document.getElementById("CSS").innerHTML = ".css";
+            document.getElementById("Javascript").innerHTML = ".js";
+        }
+
+        // Function that resets the content of the text 
+        function resetContent() {
+            document.getElementById("HTML").innerHTML = "HTML";
+            document.getElementById("CSS").innerHTML = "CSS";
+            document.getElementById("Javascript").innerHTML = "Javascript";
+        }
+
+        // Function that changes the color of the text
+        function changeColor() {
+            document.getElementById("HTML").style.color = "blue";
+            document.getElementById("CSS").style.color = "red";
+            document.getElementById("Javascript").style.color = "green";
+        }
+
+        // Function that resets the color of the text
+        function resetColor() {
+            document.getElementById("HTML").style.color = "black";
+            document.getElementById("CSS").style.color = "black";
+            document.getElementById("Javascript").style.color = "black";
+        }
+
+        // Function that changes the font of the text
+        function changeFont() {
+            document.getElementById("HTML").style.fontFamily = "Arial";
+            document.getElementById("CSS").style.fontFamily = "Georgia";
+            document.getElementById("Javascript").style.fontFamily = "Monospace";
+        }
+
+        // Function that resets the font of the text
+        function resetFont() {
+            document.getElementById("HTML").style.fontFamily = "Times New Roman";
+            document.getElementById("CSS").style.fontFamily = "Times New Roman";
+            document.getElementById("Javascript").style.fontFamily = "Times New Roman";
+        }
+
+        // Function that hides the text
+        function hideText() {
+            document.getElementById("HTML").hidden = true;
+            document.getElementById("CSS").hidden = true;
+            document.getElementById("Javascript").hidden = true;
+        }
+
+        // Function that unhides the text
+        function unhideText() {
+            document.getElementById("HTML").hidden = false;
+            document.getElementById("CSS").hidden = false;
+            document.getElementById("Javascript").hidden = false;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1><u>Exercice 1</u></h1>
+    <p id="HTML">HTML</p>
+    <p id="CSS">CSS</p>
+    <p id="Javascript">Javascript</p>
+
+    <button onclick="changeContent()">Content</button>
+    <button onclick="resetContent()">Uncontent</button>
+    <button onclick="changeColor()">Color</button>
+    <button onclick="resetColor()">Uncolor</button>
+    <button onclick="changeFont()">Font</button>
+    <button onclick="resetFont()">Unfont</button>
+    <button onclick="hideText()">Hide</button>
+    <button onclick="unhideText()">Unhide</button>
+    <button onClick="document.location.reload(true)">Reset</button>
+</body>
+
+</html>

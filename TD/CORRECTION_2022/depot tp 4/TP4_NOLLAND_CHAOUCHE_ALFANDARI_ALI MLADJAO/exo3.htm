@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"></meta>
+    <script>
+      function fibo(n)
+      {
+        var n1 = 0;
+        var n2 = 1;
+        var somme = 0;
+ 
+        for(var i = 2; i <= n; i++){
+          somme = n1 + n2; 
+          n1 = n2; 
+          n2 = somme; 
+        }
+ 
+        return somme;
+      }
+
+      function exo3()
+      {
+        var arr = [];
+        for(var i = 0; i < 10; i++)
+        {
+          arr.push(Math.floor(Math.random() * 100));
+        } 
+  
+        let tmp1 = arr.toString();
+        var text2 = tmp1.replaceAll(",", "-");  
+ 
+        document.getElementById("p1").innerHTML = text2;
+
+        arr = arr.sort(function (a, b) {  return a - b;  });
+        let tmp2 = arr.toString();
+        var text3 = tmp2.replaceAll(",", "-");
+
+        document.getElementById("p2").innerHTML = text3;
+    }
+    </script>
+    <style>
+      #exo2
+      {
+        background-color: brown;
+        border: dotted yellow;
+        color: orange;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+
+<p id="exo2"></p>
+<p id="p1"></p>
+<p id="p2"></p>
+<script>
+  document.querySelector('input')
+
+  var n = prompt("Enter n:");
+  var currentdate = new Date();
+
+  var fib = fibo(n);
+
+  var text1 = "At " + currentdate.getHours() + "hours" + currentdate.getMinutes() 
+  + ", the " + n.italics() + " th term of the Fibonnacci sequence is ... " + "<b><big>" + fib + "</big></b>";
+
+  document.getElementById("exo2").innerHTML = text1;
+</script>
+
+<button onclick="exo3();">créer tableau</button>
+
+<!--
+
+    3.cree array aleat en appuyant sur bouton qui affiche tab puis aff tab trie
+
+
+    commentaire 
+-->
+
+</body>
+</html>

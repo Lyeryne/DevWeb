@@ -1,0 +1,18 @@
+.menu ul {
+    background-color:black;
+    height: 30px;
+    padding-left: 8px;
+    width: 240px;
+    line-height: 30px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.menu  a {
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}

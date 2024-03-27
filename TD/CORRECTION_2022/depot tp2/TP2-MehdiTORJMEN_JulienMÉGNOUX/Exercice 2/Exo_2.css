@@ -1,0 +1,48 @@
+/* CSS file */
+
+a{   
+    text-decoration: none;
+    color: black;
+    vertical-align: -10px;
+}
+
+li{ 
+    background: linear-gradient(to right,#8a8178,#f0a51c);
+    font-size: 25px;
+    display: block;
+    border-bottom: 1px solid black;
+    float: left;
+    border-radius: 5px 5px 0 0;
+    width: 165px;
+    height: 50px;
+    text-align: center;
+}
+
+
+ul li > ul li{
+    background: linear-gradient(to right,white,#f0ab10);
+    border-bottom: 1px solid black; 
+    position: relative;
+    display: none;
+    top: 12px;
+    right: 41px;
+}
+
+ul li > ul li > ul li{
+    background: linear-gradient(to right,white,#f0ab10);
+    border-bottom: 1px solid black; 
+    position: relative;
+    display: none;
+    top: -39px;
+    left: 126px;
+}
+
+ul li:hover > ul > li 
+{ 
+  display: block;
+  border-radius: 0 0 5px 5px ;
+}
+
+
+
+

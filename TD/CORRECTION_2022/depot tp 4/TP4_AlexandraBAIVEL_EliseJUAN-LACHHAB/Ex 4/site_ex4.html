@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<img id="image1" style="width:30%;" src="Images/Chat1.jpg" onmouseover="afficherChat2()" onmouseout="afficherChat1()">
+		<input type = "button" id = "idbouton" name = "nameofbuttom" value = "Changer l'image" onclick = "image_hasard()"/>
+		<input type = "button" id = "idbouton" name = "nameofbuttom" value = "Afficher les informations sur l'image" onclick = "info_image()"/>
+		<script>
+			var id_image="image1";
+			function afficherChat2(){
+				document.getElementById(id_image).setAttribute("src","Images/Chat2.jpg");
+			}
+			function afficherChat1(){
+				document.getElementById(id_image).setAttribute("src","Images/Chat1.jpg");
+			}
+			function image_hasard(){
+				var num=Math.floor(Math.random() * 6)+1;
+				var nom_image="Images/Chat"+num+".jpg";
+				document.getElementById(id_image).setAttribute("src",nom_image);
+				document.getElementById(id_image).setAttribute("id","image"+num);
+				id_image="image"+num;
+			}
+			function info_image(){
+				window.alert(document.getElementById(id_image).attributes[2].textContent+"\n"+document.getElementById(id_image).naturalWidth + "x" + document.getElementById(id_image).naturalHeight);
+			}
+		</script>
+	</body>
+</html>

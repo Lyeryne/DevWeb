@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <script>
+            
+            
+            function fibonacci(n)
+            {
+                var x=1, y=0, r=0;
+                if(n==1)
+                {
+                    return 1;
+                }
+                for(var i=2; i<=n; i++)
+                {
+                    r=x+y;
+                    y=x;
+                    x=r;
+                }
+                return r;
+            }
+            
+            
+            function tableau()
+            {
+                var tab=[], max=100;
+                for(var i=0; i<10; i++)
+                {
+                    tab.push(Math.floor(Math.random() * max));
+                }
+                
+                let t1 = tab.toString();
+                var tab1 = t1.replaceAll(",", "-");
+                document.getElementById("t1").innerHTML = tab1;  
+                
+                tab.sort(function(a,b)
+                {
+                    return a-b;
+                });
+                let t2 = tab.toString();
+                var tab2 = t2.replaceAll(",", "-");
+                document.getElementById("t2").innerHTML = tab2;  
+            }
+
+
+            
+            
+            
+        </script>
+        
+        
+        <style>
+        
+        
+            #fibonacci
+            {   
+                font-size: 30px;
+                background-color: brown;
+                border: dotted yellow 2px;
+                color: orange;
+                text-align: center; 
+                height: 50px;
+            }
+            
+            
+        </style>
+        
+        
+    </head>
+    
+    
+<!--_______________________________________________________-->
+    
+    
+    <body>
+    
+        
+        <p id="fibonacci"></p>
+        <p id="t1"></p>
+        <p id="t2"></p>
+            
+        <script>
+
+
+            var n = prompt("enter n");
+            var currentdate = new Date();
+            var r = fibonacci(n);
+            var text = "At " + currentdate.getHours() + "h" + currentdate.getMinutes() + ", the " + n.italics() + " th term of the Fibonnacci sequence is ... ";
+            var result = "<b><big>" + r + "</big></b>";
+
+            document.getElementById("fibonacci").innerHTML = text + result;
+
+
+        </script>
+        
+        <button onclick="tableau();">create table</button>
+        
+        
+    </body>
+    
+
+</html>

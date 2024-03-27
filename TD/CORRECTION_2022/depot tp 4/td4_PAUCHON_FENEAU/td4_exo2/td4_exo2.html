@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleFibo.css"></link>
+</head>
+<body>
+
+<h1>Exercice 2</h1>
+
+<div class="result">
+    <p>The n term of the Fibonacci sequence is...</p>
+    <p id="reponse" style="font-size: large; font-style: italic;"></p>
+</div>
+
+
+<script>
+
+    var myP = document.getElementById("reponse");
+
+     function myFunction(){
+        fibo = [];
+        fibo[1] = 1;
+        fibo[2] = 1;
+        let pas = 0;
+        var result = 0;
+        
+        if (util < 3) {
+           result = fibo[util];
+        }
+        else {
+            for (pas = 3; pas < util+1; pas++) {
+                fibo[pas] = fibo[pas-1] + fibo[pas-2];
+                result = fibo[pas];
+            }
+        }
+        myP.innerHTML = result;
+     }
+
+    var util = Number(prompt("the n th of the Fibonacci sequence is"));
+    myFunction();
+        
+</script>
+</body>
+</html>

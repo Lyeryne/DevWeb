@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css"href="Exercice_2.css">
+    <script src="Exercice_2.js"></script>
+</head>
+<body>
+ 
+<p><u>Exercice 2</u></p>
+
+<table>
+    <tr><th scope="purple">
+<table>
+
+    <tr>
+        <th></th>
+        <th scope="grey">
+            <h1>Magasin de disques</h1>
+            <h2>Les disques à 7,50€ !!!</h2>
+            <h2>Cliquez sur l'image pour (dé)sélectionner un album</h2>
+            <h2>Montant du panier:<div id="divprix">0€</div></h2>
+        </th>
+        <th></th>
+    </tr>
+
+    <tr>
+        <th scope="green">
+            <h1>Albums disponibles</h1>
+            <button type="button" class="button1" onclick="Panier1()"><img src="JUL.jpg "></button>
+            <button type="button" class="button1" onclick="Panier2()"><img src="Eminem.jpg "></button>
+            <button type="button" class="button1" onclick="Panier3()"><img src="Ninho.jpg"></button>
+            <button type="button" class="button1" onclick="Panier4()"><img src="Naps.jpg"></button>
+            <button type="button" class="button1" onclick="Panier5()"><img src="Freeze.jpg"></button>
+        </th>
+
+        <th></th>
+
+        <th scope="red">
+            <h1>Albums choisis</h1>
+            <button class="remove-product" onclick="removearticle1()"><div id="divjul"></div></button>
+            <button class="remove-product" onclick="removearticle2()"><div id="diveminem"></div></button>
+            <button class="remove-product" onclick="removearticle3()"><div id="divninho"></div></button>
+            <button class="remove-product" onclick="removearticle4()"><div id="divnaps"></div></button>
+            <button class="remove-product" onclick="removearticle5()"><div id="divfreeze"></div></button>
+        </th></tr>
+
+</table>
+        </th></tr>
+</table>
+
+</body>
+</html>

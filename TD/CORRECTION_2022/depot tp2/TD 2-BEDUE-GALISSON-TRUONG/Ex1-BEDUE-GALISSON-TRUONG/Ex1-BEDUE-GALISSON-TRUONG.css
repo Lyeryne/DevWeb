@@ -1,0 +1,11 @@
+/* chemin amenant au a passant par li */
+li,a { 
+    list-style-type: none;
+    padding: 10px;
+    background: black;
+    color: white;
+    padding: 10px;
+    text-decoration:none; 
+  } /* design 10px de large en bloc noir avec ecriture blanche*/
+
+

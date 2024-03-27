@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			div{
+				background:#582900;
+				border: 3px dotted yellow;
+				color:#ff5500;
+				width:50%;
+				height:50px;
+				text-align: center;
+				vertical-align: middle;
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="myFunction()">Try it</button>
+		<div id="div">
+		<p id="text">The <i><span id="nb"></span></i> th term of the Fibonacci sequence is <b><span style="font-size:large;" id="res"></span></b></p>
+		</div>
+		<script>
+			function myFunction() {
+				var nb = prompt("Entrer un nombre entier positif", "");
+				var res=fibonacci(parseInt(nb),0,1);
+				var text="The "+nb+" th term of the Fibonacci sequence is "+res;
+				document.getElementById("div").style.display="block";
+				//document.getElementById("demo").innerHTML = text;
+				document.getElementById("nb").innerHTML=nb;
+				document.getElementById("res").innerHTML=res;
+			}
+			function fibonacci(nb,fnm2,fnm1){
+				if (nb==1){
+					return fnm2;
+				}else{
+					return fibonacci(nb-1,fnm1,fnm1+fnm2)
+				}
+			}
+		</script>
+	</body>
+</html>

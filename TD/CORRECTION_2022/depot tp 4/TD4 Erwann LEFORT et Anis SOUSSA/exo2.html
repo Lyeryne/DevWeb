@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercice 2</title>
+    <style>
+      #result {
+        background-color: brown;
+        border: 2px dotted yellow;
+        color: orange;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+      }
+      #result em {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function afficherFibonacci() {
+        var n = prompt("Entrez le rang de la suite de Fibonacci à calculer :");
+        n = parseInt(n);
+        var resultat = fibonacci(n);
+        var now = new Date();
+        var hh = now.getHours();
+        var mm = now.getMinutes();
+        var message = "À " + hh + " heures " + mm + ", le <em>n</em>-ième terme de la suite de Fibonacci est ";
+        message += "<span>" + resultat + "</span>";
+        document.getElementById("result").innerHTML = message;
+      }
+
+      function fibonacci(n) {
+        if (n < 2) {
+          return n;
+        } 
+        else {
+          return fibonacci(n-1) + fibonacci(n-2);
+        }
+      }
+    </script>
+    <div id="result"></div>
+    <script>
+      afficherFibonacci();
+    </script>
+  </body>
+</html>

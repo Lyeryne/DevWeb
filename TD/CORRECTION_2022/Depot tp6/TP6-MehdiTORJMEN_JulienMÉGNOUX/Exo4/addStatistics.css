@@ -1,0 +1,75 @@
+/* Styles for the body */
+body {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+    height: 100vh;
+    /* Set the height of the body to full viewport height */
+    background-color: aliceblue;
+    /* Set the background color */
+    font-family: Arial, sans-serif;
+    /* Set the font family */
+}
+
+/* Styles for the container */
+.container {
+    text-align: center;
+    /* Center align the content within the container */
+    max-width: 500px;
+    /* Set the maximum width of the container */
+    background-color: #ffe6e6;
+    /* Set the background color of the container */
+    padding: 20px;
+    /* Add padding to the container */
+    border-radius: 5px;
+    /* Add border radius to the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add box shadow to the container */
+}
+
+/* Styles for the heading */
+h1 {
+    color: #cc0000;
+    /* Set the color of the heading */
+}
+
+/* Styles for the form table */
+.form-table {
+    margin: 0 auto;
+    /* Center align the table within the container */
+}
+
+/* Styles for table cells */
+.form-table td {
+    padding: 10px;
+    /* Add padding to the table cells */
+}
+
+/* Styles for the submit button */
+.submit-button {
+    width: 100%;
+    /* Set the width of the button to 100% */
+    padding: 10px;
+    /* Add padding to the button */
+    background-color: #ff3333;
+    /* Set the background color of the button */
+    color: #fff;
+    /* Set the text color of the button */
+    font-size: 16px;
+    /* Set the font size of the button */
+    border: none;
+    /* Remove the button border */
+    border-radius: 5px;
+    /* Add border radius to the button */
+    cursor: pointer;
+    /* Change the cursor to a pointer on hover */
+}
+
+/* Styles for the hover state of the submit button */
+.submit-button:hover {
+    background-color: #cc0000;
+    /* Change the background color of the button on hover */
+}

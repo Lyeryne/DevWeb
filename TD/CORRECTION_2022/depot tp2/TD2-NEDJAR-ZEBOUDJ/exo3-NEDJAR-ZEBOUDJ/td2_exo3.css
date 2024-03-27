@@ -1,0 +1,49 @@
+body{
+	font-size: large;
+}
+
+header,footer {
+	background-color: rgb(98, 128, 135);
+	color: white;
+	padding-top:3px;
+}
+
+header {
+	display:flex;
+	justify-content:space-between;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}	
+
+aside {
+	background-color: rgb(196, 213, 220);
+	width:120px;
+	margin-right: 20px;
+}	
+
+section {
+	display: flex;
+}
+
+article {
+	background-color: rgb(235, 231, 198);
+	width: 100%;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:5px
+}
+
+footer {
+	text-align: center;
+	margin-top:10px;
+	padding-bottom: 3px;
+}
+
+ul{
+	list-style-type: square;
+}
+
+.title {
+	font-weight: bold;
+}

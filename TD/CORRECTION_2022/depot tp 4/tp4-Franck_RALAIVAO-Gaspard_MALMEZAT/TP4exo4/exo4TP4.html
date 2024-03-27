@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <img style="width:550px;height:450px;" id="image" src="images/mbappe.jpg" onmouseout="imagembappe()" onmouseover="imagemessi()">
+        <input type="button" id="idbuton" name="nameofbuttom" value="image info" onclick="imageinfo()">
+        <input type="button" id="idbuton2" name="nameofbuttom" value="change image" onclick="imagechange()">
+        <script>
+            function imagembappe() {
+            document.getElementById("image").setAttribute("src", "images/mbappe.jpg");
+            }
+            function imagemessi() {
+            document.getElementById("image").setAttribute("src", "images/messi.jpg");
+            }
+            function imageinfo() {
+                window.alert("name : " + document.getElementById("image").attributes[2].textContent + "\n" + "source : " + document.getElementById("image").src + "\n" + "dimension : " + document.getElementById("image").naturalHeight + "x" + document.getElementById("image").naturalWidth);
+            }
+            function imagechange() {
+            var img = ["images/mbappe.jpg", "images/messi.jpg", "images/ronaldo.jpg","images/frenkie.jpg", "images/pedri.jpg", "images/neymar.jpg"];
+            var randm = Math.floor(Math.random() * 6);
+            document.getElementById("image").src=img[randm];
+            }
+
+
+        </script>
+
+
+
+
+
+    </body>
+</html>

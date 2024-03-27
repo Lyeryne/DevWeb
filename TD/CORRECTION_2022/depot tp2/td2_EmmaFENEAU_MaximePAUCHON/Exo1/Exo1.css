@@ -1,0 +1,21 @@
+ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.menu{
+    background-color: black;
+    width: 231px;
+    height: 30px;
+    box-sizing: border-box;
+}
+li{
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    padding-right: 6px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

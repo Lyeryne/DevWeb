@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice 3</title>
+    <link rel="shortcut icon" href="../../icon_CY.png" />
+    <meta name="keywords" content="Exercice3" html,learning″ />
+    <meta name="description" content="A" formulaire />
+    <style>
+        .color1 {
+            background-color: rgb(244, 208, 118);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="page1.php" method="post">
+        <fieldset>
+            <legend>Formulaire </legend>
+
+            <!-- Prénom et nom de famille (obligatoires) et la taille maximale est de 50 carac-tères pour chaque champ. -->
+            <label for="name">Prenom :</label>
+            <input type="text" id="name" maxlength="50" required />
+            <br />
+            <br />
+            <label for="surname">Nom :</label>
+            <input type="text" id="surname" maxlength="50" required />
+
+            <!-- Adresse e-mail, adresse e-mail à nouveau. -->
+            <br />
+            <br />
+            <label for="Email">Email :</label>
+            <input type="email" id="Email" required />
+            <br />
+            <br />
+            <label for="Email">Email :</label>
+            <input type="email" id="Email" required />
+
+
+            <!-- Âge, entre 18 et 125 ; le champ doit être numérique et doit accepter maxi-mum trois caractères. -->
+            <br />
+            <br />
+            <label for="Age">Age :</label>
+            <input type="number" id="Age" selected="selected" min="18" max="125" required />
+
+
+            <!-- Le Genre, plusieurs options (Homme, Femme, Autre, Je ne veux pas me po-sitionner, etc.) ; l'utilisateur ne doit sélectionner qu'une seule option. -->
+            <br />
+            <br />
+            <label for="gender">Genre :</label>
+            <input type="radio" id="gender1" name="gender" value="Homme" required />
+            <label for="gender1">Homme</label>
+            <input type="radio" id="gender2" name="gender" value="Femme" required />
+            <label for="gender2">Femme</label>
+            <input type="radio" id="gender3" name="gender" value="Autre" required />
+            <label for="gender3">Autre</label>
+
+
+            <!-- Une boîte de sélection « Plan » contenant les options « Basic, Premium, Ti-tanium » ; l'utilisateur peut sélectionner une ou plusieurs options. -->
+            <br />
+            <br />
+            <label for="plan">Plan :</label>
+            <input type="checkbox" id="plan1" name="plan" value="Basic" />
+            <label for="plan1">Basic</label>
+            <input type="checkbox" id="plan2" name="plan" value="Premium" checked />
+            <label for="plan2">Premium</label>
+            <input type="checkbox" id="plan3" name="plan" value="Titanium" />
+            <label for="plan3">Titanium</label>
+
+
+            <!-- Une liste de loisirs ; l'utilisateur peut sélectionner un ou plusieurs loisirs de la liste proposée (sport, lecture, photographie, jardinage, musique, etc.). -->
+            <br />
+            <br />
+            <label for="hobbies">Loisirs</label>
+            <br />
+            <select name="hobbies" size="3" multiple="multiple" required>
+                <option value="sport">Sport</option>
+                <option value="sport">Lecture</option>
+                <option value="sport">Photographie</option>
+            </select>
+
+
+            <!-- Un champ « Taille de chemise » du type radio avec les valeurs de Small,Medium, Large. -->
+            <br />
+            <br />
+            <label for="size">Taille de chemise :</label>
+            <input type="radio" id="sizeS" name="size" value="Small" required />
+            <label for="sizeS">Small</label>
+            <input type="radio" id="sizeM" name="size" value="Medium" required />
+            <label for="sizeM">Medium</label>
+            <input type="radio" id="sizeL" name="size" value="Large" required />
+            <label for="sizeL">Large</label>
+
+
+            <!-- Numéro de téléphone. -->
+            <br />
+            <br />
+            <label for="number">Téléphone :</label>
+            <input type="text" id="number" pattern="[0-9]*" required />
+
+
+            <!-- Couleur préférée. -->
+            <br />
+            <br />
+            <label for="colors">Couleur :</label>
+            <input type="color" id="colors" name="color" required />
+
+            <!-- Commentaires. -->
+            <br />
+            <br />
+            <label for="commantaires">Commantaires :</label>
+            <br />
+            <textarea placeholder="Entrer vos commentaires..." cols="50" rows="5"></textarea>
+
+
+            <!-- Ajouter un bouton qui réinitialise tous les champs du formulaire à leur valeur défaut, lorsqu’on clique sur le bouton.-->
+            <br />
+            <br />
+            <button type="submit">Envoyer</button>
+            <button type="reset">Reset</button>
+
+        </fieldset>
+    </form>
+</body>
+
+
+<html />

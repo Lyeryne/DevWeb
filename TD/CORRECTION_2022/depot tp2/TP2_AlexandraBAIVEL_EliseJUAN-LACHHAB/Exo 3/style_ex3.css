@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+header {
+  background: #668285;
+  padding: 1rem;
+  color:#fff;
+}
+.site-content {
+  margin: 1rem 0;
+  display: flex;
+}
+nav {
+  width: 150px;
+  margin-right: 1rem;
+  background: #b9d7d9;
+  padding: 1rem;
+}
+main {
+  flex: 1;
+}
+section {
+  background: #f4ebc2;
+  display: flex;
+}
+.section__content {
+  flex: 1;
+  margin-left: 5px;
+}
+footer {
+  background: #668285;
+  color:#fff;
+  padding: 1rem;
+	vertical-align: middle;
+	text-align: center;
+}
+

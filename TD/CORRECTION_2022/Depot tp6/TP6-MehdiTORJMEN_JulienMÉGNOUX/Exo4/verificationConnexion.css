@@ -1,0 +1,57 @@
+/* Styling for the coach menu container */
+.coach-menu {
+  background-color: #ff5858;
+  /* Reddish background color */
+  text-align: center;
+  /* Center-align the content */
+  padding: 20px;
+  /* Add 20 pixels of padding around the menu */
+  border-radius: 5px;
+  /* Create rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow */
+}
+
+/* Styling for the coach menu heading */
+.coach-menu h2 {
+  color: white;
+  /* White text color */
+  font-size: 24px;
+  /* Set the font size to 24 pixels */
+  margin-bottom: 20px;
+  /* Add 20 pixels of bottom margin */
+}
+
+/* Styling for the unordered list inside the coach menu */
+.coach-menu ul {
+  list-style-type: none;
+  /* Remove the default bullet points */
+  padding: 0;
+  /* Remove any unwanted padding */
+}
+
+/* Styling for the list items inside the coach menu */
+.coach-menu li {
+  margin-bottom: 10px;
+  /* Add 10 pixels of bottom margin */
+}
+
+/* Styling for the links inside the coach menu */
+.coach-menu li a {
+  color: white;
+  /* White text color */
+  text-decoration: none;
+  /* Remove underline decoration */
+  font-size: 18px;
+  /* Set the font size to 18 pixels */
+  transition: color 0.3s ease;
+  /* Smooth transition effect for color change */
+}
+
+/* Styling for the links inside the coach menu on hover */
+.coach-menu li a:hover {
+  color: #e72424;
+  /* Darker shade of red text color */
+  font-weight: bold;
+  /* Set the font weight to bold on hover */
+}

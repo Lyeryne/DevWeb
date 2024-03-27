@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #source-block {
+      position: absolute;
+      left: 20px;
+      top: 150px;
+      width: 300px;
+      height: 275px;
+      background-color: green;
+      border: 2px solid red;
+    }
+
+    #destination-block {
+      position: absolute;
+      left: 1300px;
+      top: 150px;
+      width: 300px;
+      height: 275px;
+      background-color: red;
+      border: 2px solid green;
+    }
+
+    #cart-block {
+       text-align: center;
+      font-weight: bold;
+      background-color: gray;
+      border: 2px solid black;
+    }
+  </style>
+  <script>
+    var totalPrice = 0;
+
+    function addToCart(imageElement, title) {
+      var destinationBlock = document.getElementById("destination-block");
+      var cartBlock = document.getElementById("cart-block");
+
+      // Create a new image element for the selected record
+      var selectedRecord = document.createElement("img");
+      selectedRecord.src = imageElement.src;
+      selectedRecord.alt = imageElement.alt;
+      selectedRecord.title = title;
+      selectedRecord.onclick = function() {
+        removeFromCart(this);
+      };
+
+      // Add the selected record image to the destination block
+      destinationBlock.appendChild(selectedRecord);
+
+      // Update the total price
+      totalPrice += 7.5; // Assuming each record costs $10
+      cartBlock.innerText = "Montant du panier: $" + totalPrice;
+    }
+
+    function removeFromCart(imageElement) {
+      var destinationBlock = document.getElementById("destination-block");
+      var cartBlock = document.getElementById("cart-block");
+
+      // Remove the selected record image from the destination block
+      destinationBlock.removeChild(imageElement);
+
+      // Update the total price
+      totalPrice -= 7.5; // Assuming each record costs $10
+      cartBlock.innerText = "Montant du panier: $" + totalPrice;
+    }
+  </script>
+</head>
+<body>
+  <div id="source-block" style="text-align: center;"> Albums disponibles <br />
+    <img src="record1.jpg" alt="Record 1" title="Title 1" onclick="addToCart(this, 'Title 1')" />
+    <img src="record2.jpg" alt="Record 2" title="Title 2" onclick="addToCart(this, 'Title 2')" />
+    <img src="record3.jpg" alt="Record 3" title="Title 3" onclick="addToCart(this, 'Title 3')" />
+  </div>
+
+  <div id="destination-block" style="text-align: center;"> Albums choisis <br /> </div>
+
+  <div id="cart-block">Tous les titres a 7.5 $ !!! <br /> Cliquez sur l'image pour (de)selectionner un album <br /> Montant du panier: $0</div>
+</body>
+</html>

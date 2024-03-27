@@ -1,0 +1,33 @@
+<!-- Programme présentant un formulaire d'envoie d'information simple. -->
+<!DOCTYPE html>
+<html>
+    
+    <body>
+        <form method="post" target="_self">
+        <p><CENTER>Veuillez saisir vos coordonnées dans le formulaire ci-dessous</CENTER></p><br>
+        <!-- Pour spécifier le genre  -->
+        <input type="radio" name="gender" value="M." checked>M. 
+        <input type="radio" name="gender" value="Mme">Mme 
+        <input type="radio" name="gender" value="Mlle">Mlle <br> <br>
+        <!-- Pour spécifire le nom,prénom et la société -->
+        Nom:<input type="text" name="Lastname">Prénom:<input type="text" name="Firstname">Société:<input type="text" name="Society"><br><br>
+        N° et rue:<input type="text" name="N°androad" size="80"><br><br> <!-- Pour spécifier la rue  -->
+        Code Postal:<input type="text" name="Codepostal" size="6">Ville:<input type="text" name="Codepostal" size="50"> <!-- Pour spécifier le code postale  -->
+        <select name="Country"> <!-- Choix du pays de résidence -->
+            <option value="Allemagne">Allemagne</option>
+            <option value="Australie">Australie</option>
+            <option value="France">France</option>
+            <option value="Italie">Italie</option>
+            <option value="Japon">Japon</option>
+            <option value="USA">USA</option>
+            <option value="Autre">Autre</option>
+        </select><br><br>
+        Votre Message<textarea name="message" rows="6" cols="40"></textarea><br><br> <!-- Zone de texte pour le message  -->
+        Adresse E-mail<input type="text" name="Emailadress" size="50"> <!-- Choix de l'adresse email  -->
+        <button type="submit" accesskey="Enter" onclick="alert('Merci de m&#884avoir offert toutes vos coordonées!&#9786')">Valider</button> <!-- Un bouton qui affiche un message de validation -->
+        <input type="reset" value="Effacer"> <!-- Pour réinitialiser tout -->
+        </form>
+          
+    </body>
+
+</html>

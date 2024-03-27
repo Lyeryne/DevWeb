@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    
+    <img id="myImage" src="Image1.jpg" width="200" height="200">
+    <br>
+    <br>
+    <input type="button" id="myButton" name="myButton" value="Click here" onclick="showImageInfo()">
+
+    <script>
+      function changeImageOnMouseOver() {
+        var myImage = document.getElementById("myImage");
+        myImage.src = "Image2.jpg";
+      }
+
+      function resetImageOnMouseOut() {
+        var myImage = document.getElementById("myImage");
+        myImage.src = "Image.jpg";
+      }
+
+      var myImage = document.getElementById("myImage");
+      myImage.addEventListener("mouseover", changeImageOnMouseOver);
+      myImage.addEventListener("mouseout", resetImageOnMouseOut);
+
+      function showImageInfo() {
+        var myImage = document.getElementById("myImage");
+        var source = myImage.src;
+        var name = myImage.alt;
+        var size = myImage.naturalHeight + " x " + myImage.naturalWidth;
+        alert("Source: " + source + "\nName: " + name + "\nSize: " + size);
+      }
+
+      function changeImageRandomly() {
+        var index = Math.floor(Math.random() * 6);
+        var images = [
+          { src: "Image.jpg", id: "myImage" },
+          { src: "Image2.jpg", id: "myImage" },
+          { src: "Image3.jpg", id: "myImage" },
+          { src: "Image4.jpg", id: "myImage" },
+          { src: "Image5.jpg", id: "myImage" },
+          { src: "Image6.jpg", id: "myImage" }
+        ];
+        var image = images[index];
+        var myImage = document.getElementById(image.id);
+        myImage.src = image.src;
+      }
+      
+      var myButton = document.getElementById("myButton");
+      myButton.addEventListener("click", changeImageRandomly);
+    </script>
+  </body>
+</html>

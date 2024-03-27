@@ -1,0 +1,23 @@
+section {
+    display: flex;
+    margin-bottom: 10px;
+   }
+
+   #oe {
+    border: black 10px solid;
+   }
+
+   #bord {
+    border: black 3px solid;
+   }
+   
+   #espace {
+    padding-right: 20px;
+   }
+
+   img {
+        display: flex;
+        justify-content: right;
+    }
+    
+    

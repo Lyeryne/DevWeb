@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"></meta>
+</head>
+<body>
+
+<p style="text-align: center;">Veuillez saisir vos coordonnées dans le formulaire ci-dessous</p>
+<form>
+
+    <input type="radio" name="gender" value="M." id="M.">
+    <label for="M.">M.</label>
+    <input type="radio" name="gender" value="Mme" id="Mme">
+    <label for="Mme">Mme</label>
+    <input type="radio" name="gender" value="Mlle" id="Mlle">
+    <label for="Mlle">Mlle</label>
+
+    <br>
+    <br>
+
+    <label for="Nom:">Nom:</label>
+    <input type="text" name="nom" id="Nom:">
+    <label for="Prenom:">Prénom:</label>
+    <input type="text" name="prenom" id="Prenom:">
+    <label for="Societe:">Société:</label>
+    <input type="text" name="societe" id="Societe:">
+
+    <br>
+    <br>
+
+    <label for="N:">N° et rue:</label>
+    <input type="text" name="rue" id="N:" size="80%">
+
+    <br>
+    <br>
+
+    <label for="code">Code Postal:</label>
+    <input type="text" name="code" id="code" maxlength="10">
+    <label for="ville">Ville:</label>
+    <input type="text" name="ville" id="ville" size="40%">
+    <select name="pays">
+        <option value="Angleterre">Angleterre</option>
+        <option value="Allemagne">Allemagne</option>
+        <option value="Australie">Australie</option>
+        <option value="France" selected="selected">France</option>
+        <option value="Italie">Italie</option>
+        <option value="Japon">Japon</option>
+        <option value="USA">USA</option>
+        <option value="Autre">Autre</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="areatext">Votre Message</label>
+    <textarea name="commentaire" cols="45" rows="5" id="areatext"></textarea>
+
+    <br>
+    <br>
+
+    <label for="email">Adresse E-Mail</label>
+    <input type="email" name="mail" id="email" size="40%">
+    <button type="submit">Valider</button>
+    <button onclick="location.href='exo2.htm'" type="button">Effacer</button>
+    
+</form>
+
+
+
+<!-- commentaire -->
+
+</body>
+</html>

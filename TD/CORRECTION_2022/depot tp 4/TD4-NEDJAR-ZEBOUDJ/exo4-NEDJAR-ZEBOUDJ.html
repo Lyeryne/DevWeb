@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>exo4</title>
+  </head>
+  <body>
+    <h1>Exercice 4</h1>
+    <img style="width: 300px; height: 300px;" id="image" src="img1.jpg" alt="Random Image" onmouseover="this.src='img2.jpg';" onmouseout="this.src='img1.jpg';" />
+    <input type="button" id="idbouton" name="buttoninfo" value="Show image info" onclick="imginfo()"/>
+    <input type="button" id="idbouton" name="changeimg" value="change image" onclick="randomimg()"/>
+    <script>
+        function imginfo(){
+            const img = document.getElementById("image");
+            const txt = `Source: ${img.src}\nName: ${img.alt}\nSize: ${img.height} x ${img.width}`;
+            alert(txt);
+        }
+
+        function randomimg() {
+        var index = Math.floor(Math.random() * 6)+1;
+        const image = document.getElementById('image');
+        image.src = `img${index}.jpg`;
+        image.alt = `Random Image ${index}`;
+        image.id  = `Image-${index}`;
+      }
+    </script>
+  </body>
+</html>

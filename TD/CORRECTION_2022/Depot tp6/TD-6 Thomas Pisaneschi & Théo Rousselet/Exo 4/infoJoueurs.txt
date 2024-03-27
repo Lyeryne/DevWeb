@@ -1,0 +1,4 @@
+Messi;Lionel;1987-06-24;attaquant
+Giroud;Olivier;1985-09-30;attaquant
+Griezmann;Antoine;1991-03-21;attaquant
+Pavard;Benjamin;1996-03-28;defenseur

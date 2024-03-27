@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TD1</title>
+<meta charset="UTF-8">
+<style>
+.t1{
+    border:2px solid black;
+    width:40%;
+}
+.t2 td, .t2 th{
+  border: 1px solid grey;
+}
+
+.t3 {
+    background-color: #8deb90;
+}
+.t4 {
+    border-bottom: 2px solid black;
+    border-collapse:collapse ;
+      }
+.t5 {
+    border-left: 2px solid black;
+    border-collapse: collapse;  
+}
+
+.t9{
+  border: 2px solid black;
+  padding: 5px;
+  background-color: blue; 
+}
+
+.t10{
+  border: 2px solid black;
+  padding: 5px;
+  background-color: aqua; 
+}
+
+</style>
+</head>
+<body>
+    <h1>Titre HTML</h1>
+    <h2>Titre HTML</h2>
+    <h3>Titre HTML</h3>
+    <h4>Titre HTML</h4>
+    <h5>Titre HTML</h5>
+    <h6>Titre HTML</h6>
+
+    <p> <I> <u>Texte mis en forme </I></u> </p>
+
+    <div class="cmath"> (x<sub>1</sub>-x<sub>2</sub>)<sup>2</sup> = (x<sub>1</sub>+x<sub>2</sub>)<sup>2</sup>-4x<sub>1</sub>x<sub>2</sub>  </div> <br>
+
+    <font size="7">Les Caracteres</font><br>
+    <font size="6">Les Caracteres</font><br>
+    <font size="5">Les Caracteres</font><br>
+    <font size="4">Les Caracteres</font><br>
+    <font size="3">Les Caracteres</font><br>
+    <font size="2">Les Caracteres</font><br>
+    <font size="1">Les Caracteres</font><br>
+
+    <p style="color:aqua"> Bleu clair</p>
+    <p style="color:blue"> Bleu moyen</p>
+    <p style="color:darkblue">Bleu foncée </p>
+
+    <p style="font-family:'Times New Roman'"> Texte en times new roman </p>
+    <p style="font-family:Arial"> Texte en Arial </p>
+    <p style="font-family:Courier"> Texte en Courrier </p>
+    <p style="font-family:monospace"> Texte en MS sans serif </p>
+
+    <p Align="right">A droite </p>
+
+    <ul style="list-style-type:disc;">
+        <li>cercle plein</li>
+        </ul>
+
+    <ul style="list-style-type:circle;">
+            <li>cercle vide</li>
+          </ul>
+
+        <ul style="list-style-type:square;">
+            <li>carré plein</li>   
+          </ul>
+    <br>          
+    <ol type="1">
+        <li>Des chiffres avant les lettres </li> 
+            <ol type="A">
+                <li> Des lettres en majuscules</li>
+                    <ol type="a">
+                        <li>Des lettres en minuscules</li>
+                            <ol type="I">
+                                <li> Les romains sont dans la plaine...</li>
+                                    <ol type="i">
+                                        <li> Ils sont fous ces romains !</li>
+                                    </ol>
+                                </ol>
+                            </ol>
+                        </ol>
+                    </ol>
+    <br>
+    <p>Texte Normal </p>            
+    <blockquote>Texte en retrait </blockquote>  
+    <dd>Autre texte en retrait</dd>    
+        <ul style="list-style-type:none;">
+            <li>Toujours du texte en retrait</li> 
+        </ul>
+
+    <table  class="t1 t2">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+
+        <tr>
+            <td Align="left">1</td>
+            <td Align="left">deux</td>
+            <td Align="left">3</td>
+        </tr>
+        <tr>
+            <td Align="right">cinq</td>
+            <td Align="right">6</td>
+            <td Align="right">sept</td>
+        </tr>
+    </table>
+    <br>
+
+    <table class="t1 t2 t3">
+        <tr>
+            <th colspan="2" rowspan="2">Population</th>
+            <th colspan="2">Moyenne</th>
+        </tr>
+        <tr>
+            <td Align="center">hauteur en cm</td>
+            <td Align="center">esperance de vie</td>
+        </tr>
+        
+    <tr>
+        <td rowspan="2"> Sexe</td>
+        <td Align="left"> Masculin</td>
+        <td Align="center"> 1,78</td>
+        <td Align="center"> 70</td>
+    
+    </tr>
+    <td Align="left"> Feminin</td>
+    <td Align="center"> 1,70</td>
+    <td Align="center">  80</td>
+
+    </table>
+
+    <br>
+
+    <table  style="width: 40%;"class="t4" >
+        <caption style="caption-side:bottom">Liste de prix au 14/10/2005</caption>
+        
+        <tr class="t4">
+            <th >Produits</th>
+            <th  class="t5">Prix HTVA</th>
+            <th>Prix TVAC</th>
+        </tr>
+        <tr>
+            <td >Lys</td>
+            <td  Align="center" class="t5" > 34;95€</td>
+            <td Align="right">44,55€</td>
+        </tr>
+
+        <tr> 
+            <td>Orchidée</td>
+            <td  Align="center" class="t5">43;00€</td>
+            <td Align="right">52,30€</td>
+        </tr>
+
+        <tr>
+            <td>Rose</td>
+            <td  Align="center" class="t5">48,00€</td>
+            <td Align="right">57,30€</td>
+        </tr>
+    
+    </table> <br>
+
+    <table  style="width: 40%; border-spacing: 5px;" >
+        <tr >
+        <th class="t8 t9 ">Filiere E</th>
+        <th class="t8 t9">Majeur Info </th>
+        <th class="t8 t9">Majeur maths</th>
+        </tr>
+        <tr>
+        <td class="t8 t10">Proposer des informations originales au carrefour des mathematique appliquées et de l'informatique</td>
+        <td class="t8 t10">A l'issu de cette formation les etudiants pourront ainsi devenir expert chargé d'etudes ou chef de projet en multimedia, internet, genie logiciel,etc </td>
+        <td class="t8 t10"> Les debouchés nombreux garantissent une insertion professionelle rapide</td>
+        </tr>
+    </table>
+
+</body>
+</html>

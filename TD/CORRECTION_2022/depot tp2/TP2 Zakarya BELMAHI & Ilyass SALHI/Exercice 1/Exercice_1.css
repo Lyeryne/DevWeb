@@ -1,0 +1,14 @@
+.menu{
+    list-style-type: none;
+    background-color: black; 
+    text-align: left;
+    display: flex;
+    padding: 1%;
+    width: 350px;
+}
+.menu a {
+    display:block;      
+    min-width: 100px;  
+    text-decoration: none;
+    color: white;
+}

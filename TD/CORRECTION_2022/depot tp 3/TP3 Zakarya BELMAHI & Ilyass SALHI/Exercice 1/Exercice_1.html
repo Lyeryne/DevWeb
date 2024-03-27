@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>TP3</title>
+    <meta charset="UTF-8">
+    <style>
+        ::placeholder{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <fieldset style="width: 620px;">
+        <legend>Exercice 1</legend>
+        Enregistrement d'un utilisateur<br>
+        <table>
+            <tr>
+                <td style="width:90px;">Nom</td>
+                <td><input style="width: 160px;" type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <td style="width:90px;">Prénom</td>
+                <td><input style="width: 160px;" type="text" name="firstname"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="width:90px;">Sexe</td>
+                <td>Homme :<input type="radio" name="gender"></td>
+            </tr>
+            <tr>
+                <td>Femme :<input type="radio" name="gender"></td>
+            </tr>
+            <tr>
+                <td style="width:90px;">Fonction</td>
+                <td>
+                    <select name="functions">
+                        <option>Enseignant</option>
+                        <option>Etudiant</option>
+                        <option>Autre</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:90px;">Commentaires</td>
+                <td>
+                    <textarea style="resize: none;" rows="4" cols="23" name="comments" placeholder="Tapez ici vos commentaires"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:90px;"><input type="submit"></td>
+            </tr>
+        </table>   
+</fieldset>
+</form>

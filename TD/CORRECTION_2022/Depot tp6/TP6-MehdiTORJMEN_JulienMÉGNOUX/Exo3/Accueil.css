@@ -1,0 +1,71 @@
+/* Styles for the body */
+body {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+    height: 100vh;
+    /* Set the height of the body to full viewport height */
+    margin: 0;
+    /* Remove default margin */
+    background-color: aliceblue;
+    /* Set the background color of the body */
+    font-family: Arial, sans-serif;
+    /* Define the font family for the body */
+}
+
+/* Styles for the container */
+.container {
+    max-width: 400px;
+    /* Set the maximum width of the container */
+    padding: 20px;
+    /* Add padding to the container */
+    background-color: #82adad;
+    /* Set the background color of the container */
+    border-radius: 4px;
+    /* Add border radius to the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add box shadow to the container */
+}
+
+/* Styles for the welcome message */
+.welcome-message {
+    text-align: center;
+    /* Center align the welcome message */
+    font-size: 24px;
+    /* Set the font size of the welcome message */
+    margin-top: 0;
+    /* Remove the top margin of the welcome message */
+}
+
+/* Styles for the logout button */
+.logout-button {
+    display: block;
+    /* Display the logout button as a block element */
+    width: 100%;
+    /* Set the width of the logout button */
+    padding: 10px;
+    /* Add padding to the logout button */
+    text-align: center;
+    /* Center align the text within the logout button */
+    background-color: rgb(5, 82, 61);
+    /* Set the background color of the logout button */
+    color: white;
+    /* Set the text color of the logout button */
+    font-size: 16px;
+    /* Set the font size of the logout button */
+    border: none;
+    /* Remove the border of the logout button */
+    border-radius: 5px;
+    /* Add border radius to the logout button */
+    cursor: pointer;
+    /* Change the cursor to a pointer on hover */
+}
+
+/* Styles for the hover state of the logout button */
+.logout-button:hover {
+    background-color: #45a088;
+    /* Change the background color of the logout button on hover */
+}

@@ -1,0 +1,81 @@
+/* Styles for the body */
+body {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+    height: 100vh;
+    /* Set the height of the body to full viewport height */
+    background-color: #f2f2ff;
+    /* Set the background color */
+    font-family: Arial, sans-serif;
+    /* Set the font family */
+}
+
+/* Styles for the container */
+.container {
+    text-align: center;
+    /* Center align the content within the container */
+    max-width: 500px;
+    /* Set the maximum width of the container */
+    background-color: #e6e6ff;
+    /* Set the background color of the container */
+    padding: 20px;
+    /* Add padding to the container */
+    border-radius: 5px;
+    /* Add border radius to the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a box shadow to the container */
+}
+
+/* Styles for the heading */
+h1 {
+    color: #0000cc;
+    /* Set the color of the heading */
+    margin-bottom: 20px;
+    /* Add margin at the bottom of the heading */
+}
+
+/* Styles for the sub-heading */
+h2 {
+    color: #0000cc;
+    /* Set the color of the sub-heading */
+    margin-bottom: 10px;
+    /* Add margin at the bottom of the sub-heading */
+}
+
+/* Styles for the preformatted text */
+pre {
+    background-color: #f0f0ff;
+    /* Set the background color of the preformatted text */
+    padding: 10px;
+    /* Add padding to the preformatted text */
+    border-radius: 5px;
+    /* Add border radius to the preformatted text */
+    overflow-x: auto;
+    /* Enable horizontal scrolling for the preformatted text if needed */
+}
+
+/* Styles for paragraphs */
+p {
+    color: #cc0000;
+    /* Set the color of the paragraphs */
+    margin-bottom: 10px;
+    /* Add margin at the bottom of the paragraphs */
+}
+
+/* Styles for links */
+a {
+    color: #3333ff;
+    /* Set the color of the links */
+    text-decoration: none;
+    /* Remove underline from the links */
+}
+
+/* Styles for links on hover */
+a:hover {
+    text-decoration: underline;
+    /* Add underline to links on hover */
+}

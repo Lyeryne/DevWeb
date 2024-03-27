@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="exo2.css">
+	<title>TD5_exo2</title>
+</head>
+
+<body>
+    <div id="c1">
+        <h1>Magasin de disque</h1>
+        <p>Tous les disques à 7,50€!!!
+        <br/>Cliquez sur l'image pour (dé)sélectionner un album</p>
+        <div id="cart">
+            <p> Total du panier : <span>0€</span></p>
+        </div>
+    </div>
+    <div id="source">
+        <h2>Albums disponibles</h2>
+        <img id="img1" src="disc1.jpg" onclick="addCart('The Essential of Elvis',7.5)" controls height="80px" width="80px">
+        <img id="img2" src="disc2.jpg" onclick="addCart('The Essential of Diana Ross',7.5)" controls height="80px" width="80px">
+        <img id="img3" src="disc3.jpg" onclick="addCart('The Essential of Michael Jackson',7.5)" controls height="80px" width="80px">
+        <img id="img4" src="disc4.jpg" onclick="addCart('Amy Winehouse: Back to Black',7.5)" controls height="80px" width="80px">
+        <img id="img5" src="disc5.jpg" onclick="addCart('Sia : This is acting ',7.5)" controls height="80px" width="80px">
+    </div>
+    
+    <div id="destination">
+        <h2>Albums choisis</h2>
+    </div>
+
+
+    <script>
+        let total=0;
+        function addCart(caption,price){
+            const cart= document.getElementById('destination');
+            const newd = document.createElement('div');
+            const text = document.createTextNode(caption);
+            const image = document.createElement('img');
+            image.src = event.target.src;
+            image.addEventListener('click', function deleteCart() {
+                const divcart= event.target.parentNode.parentNode;
+                const toDelete=event.target.parentNode;
+                divcart.removeChild(toDelete);
+
+                total= total- price;
+                document.getElementById("cart").innerHTML= `Total du panier : <span>${total.toFixed(2)}€ </span>`;
+
+                let newsrc= event.target.src.split('/').pop();
+                let i=0;
+                for(i=1;i<6;i++){
+                    var oldsrc=`disc${i}.jpg`;
+                    if(oldsrc==newsrc){
+                        var idimage=`img${i}`;
+                        document.getElementById(idimage).style.display="inline";
+                        break;
+                    }
+                }
+            });
+            newd.appendChild(text);
+            newd.appendChild(image);
+            cart.appendChild(newd);
+            event.target.style.display= "none";
+            total += price;
+            document.getElementById("cart").innerHTML= `Total du panier : <span>${total.toFixed(2)}€ </span>`;
+        }
+
+    </script>
+</body>
+</html>

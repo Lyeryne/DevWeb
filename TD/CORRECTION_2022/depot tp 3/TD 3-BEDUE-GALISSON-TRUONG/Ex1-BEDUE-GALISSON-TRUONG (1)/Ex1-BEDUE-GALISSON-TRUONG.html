@@ -1,0 +1,50 @@
+<!-- Ce programme représente la mise en page d'un formulaire simple. -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h>Enregistrement d'un utilisateur</h>
+    <table>
+      <tr>    
+          <tr> <!-- Choix du prénom-->
+            <th ALIGN="LEFT"><label for="prenom">Prénom : </label></th>
+            <th  ALIGN="LEFT"><input id="prenom" name="pr enom" type="text" required></th>
+          </tr>
+          <tr> <!-- Choix du nom-->
+            <th ALIGN="LEFT"><label for="nom">Nom : </label></th>
+            <th ALIGN="LEFT"><input id="nom" name="nom" type="text" required></th>
+          </tr>
+      <tr> <!-- Choix du sexe-->
+        <th ALIGN="LEFT">Sexe:</th>
+        <th ALIGN="LEFT">    
+            <label>Homme:</label>
+            <input  type="radio" name="Sex" type="Homme">
+          <br>
+            <label >Femme:</label>
+            <input  type="radio" name="Sex" type="Femme" >
+          </br>
+        </th>
+        
+      </tr>
+      <tr> <!-- Choix de sa fonction-->
+        <th ALIGN="LEFT">Fonction:</th>
+        <th ALIGN="LEFT">
+          <select name="Fonction">
+            <option ALIGN="LEFT" value="Enseignant">Enseignant</option>
+            <option ALIGN="LEFT" value="Eleve">Eleve</option>
+          </select>
+        </th>
+      </tr>
+      <tr> <!-- Placement d'une zone de commentaire-->
+        <th ALIGN="LEFT">Commentaires:</th>
+        <th ALIGN="LEFT">
+          <label for="msg"></label>
+          <textarea placeholder="Tapez ici vos commentaires"cols="20" rows="4" id="msg" name="user_message"></textarea>
+        </th>
+        
+      </tr>
+
+    </table>
+    <button>Envoyer</button> <!-- Bouton simple, ne réalisant rien -->
+  </body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <style>
+
+    .fibonacci-area {
+
+      background-color: brown;
+
+      border: 2px dotted yellow;
+
+      width: 300px;
+
+      height: 200px;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+    }
+
+   
+
+    .fibonacci-text {
+
+      color: orange;
+
+      font-size: 24px;
+
+      text-align: center;
+
+      font-style: italic;
+
+      font-weight: bold;
+
+    }
+
+
+    .array-area {
+
+      background-color: lightblue;
+
+      border: 2px dashed navy;
+
+      width: 300px;
+
+      padding: 10px;
+
+    }
+
+   
+
+    .array-text {
+
+      color: navy;
+
+      font-size: 18px;
+
+      text-align: center;
+
+      font-weight: bold;
+
+    }
+
+  </style>
+
+  <script>
+
+    function fibonacci(n) {
+
+      if (n <= 1) {
+
+        return n;
+
+      } else {
+
+        return fibonacci(n - 1) + fibonacci(n - 2);
+
+      }
+
+    }
+
+
+    function generateRandomArray(size, maxValue) {
+
+      var array = [];
+
+      for (var i = 0; i < size; i++) {
+
+        array.push(Math.floor(Math.random() * (maxValue + 1)));
+
+      }
+
+      return array;
+
+    }
+
+
+    window.onload = function() {
+
+      var fibonacciRank = prompt("Enter the rank of the Fibonacci number:");
+
+      var fibonacciTerm = fibonacci(parseInt(fibonacciRank));
+
+     
+
+      var date = new Date();
+
+      var hours = date.getHours();
+
+      var minutes = date.getMinutes();
+
+
+      var fibonacciResultText = "At " + hours + " hours " + minutes + " minutes, the <span class='fibonacci-number'>" + fibonacciRank + "</span>th term of the Fibonacci sequence is <span class='fibonacci-number'>" + fibonacciTerm + "</span>";
+
+      var fibonacciOutput = document.getElementById("fibonacci-output");
+
+      fibonacciOutput.innerHTML = fibonacciResultText;
+
+
+      var arraySize = 10;
+
+      var maxValue = 99;
+
+      var randomArray = generateRandomArray(arraySize, maxValue);
+
+
+      var arrayText = randomArray.join(" - ");
+
+      var unsortedOutput = document.getElementById("unsorted-array");
+
+      unsortedOutput.innerHTML = arrayText;
+
+
+      randomArray.sort(function(a, b) {
+
+        return a - b;
+
+      });
+
+
+      var sortedText = randomArray.join(" - ");
+
+      var sortedOutput = document.getElementById("sorted-array");
+
+      sortedOutput.innerHTML = sortedText;
+
+    };
+
+
+    function changeImage() {
+
+      var image = document.getElementById("hover-image");
+
+      image.src = "second_image.jpg";
+
+    }
+
+
+    function restoreImage() {
+
+      var image = document.getElementById("hover-image");
+
+      image.src = "first_image.jpg";
+
+    }
+
+
+    function displayImageInfo() {
+
+      var image = document.getElementById("hover-image");
+
+      var source = image.src;
+
+      var name = image.alt;
+
+      var size = image.height + " × " + image.width;
+
+      alert("Source: " + source + "\nName: " + name + "\nSize: " + size);
+
+    }
+
+
+    function changeRandomImage() {
+
+      var randomNumber = Math.floor(Math.random() * 6);
+
+      var image = document.getElementById("random-image");
+
+      image.src = "image" + randomNumber + ".jpg";
+
+      image.alt = "Image " + randomNumber;
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="fibonacci-area">
+
+    <p id="fibonacci-output" class="fibonacci-text"></p>
+
+  </div>
+
+
+  <div class="array-area">
+
+    <p id="unsorted-array" class="array-text"></p>
+
+    <p>Unsorted Array</p>
+
+  </div>
+
+ 
+
+  <div class="array-area">
+
+    <p id="sorted-array" class="array-text"></p>
+
+    <p>Sorted Array</p>
+
+  </div>
+
+
+  <img id="hover-image" src="first_image.jpg" alt="First Image" onmouseover="changeImage()" onmouseleave="restoreImage()" onclick="displayImageInfo()" />
+
+
+  <input type="button" id="idbouton" name="nameofbutton" value="Button Text" onclick="changeRandomImage()" />
+
+
+  <img id="random-image" src="image0.jpg" alt="Image 0" />
+
+</body>
+
+</html>
+

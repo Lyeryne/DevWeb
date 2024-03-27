@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exo1TD6</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+    <?php
+      $equipe = array
+      (
+      array("Nom","Prénom","date de naissance","Poste"),
+      array("Giroud","Olivier","30/09/1986","Attaquant"),
+      array("Griezmann","Antoine","21/03/1991","Attaquant"),
+      
+      );
+      function calculateAge($dateOfBirth) {
+        $today = date("d/m/Y");
+        list($day, $month, $year) = explode('/', $dateOfBirth);
+        list($currentDay, $currentMonth, $currentYear) = explode('/', $today);
+    
+        $age = $currentYear - $year;
+    
+        
+        if ($currentMonth < $month || ($currentMonth == $month && $currentDay < $day)) {
+            $age--;
+        }
+      
+        
+        return $age;
+      }
+      echo "<table>";
+      foreach($equipe as $row){
+        echo "<tr>";
+        foreach($row as $value){
+          echo "<td>". $value . "</td>";
+        }
+        if($row>=2){
+        echo "<td>" . calculateAge($row[2]) . "</td>";
+        }
+        echo"</tr>";
+      }
+echo "</table>";
+     ?>
+</body>
+</html>

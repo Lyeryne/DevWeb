@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html> 
+
+<style>
+    .div1{
+        border-color: black;
+        border-style: solid;
+        background-color: grey;
+        text-align: center;
+        padding: 5%;
+        width:350px;
+    }
+    .div2{
+        border-color: rgb(7, 63, 128);
+        border-style: solid;
+        background-color: rgb(115, 155, 192);
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+    .div3{
+        border-color: rgb(90, 7, 128);
+        border-style: solid;
+        background-color: rgb(152, 124, 189);
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+    .album{
+        height: 100px;
+        width: 100px;
+    }
+</style>
+
+<body>
+    <!-- Program simulating a music disk shop -->
+    <table>
+        <tr>
+            <td></td>
+            <td class="div1">   
+                <div> <b> Magasin de disques </b> </div> 
+                <div>Tous les disques a 7€50! Cliquez sur les albums pour les selectionner ou deselectionner.</div> 
+                <div> Montant du panier: </div>
+                <b><p id="resultat" style="color: yellow;"> </p></b> <!-- Total price -->
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td class="div2">
+                <div style="padding-bottom: 2%;"> <b> Albums disponibles </b> </div>
+                    <br>
+                <div>   <!-- 5 disks available -->
+                    <img onclick="album10()" src="im1.png" class="album">   <!-- image, on click will execute a javascript function -->
+                    <img onclick="album20()" src="im2.png" class="album">   <!-- image, on click will execute a javascript function -->
+                    <img onclick="album30()" src="im3.png" class="album">   <!-- image, on click will execute a javascript function -->
+                <div>
+                    <img onclick="album40()" src="im4.png" class="album">  <!-- image, on click will execute a javascript function -->
+                    <img onclick="album50()" src="im5.png" class="album">  <!-- image, on click will execute a javascript function -->
+                </div>
+                <div>  </div>
+            </td>
+            <td></td>
+            <td class="div3">
+                <div style="padding-bottom: 2%;"> <b> Albums choisis </b> </div>
+                <br>
+                <!-- chosen albums will be shown here -->
+                <div style="display: flex;">  <!-- Display will change depending on the amount of visible images -->
+                    <div onclick="album11()" id="photo1" scr="im1.png" ></div>  <!-- image, on click will execute a javascript function -->
+                    <div onclick="album21()" id="photo2" scr="im2.png" ></div>  <!-- image, on click will execute a javascript function -->
+                    <div onclick="album31()" id="photo3" scr="im3.png" ></div>  <!-- image, on click will execute a javascript function -->
+                </div>
+                
+                <div style="display: flex;"> <!-- Display will change depending on the amount of visible images -->
+                    <div onclick="album41()" id="photo4" scr="im4.png" ></div>  <!-- image, on click will execute a javascript function -->
+                    <div onclick="album51()" id="photo5" scr="im5.png" ></div>  <!-- image, on click will execute a javascript function --> 
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+        <script>
+            
+            function album10(){ // will make the chosen album visible in the cart and add its price to the total count 
+                var x=document.getElementById("photo1") 
+                x.innerHTML="<img src=\"im1.png\" class=\"album\"/>"
+                document.getElementById("resultat").innerHTML = calcul();
+            }
+            function album11(){ // will make the chosen album disappear from the cart and remove its price to the total count 
+                document.getElementById("photo1").innerHTML = "";   
+                document.getElementById("resultat").innerHTML = calcul();    
+            }
+            function album20(){ // will make the chosen album visible in the cart and add its price to the total count 
+                var x=document.getElementById("photo2") 
+                x.innerHTML="<img src=\"im2.png\" class=\"album\"/>"
+                document.getElementById("resultat").innerHTML = calcul();
+                
+            }
+            function album21(){ // will make the chosen album disappear from the cart and remove its price to the total count 
+                document.getElementById("photo2").innerHTML = "";
+                document.getElementById("resultat").innerHTML = calcul();       
+            }
+            function album30(){ // will make the chosen album visible in the cart and add its price to the total count 
+                var x=document.getElementById("photo3") 
+                x.innerHTML="<img src=\"im3.png\" class=\"album\"/>"
+                document.getElementById("resultat").innerHTML = calcul();
+            }
+            function album31(){ // will make the chosen album disappear from the cart and remove its price to the total count  
+                document.getElementById("photo3").innerHTML = "";  
+                document.getElementById("resultat").innerHTML = calcul();     
+            }
+            function album40(){ // will make the chosen album visible in the cart and add its price to the total count 
+                var x=document.getElementById("photo4") 
+                x.innerHTML="<img src=\"im4.png\" class=\"album\"/>"
+                document.getElementById("resultat").innerHTML = calcul();
+            }
+            function album41(){ // will make the chosen album disappear from the cart and remove its price to the total count 
+                document.getElementById("photo4").innerHTML = ""; 
+                document.getElementById("resultat").innerHTML = calcul();      
+            }
+            function album50(){ // will make the chosen album visible in the cart and add its price to the total count 
+                var x=document.getElementById("photo5") 
+                x.innerHTML="<img src=\"im5.png\" class=\"album\"/>"
+                document.getElementById("resultat").innerHTML = calcul();
+            }
+            function album51(){ // will make the chosen album disappear from the cart and remove its price to the total count 
+                document.getElementById("photo5").innerHTML = "";  
+                document.getElementById("resultat").innerHTML = calcul();     
+            }    
+            function calcul(){
+                x=0
+                for (let i = 1; i <= 5; i++) {
+                    if (document.getElementById("photo"+i).innerHTML != ""){    //count the amount of disks are chosen
+                    x++;
+                    }
+                }
+                if (x == 0) {
+                return "0.00€";
+                }
+                x=x*7.5;
+                return x+"€";   //calculate the final price
+            }
+        </script>
+    </body>
+
+</html>

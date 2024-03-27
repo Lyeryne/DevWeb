@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        
+    </head>
+    
+    
+    <body>     
+                
+<h>Enregistrement d'un utilisateur</h>
+<table>
+
+    <tr>
+        <td><label for="nom">Nom</label></td>
+        <td><input type="text" id="nom" name="nom" size="16"></td>
+    </tr>
+    <tr>
+        <td><label for="prénom">Prénom</label></td>
+        <td><input type="text" id="prénom" name="prénom" size="16"></td>
+    </tr>
+    <tr>
+        <td>Sexe</td>
+        
+        <td>
+                Homme :
+                <input type="radio" value="homme" name="sexe">
+                <br>Femme :
+                <input type="radio" value="femme" name="sexe">
+        </td>   
+    </tr>
+
+<tr>
+    <td>Fonction</td>
+    <td>
+        <select name="fonction">
+            <option value="enseignant">Enseignant</option>
+            <option value="chercheur">Chercheur</option>
+            <option value="ingénieur">Ingénieur</option>
+        </select>
+    </td>
+</tr>
+<tr>
+        <td>Commentaires</td>
+        <td><textarea name="message" rows="4" cols="22">Tapez ici vos commentaires</textarea></td>
+</tr> 
+<tr>
+    <td><input type="submit" value="Envoyer"></td>
+</tr>
+
+</table>
+            
+            
+        <p align="center">Veuillez saisir vos coordonnées dans le formulaire ci-dessous</p>
+        <form>
+            <input type="radio" name="gender" value="m"> M.
+            <input type="radio" name="gender" value="mme"> Mme
+            <input type="radio" name="gender" value="mlle"> Mlle
+            <br><br>  
+
+            Nom:
+            <input type="text" name="nom" size="10px">
+            Prénom:
+            <input type="text" name="prenom" size="10px">
+            Société:
+            <input type="text" name="societe" size="10px"><br><br>
+            N° et rue:
+            <input type="text" name="num&rue" size="50px"><br><br>
+            Code Postal:
+            <input type="text" name="code_postal" size="1px">
+            Ville:
+            <input type="text" name="code_postal" size="30px">
+            <select name="pays" style="margin-left: 5px">
+                <option value="angleterre">Angleterre</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="australie">Australie</option>
+                <option value="france">France</option>
+                <option value="italie">Italie</option>
+                <option value="japon">Japon</option>
+                <option value="usa">USA</option>
+                <option value="autre">Autre</option>                
+            </select><br><br>
+            Votre Message        
+            <textarea name="message" rows="5" cols="30"></textarea><br><br>
+            Adresse E-Mail
+            <input type="text" name="email">
+            <input type="submit" value="Valider" style="margin-left: 8px">
+            <input type="reset" value="Effacer">
+            
+        </form><br><br>
+        
+        
+        <form>
+        
+            <fieldset style="padding-left: 30px; padding-right: 30px">
+                <legend>Client</legend>
+                <table style="background-color: yellow; width:100%; border:0; border-spacing: 3px 5px;">
+                    <tr style="padding: 20px">
+                        
+                        <td><b>Civilité</b></td>
+                        <td>
+                            <input type="radio" name="gender" value="mlle"> Mademoiselle
+                            <input type="radio" name="gender" value="mme"> Madame
+                            <input type="radio" name="gender" value="mr"> Monsieur    
+                        </td>
+                    </tr>          
+                    <tr>
+                        
+                        <td><b>Nom/Prénom</b></td>
+                        <td>
+                            <input type="text" name="nom_prenom" size="40px">  
+                        </td>
+                    </tr>           
+                    <tr>
+                        
+                        <td><b>Adresse</b></td>
+                        <td>
+                            <textarea name="message" rows="4" cols="55">Rue n° boîte postale
+                            </textarea>  
+                        </td>
+                    </tr>           
+                    <tr>
+                        
+                        <td><b>No postal/Localité</b></td>
+                        <td>  
+                            <input type="text" name="postal_locality" size="1px">  
+                            <input type="text" name="postal_locality" size="8px" placeholder="Lausane">
+                        </td>
+                    </tr>                   
+                    <tr>
+                        
+                        <td><b>Pays</b></td>
+                        <td>
+                            <select name="pays">
+                                <option value="suisse">Suisse</option>
+                                <option value="allemagne">Allemagne</option>
+                                <option value="australie">Australie</option>
+                                <option value="france">France</option>
+                                <option value="italie">Italie</option>
+                                <option value="japon">Japon</option>
+                                <option value="usa">USA</option>
+                                <option value="autre">Autre</option>                
+                            </select> 
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        
+                        <td><b>Plateforme(s)</b></td>
+                        <td>
+                            <input type="checkbox" name="systeme" value="W"> Windows
+                            <input type="checkbox" name="systeme" value="Mc"> Macintosh
+                            <input type="checkbox" name="systeme" value="U"> Unix    
+                        </td>
+                    
+                    </tr>
+                    <tr>
+                        
+                        <td><b>Application(s)</b></td>
+                        <td>
+                            <select name="application" size="5" multiple>
+                                <option value="bureau">Bureautique</option>
+                                <option value="dao">DAO</option>
+                                <option value="stat">Statistique</option>
+                                <option value="sgbd">SGBD</option>
+                                <option value="web">Internet</option>
+                            </select>
+                        </td>
+                    
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <p align=center>
+                <input type="submit" value="Soumettre formulaire">
+                <input type="reset" value="Effacer">
+            </p>
+            
+        </form>
+        
+        
+        
+        
+        
+        
+    </body>
+
+</html>
+

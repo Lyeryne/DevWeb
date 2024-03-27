@@ -1,0 +1,27 @@
+img[scope="1"]{
+    max-width: 150px;
+    height: auto;
+    border: 2px solid black;
+}
+
+img[scope="2"]{
+    max-width: 150px;
+    height: auto;
+    border: 5px solid black;
+}
+td[scope="Image1"]{
+    border: 20px solid white;
+    width:300px;
+    font-family: Arial;
+    text-justify: auto;
+}
+td[scope="Image2"]{
+    border: 6px solid;
+    border-color: white white red white;
+    width: 200px;
+}
+td[scope="Image3"]{
+    border: 6px solid;
+    border-color: red white white white;
+    width: 200px;
+}

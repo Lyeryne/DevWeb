@@ -1,0 +1,246 @@
+<!-- HTML file -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Entête -->
+    <title>TP 3 : Mehdi TORJMEN - Julien MÉGNOUX</title>
+    <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/CY_Tech.png" alt="Le logo de CY Tech"
+        width="132" height="70">
+    <h1 align="center"><u>Informatique 4</u> : TP 3</h1>
+    <br>
+    <p align="right"><i>Mehdi TORJMEN</i> - <i>Julien MÉGNOUX</i></p>
+    <p align="right">PréIng 2 - MI</p>
+    <style>
+        .menu {
+            border-collapse: collapse;
+            background-color: #ffff00;
+            width: 100%;
+        }
+
+        th {
+            width: 175px;
+            text-align: left;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Exo 1 -->
+
+    <h2><u>Exercice 1</u> :</h2>
+
+    <form>
+        Enregistrement d'un utilisateur<br>
+        <table>
+            <tr>
+                <td>
+                    Nom
+                </td>
+                <td>
+                    <input type="text" name="nom">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Prénom
+                </td>
+                <td>
+                    <input type="text" name="prenom">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" width="97px">
+                    Sexe
+                </td>
+                <td>
+                    Homme :
+                    <input type="radio" name="genre" value="homme">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Femme :
+                    <input type="radio" name="genre" value="femme" style="margin-left: 8px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fonction
+                </td>
+                <td>
+                    <select name="fonction">
+                        <option value="enseignant">Enseignant</option>
+                        <option value="eleve">Élève</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Commentaires
+                </td>
+                <td>
+                    <textarea name="message" rows="4" cols="25">Tapez ici vos commentaires</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Envoyer">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Exo 2 -->
+
+    <br>
+    <h2><u>Exercice 2</u> :</h2>
+
+    <form>
+        <p style="margin-left: 135px; line-height: 1px"> Veuillez saisir vos coordonnées dans le formulaire ci-dessous
+        </p>
+        <input type="radio" name="genre" value="monsieur"> M.
+        <input type="radio" name="genre" value="madame"> Mme
+        <input type="radio" name="genre" value="mademoiselle"> Mlle
+        <br>
+        <br>
+        Nom :
+        <input type="text" name="nom">
+        Prénom :
+        <input type="text" name="prenom">
+        Société :
+        <input type="text" name="societe">
+        <br>
+        <br>
+        N° et rue :
+        <input type="text" name="rue" size="80">
+        <br>
+        <br>
+        Code postal :
+        <input type="text" name="code postal" size="10">
+        Ville :
+        <input type="text" name="ville" size="40">
+        <select name="pays" style="margin-left: 15px">
+            <option value="angleterre">Angleterre</option>
+            <option value="allemagne">Allemagne</option>
+            <option value="australie">Australie</option>
+            <option value="france" selected>France</option>
+            <option value="italie">Italie</option>
+            <option value="japon">Japon</option>
+            <option value="usa">USA</option>
+            <option value="autre">Autre</option>
+        </select>
+        <br>
+        <br>
+        Votre message
+        <textarea name="message" rows="6" cols="36"></textarea>
+        <br>
+        <br>
+        Adresse E-Mail
+        <input type="text" name="adresse mail" ysize="37">
+        <input type="submit" style="margin-left: 10px" value="Valider">
+        <input type="reset" style="margin-left: 1px" value="Effacer">
+    </form>
+
+    <!-- Exo 3 -->
+
+    <br>
+    <h2><u>Exercice 3</u> :</h2>
+
+    <form>
+        <fieldset style="padding-left: 32px; padding-right: 32px">
+            <legend style="margin-left: -22px"><b>Client</b></legend>
+            <table div class="menu">
+                <tr>
+                    <th>
+                        Civilité
+                    </th>
+                    <td>
+                        <input type="radio" name="genre" value="mademoiselle">Mademoiselle<input type="radio"
+                            name="genre" value="madame" checked>Madame
+                        <input type="radio" name="genre" value="monsieur">Monsieur
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Nom / Prénom
+                    </th>
+                    <td>
+                        <input type="text" name="nom/prénom" size="45">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Adresse
+                    </th>
+                    <td>
+                        <textarea name="adresse" rows="4" cols="50">Rue No Boîte postale</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        No postal / Localité
+                    </th>
+                    <td>
+                        <input type="text" name="no postal" size="4" maxlength="4">
+                        <input type="text" name="localité" value="Lausanne" size="16">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Pays
+                    </th>
+                    <td>
+                        <select name="pays">
+                            <option value="france">France</option>
+                            <option value="allemagne">Allemagne</option>
+                            <option value="suisse" selected>Suisse</option>
+                            <option value="tunisie">Tunisie</option>
+                            <option value="italie">Italie</option>
+                            <option value="japon">Japon</option>
+                            <option value="usa">USA</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Plateforme(s)
+                    </th>
+                    <td>
+                        <input type="checkbox" name="windows" checked>Windows<input type="checkbox" name="macintosh"
+                            checked>Macintosh<input type="checkbox" name="unix">Unix
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Application(s)
+                    </th>
+                    <td>
+                        <select name="applications" size="5" multiple>
+                            <option value="bureautique">Bureautique</option>
+                            <option value="dao">DAO</option>
+                            <option value="statistiques">Statistiques</option>
+                            <option value="sgbd">SGBD</option>
+                            <option value="internet">Internet</option>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <p align="center">
+            <input type="submit" value="Soumettre formulaire">
+            <input type="reset" value="Effacer">
+        </p>
+
+    </form>
+
+    <br>
+    <h2 align="center">Fin</h2>
+
+</body>
+
+</html>

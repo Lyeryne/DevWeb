@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #students-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .student-card {
+      border: 2px solid black;
+      background-color: lightgray;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+
+    .student-info {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function addStudent() {
+      var lastName = prompt("Enter your last name:");
+      var nameGreeting = "Hello <span class='student-variable'>" + lastName + "</span>!";
+      var programInfo = "You are a student in Bachelor2 at CYTech";
+      var browserInfo = "Your browser is: " + navigator.userAgent;
+      var osInfo = "Your operating system is: " + navigator.platform;
+
+      var studentCard = document.createElement("div");
+      studentCard.className = "student-card";
+
+      var studentName = document.createElement("p");
+      studentName.innerHTML = nameGreeting;
+      studentName.className = "student-info";
+
+      var program = document.createElement("p");
+      program.innerHTML = programInfo;
+      program.className = "student-info";
+
+      var browser = document.createElement("p");
+      browser.innerHTML = browserInfo;
+      browser.className = "student-info";
+
+      var os = document.createElement("p");
+      os.innerHTML = osInfo;
+      os.className = "student-info";
+
+      studentCard.appendChild(studentName);
+      studentCard.appendChild(program);
+      studentCard.appendChild(browser);
+      studentCard.appendChild(os);
+
+      var studentsContainer = document.getElementById("students-container");
+      studentsContainer.appendChild(studentCard);
+    }
+
+    function deleteStudent() {
+      var studentsContainer = document.getElementById("students-container");
+      if (studentsContainer.lastChild) {
+        studentsContainer.removeChild(studentsContainer.lastChild);
+      }
+    }
+
+    function resetStudents() {
+      var studentsContainer = document.getElementById("students-container");
+      studentsContainer.innerHTML = "";
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <button onclick="addStudent()">Ajouter etudiant</button>
+    <button onclick="deleteStudent()">Supprimer etudiant</button>
+    <button onclick="resetStudents()">Supprimer tous les etudiants</button>
+  </div>
+
+  <div id="students-container"></div>
+</body>
+</html>
