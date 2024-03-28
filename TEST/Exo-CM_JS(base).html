@@ -194,7 +194,43 @@
         alert("Average of notes : " + average);
         */
 
-    
+        //Exercice 9
+        /*
+        Ecrire une fonction JavaScript pour obtenir le premier n
+        élément d'un tableau.
+        f([1,2,7,8],2)= 1,2
+        f([1,2,7,8],3)= 1,2,7
+
+        var start = [1, 2, 7, 8];
+        var size = prompt("Please indicate how many numbers you need to saw :");
+        size = parseInt(size, 10);
+
+
+        while (size > start.length || size <= 0 || isNaN(size)) {
+            if (size > start.length || isNaN(size)) {
+                alert("ERROR OVER_SIZE - Please reduce the range of numbers you need to saw.");
+            } else if (size <= 0 || isNaN(size)) {
+                alert("ERROR LESS_SIZE - Please enter a positive number greater than zero.");
+            }
+            size = parseInt(prompt("Please enter a valid number: "), 10);
+        }
+
+        f(start, size);
+
+        function f(arg1, arg2) {
+            var tab = new Array();
+            for (var i = 0; i < arg2; i++) {
+                tab[i] = arg1[i];
+                document.write("" + tab[i]);
+                document.write("->");
+            }
+        }
+        */
+
+        
+
+
+
 
 
 
