@@ -177,14 +177,14 @@
         var tab = new Array();
         var average = 0;
 
-        var size = parseInt(prompt("Please indicate the number of notes you will enter :"));
+        var size = parseInt(prompt("Please indicate the number of notes you will enter :"), 10);
 
         for (var i = 1; i <= size; i++) {
             tab[i] = parseInt(prompt("Note " + i + " :"));
             sum += tab[i];
         }
 
-        average = parseInt(sum / size);
+        average = parseInt(sum / size, 10);
         alert("Average of notes : " + average);
 
 
