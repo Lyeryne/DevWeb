@@ -165,6 +165,29 @@
         console.log(char);
         */
 
+        //Exercice 8
+        /*
+        Ecrire un programme qui calcule la moyenne d'un
+        ensemble de notes. le programme demande à l'utilisateur
+        de saisir le numéro des notes et, puis ouvrir une fenêtre
+        pour entrer chacune des notes. Quand toutes les notes
+        sont saisies, une fenêtre affiche la moyenne.*/
+
+        var sum = 0;
+        var tab = [];
+        var average = 0;
+
+        var size = parseInt(prompt("Please indicate the number of notes you will enter :"));
+
+        for (var i = 1; i <= size; i++) {
+            tab[i] = parseInt(prompt("Note " + i + " :"));
+            sum = sum + tab[i];
+        }
+
+        average = parseInt(sum / size);
+        alert("Average of notes : " + average);
+
+
 
 
     </script>
