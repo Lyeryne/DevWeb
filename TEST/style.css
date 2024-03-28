@@ -1,0 +1,217 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap'); */
+
+
+body
+{
+    background: url(./TD/Images/CYTech-CTI_coul.webp) center/cover;
+    /* vh = 100% de la taille de l'écran (viewport height) */
+    /* min-height: 100vh; */
+}
+
+h1
+{
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   text-align: center;
+   font-size: 8vw; /*viweport width*/
+   text-shadow: 3px -1px 3px #00000045;
+   color: red;
+   /* font-family: "Sixtyfour", sans-serif; */
+}
+
+main
+{
+    /* taille de la boîte */
+    min-height: 500px;
+    /* largeur */
+    width: 90%;
+    /* Centrer une boîte */
+        /* 1er valeur (0) : haut/bas; 2e valeur (auto) : droite/gauche */
+        margin : 0 auto;
+    /* Arrière-plan */
+    background: rgba(0, 0, 0, 0.614);
+    
+    border : 2px solid pink;
+    /* Arrondir les bordures */
+    border-radius: 20px; /*ou (Hg Hd ed eg = "20px 20px 20px 20px*/
+    /* Effet d'ombres */
+    box-shadow: 0 0 20px 4px pink;
+    /* Pour bien placer le text (voir dans inspecter sur votre site) */
+    padding: 15px;
+}
+
+h2
+{
+    /* mettre bien les marges  */
+    margin: 0;
+}
+
+.flexbox, .grid, .absolute
+{
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    min-height: 150px;
+}
+
+/* FLEXBOX_CSS */
+/* sert à répartir équitablement des elements sur la page */
+.flexbox ul 
+{
+    padding: 0;
+    /* aligne les box */
+    display: flex;
+    /* centre les box équitablement */
+    justify-content: space-around;
+}
+ .flexbox li /*Tous les li qui se trouve dans flexbox */
+{
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: black;
+    /* centrer un unique element horizontament et verticalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* L'étoile donne du style à TOUS les éléments => vous modifier vous meme les padding/espacement etc.. */
+/* *{ 
+    margin: 0;
+    padding: 0;
+}
+
+
+/* GRID */
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.grid img
+{
+    width: 80%;
+    margin-top: 20px;
+    display: blocks;
+}
+form 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "i1 i2"
+    "ta ta"
+    "vi bt";
+}
+input, textarea
+{
+    margin: 5px;
+    border: 1px solid red;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+textarea
+{
+    grid-area: ta;
+    height: 40px;
+    resize: none;
+}
+#btn-submit
+{
+    grid-area: bt;
+    cursor: pointer;
+    background: red;
+    transition: 0.2s;
+}
+#btn-submit:hover
+{
+    background: lightcoral;
+}
+
+/* ABSOLUTE_CSS */
+
+/* Sans élément en Relative, de base, l'élément en absolute l'est par rapport au Body */
+/* Il faut mettre une position relative au parent pour contraindre l'élément en absolute dans ses frontières */
+.absolute
+{
+    position: relative;
+}
+
+#circle1
+{
+    height: 80px;
+    width: 80px;
+    background: red;
+    position: absolute;
+    border-radius: 150px;
+    top: 0;
+    right: 0;
+}
+
+#circle2
+{
+    height: 40px;
+    width: 40px;
+    background: red;
+    position: absolute;
+    border-radius: 150px;
+    /* centrer votre élément en absolute */
+        left: 50%;
+        transform: translateX(-50%);
+    top: 100px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 880px) {
+    .grid-container
+    {
+        display : block;
+    }
+    .grid-container img
+    {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 640px)
+{
+    form 
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "i1"
+        "i2"
+        "ta"
+        "bt";
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .flexbox ul 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form 
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "i1"
+        "i2"
+        "ta"
+        "bt";
+    }
+
+    input, textarea 
+    {
+        font-size: 0.8rem;
+    }
+}
+

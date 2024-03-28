@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .whitetext {
+            color: white
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>LES BASES DE CSS</h1>
+    </header>
+
+    <main>
+        <!-- .flexbox => <div class="flexbox"></div> -->
+        <div class="flexbox">
+            <h2 class="whitetext">Flexbox</h2>
+            <!-- ul*li*3 -->
+            <ul class="whitetext">
+                <li>boite 1</li>
+                <li>boite 2</li>
+                <li>boite 3</li>
+            </ul>
+        </div>
+
+        <!-- GRID -->
+        <div class="grid">
+            <h2 class="whitetext">Grid</h2>
+            <div class="grid-container">
+                <img src="./TD/icon_CY.png" alt="logo CY">
+                <form action="">
+                    <input type="text" id="firstname" placeholder="Prénom">
+                    <input type="text" id="surname" placeholder="Nom">
+                    <textarea cols="30" rows="10" placeholder="Ici votre message"></textarea>
+                    <input type="submit" value="Valider" id="btn-submit">
+                </form>
+            </div>
+        </div>
+
+        <!-- ABSOLUTE -->
+        <div class="absolute">
+            <h2 class="whitetext">Absolute</h2>
+            <span id="circle1"></span>
+            <span id="circle2"></span>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

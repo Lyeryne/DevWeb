@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExoS-CM-JS</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        //Exercice 1
+        /*
+        • Ecrire un script qui affiche le message " Bonjour World !"
+        dans une boite de dialogue
+
+        var a = prompt('Bonjour World!');
+
+        • Améliorer le script pour qu’il permette de demander le
+        Prénom de l’utilisateur et afficher « Bonjour ‘votre
+        prénom’»
+
+        var a = prompt("Quel est ton nom");
+        alert("Bonjour " + a);
+        */
+
+        //Exercice 2
+        /*
+        • Ecrire un script qui demande à l’utilisateur de saisir deux
+        nombres entiers puis affiche leur somme.
+
+        var a = prompt("Saisi le 1er nombre entier :");
+        var b = prompt("Saisi le 2e nombre entier :");
+        var c = parseFloat(a) + parseFloat(b);
+
+        alert("La somme de " + a + " et " + b + " egal à " + c);*/
+
+        //Exercice 3
+        /*
+        • Demander le nom de l'utilisateur au chargement de la
+        page. Demander ensuite une confirmation du nom de
+        l'utilisateur. Si le nom est confirmé, afficher ce dernier
+        dans une boîte de dialogue
+
+        var tellUser = prompt("What's your name :");
+        var tellUserAgain = prompt("Can you confirm your name :");
+
+        if (tellUser === tellUserAgain) {
+            alert("Hi " + tellUser);
+        }
+        else {
+            alert("Error");
+        }
+        */
+
+        //Exercice 4
+        /*
+        • Ecrire un script permettant de résoudre une équation du
+        second degré : a𝑥^2+bx+c=0. Ce script devra demander à
+        l’utilisateur les valeurs de a, b et c ; puis donner le
+        résultat.
+
+        var d0, d1, d2;
+
+        var a = prompt("a=");
+        var b = prompt("b=");
+        var c = prompt("c=");
+
+        // Convertir les valeurs en nombres
+        a = parseFloat(a);
+        b = parseFloat(b);
+        c = parseFloat(c);
+
+        // Calculer le discriminant
+        var d = Math.pow(b, 2) - 4.0 * a * c;
+
+        if (d > 0) {
+            d1 = (-b - Math.sqrt(d)) / (2.0 * a);
+            d2 = (-b + Math.sqrt(d)) / (2.0 * a);;
+
+            alert("DELTA = " + d + " => x1 = " + d1 + " & x2 = " + d2 + " ");
+        }
+        else if (d < 0) {
+            alert("DELTA = " + d + " => We don't have the power to solve complex number  ");
+        }
+        else //(d == 0)
+        {
+            d0 = (-b) / (2.0 * a);
+            alert("DELTA = " + d + " Xo = " + d0);
+        }
+        */
+
+        //Exercice 5
+        /*
+        • Ecrire une page HTML faisant apparaitre la table de
+        multiplication pour les entiers compris entre 1 et 9 et
+        présenter le résultat dans un tableau [10x 10].
+
+        document.write("<center>");
+        document.write("<caption> Tableau de multiplication </caption>");
+        document.write("<table border=4");
+        // document.write("<tr> <td>x</td> </tr>");
+        document.write("<tr> <td>", "x", "</td> ");
+        for (var x = 1; x <= 9; x++) {
+            document.write("<td>", x, "</td> ");
+
+        }
+        document.write("</tr>");
+
+        for (var i = 1; i < 10; i++) {
+            document.write("<tr>");
+            document.write("<td>", i, "</td>");
+            for (var j = 1; j <= 9; j++) {
+                document.write("<td>", i * j, "</td>");
+            }
+            document.write("</tr>");
+        }
+
+        document.write("</table>");
+        document.write("</center>");*/
+
+        //Exercice 6
+        /*
+        • Créez une fonction qui fait la somme d'un nombre
+        indéterminé d'entiers.
+        • Écrivez un script qui va tester cette fonction.
+
+
+        function sum2() {
+            var sum = 0;
+            for (var k = 0; k <= arguments.length - 1; k++) {
+                sum = sum + arguments[k];
+            }
+            return sum;
+        }
+
+        for (var i = 1; i <= 10; i++) {
+            sum2(parseFloat(i));
+        }
+
+        document.write("sum = " + sum);*/
+
+        //Exercice 7
+        /*
+        Ecrire un programme JavaScript pour trouver l'élément le plus fréquent d'un tableau.
+        Exemple tab= [3, 'B', 'B', 'B', 2, 3, 4, 3, 'a', 2, 4, 9, 3,3,3];
+        sortie: 3 (6 fois)
+        
+        var tab = [3, 'B', 'B', 'B', 2, 3, 4, 3, 'a', 2, 4, 9, 3, 3, 3];
+        var maxf = 0, f = 0;
+        for (var i = 0; i < tab.length; i++) {
+            for (var j = i; j < tab.length; j++) {
+                if (tab[i] == tab[j]) {
+                    f++;
+                }
+                if (f > maxf) {
+                    maxf = f;
+                    item = tab[i];
+                }
+            }
+            f = 0;
+        }
+        var char = item + "(" + maxf + " times)";
+        console.log(char);
+        */
+
+
+
+    </script>
+</body>
+
+</html>
