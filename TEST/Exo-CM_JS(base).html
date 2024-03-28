@@ -177,14 +177,20 @@
         var tab = new Array();
         var average = 0;
 
-        var size = parseInt(prompt("Please indicate the number of notes you will enter :"), 10);
+        var size = prompt("Please indicate the number of notes you will enter :");
+        size = parseInt(size, 10);
+        if(isNaN(size))
+        {
+            alert("ERROR YOU NEED TO PUT INTEGER NUMBER");
+        }
 
         for (var i = 1; i <= size; i++) {
-            tab[i] = parseInt(prompt("Note " + i + " :"));
+            tab[i] = prompt("Note " + i + " :");
+            tab[i] = parseInt(tab[i], 10);
             sum += tab[i];
         }
 
-        average = parseInt(sum / size, 10);
+        average = sum / size;
         alert("Average of notes : " + average);
 
 
