@@ -10,6 +10,8 @@
 <body>
     <script type="text/javascript">
 
+    //ENTREES/SORTIES
+    //~~~~~~~~~~~~~~~~~~
         //Exercice 1
         /*
         • Ecrire un script qui affiche le message " Bonjour World !"
@@ -35,7 +37,10 @@
         var c = parseFloat(a) + parseFloat(b);
 
         alert("La somme de " + a + " et " + b + " egal à " + c);*/
-
+    //~~~~~~~~~~~~~~~~~~
+      
+    //CONDITIONS
+    //~~~~~~~~~~~~~~~~~~
         //Exercice 3
         /*
         • Demander le nom de l'utilisateur au chargement de la
@@ -90,7 +95,10 @@
             alert("DELTA = " + d + " Xo = " + d0);
         }
         */
+    //~~~~~~~~~~~~~~~~~~
 
+    //BOUCLES
+    //~~~~~~~~~~~~~~~~~~
         //Exercice 5
         /*
         • Ecrire une page HTML faisant apparaitre la table de
@@ -119,7 +127,10 @@
 
         document.write("</table>");
         document.write("</center>");*/
+    //~~~~~~~~~~~~~~~~~~
 
+    //FONCTIONS
+    //~~~~~~~~~~~~~~~~~~
         //Exercice 6
         /*
         • Créez une fonction qui fait la somme d'un nombre
@@ -140,7 +151,10 @@
         }
 
         document.write("sum = " + sum);*/
+    //~~~~~~~~~~~~~~~~~~
 
+    //TABLEAUX
+    //~~~~~~~~~~~~~~~~~~
         //Exercice 7
         /*
         Ecrire un programme JavaScript pour trouver l'élément le plus fréquent d'un tableau.
@@ -199,7 +213,8 @@
         Ecrire une fonction JavaScript pour obtenir le premier n
         élément d'un tableau.
         f([1,2,7,8],2)= 1,2
-        f([1,2,7,8],3)= 1,2,7
+        f([1,2,7,8],3)= 1,2,7 
+
 
         var start = [1, 2, 7, 8];
         var size = prompt("Please indicate how many numbers you need to saw :");
@@ -215,26 +230,69 @@
             size = parseInt(prompt("Please enter a valid number: "), 10);
         }
 
-        f(start, size);
-
         function f(arg1, arg2) {
             var tab = new Array();
+
             for (var i = 0; i < arg2; i++) {
                 tab[i] = arg1[i];
-                document.write("" + tab[i]);
-                document.write("->");
+                document.writeln("" + tab[i]);
+                document.writeln("->");
+            }
+        }
+        f(start, size);
+        */
+        // VERSION fonction flêchée (Exo 9)
+        /*
+        const f = (tab, size) => {
+            if (tab == null) return void 0;
+            if (size == null) return tab[0];
+            if (size < 0) return [];
+            console.log("f[1, 2, 7, 8] = " + tab.slice(0, size));
+        };
+
+        f([1, 2, 7, 8], 2);
+        f([1, 2, 7, 8], 3);
+        */
+    //~~~~~~~~~~~~~~~~~~
+
+    //OBJECTS
+    //~~~~~~~~~~~~~~~~~~
+        //Exercice 10
+        /*
+        Supposons que vous ayez un objet défini.
+        Ecrire un programme javascript pour afficher toutes les valeurs de ses propriétés et méthodes.
+
+        var person = {
+            name: "James ",
+            birth: 1989,
+            ship: {
+                name: "USS Enterprise",
+                number: "NCC-1701",
+                commissioned: 2245
+            },
+            getInfo: function () {
+                return this.name + "commands the " + this.ship.name;
+            }
+        };
+
+        for (var key in person) {
+            if (typeof person[key] === 'function') {
+                console.log("Methodes =  " + key + "  => " + person[key]());
+            }
+            else if (typeof person[key] === 'object') {
+                var person1 = person[key];
+                console.log("Property of " + key + " :");
+                for (var key1 in person1) {
+                    console.log("- " + key1 + " => " + person1[key1]);
+                }
+            }
+            else {
+                console.log("Property : " + key + " => " + person[key]);
             }
         }
         */
-
-        
-
-
-
-
-
-
-
+    //~~~~~~~~~~~~~~~~~~
+    
     </script>
 </body>
 
