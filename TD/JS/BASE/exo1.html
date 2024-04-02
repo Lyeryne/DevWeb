@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo1_JS</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        //1.
+        /*
+        Écrire un programme JavaScript qui demande deux nombres à l’utilisateur, et l’informe ensuite si le produit est négatif ou positif (on inclut le traitement du cas où le produit peut être nul). Attention toutefois, on ne doit pas calculer le produit !
+
+        var n1 = prompt("n1=");
+        while (isNaN(n1)) {
+            n1 = prompt("n1(bis) =");
+        }
+        var n2 = prompt("n2=");
+        while (isNaN(n2)) {
+            n2 = prompt("n2(bis) =");
+        }
+
+        if (n1 != 0 && n2 != 0) {
+            if ((n1 > 0 && n2 > 0) || (n1 < 0 && n2 < 0)) {
+                alert("The product is positive");
+            }
+            else {
+                alert("The product is negative");
+            }
+        }
+        else {
+            alert("The product is null");
+        }
+        */
+
+        //2.
+        /*
+        Écrire trois fonctions JavaScript permettant de calculer pour deux entiers positifs donnés :
+            • Une multiplication par additions successives.
+            • Une division par soustractions successives.
+            • Une élévation à la puissance par multiplications successives
+        
+
+        function sumSquare(a, b) {
+            var sum = 0;
+            for (var i = 0; i < b; i++) {
+                sum += a;
+            }
+            return sum;
+        }
+
+        function powMultiply(pow, exp) {
+            var result = 1;
+            for (var i = 0; i < exp; i++) {
+                result *= pow;
+            }
+            return result;
+        }
+
+        function divideSubtract(dividend, divisor) {
+            var quotient = 0;
+            while (dividend >= divisor) {
+                dividend -= divisor;
+                quotient++;
+            }
+            return quotient;
+        }
+
+
+        var n1 = parseInt(prompt("n1 = "));
+        while (isNaN(n1)) {
+            n1 = parseInt(prompt("n1(bis) = "));
+        }
+
+        var n2 = parseInt(prompt("n2 = "));
+        while (isNaN(n2)) {
+            n2 = parseInt(prompt("n2(bis) = "));
+        }
+
+        console.log("" + n1 + "*" + n2 + " = " + sumSquare(n1, n2));
+        console.log("" + n1 + "^" + n2 + " = " + powMultiply(n1, n2));
+        console.log("" + n1 + "/" + n2 + " = " + divideSubtract(n1, n2));
+    */
+
+    </script>
+
+</body>
+
+</html>
