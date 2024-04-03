@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo2_JS</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //1.
+        /*
+        Écrire une fonction JavaScript qui vérifie si une chaîne des caractères passée (ne contient que des caractères alphabétiques) est palindrome ou non ?
+    
+        Remarque : Un palindrome est mot ou groupe de mots qui peut se lire indifféremment de gauche à droite ou de droite à gauche en gardant le même sens est un mot. Exemple :radar, rotor ou stats.
+        
+
+        var tab = prompt("Input a word :");
+        while (!isNaN(tab)) {
+            tab = prompt("Error, there is not a word! Input again :");
+        }
+
+        var size = tab.length;
+        function palindrome(n, word) {
+            var cmp = word;
+            for (var i = 0; i < n; i++) {
+                if (cmp[n - i - 1] !== word[i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        if (palindrome(size, tab)) {
+            alert(" " + tab + " is a palindromic word");
+        }
+        else {
+            alert(" " + tab + " is not a palindromic word");
+        }
+        */
+        // => Plus Simple (1)
+        /*
+        function palindromic(word) {
+            var size = word.length;
+            for (var i = 0; i < Math.floor(size / 2); i++) {
+                if (word[n - i - 1] != word[i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        */
+        // => Plus Simple (2)
+        /*
+        function palindromic(word) {
+            var reversedWord = word.split('').reverse().join('');
+                if (word !== reversedword) {
+                    return false;
+                }
+            }
+            return true;
+            //return word === reversedWord;
+        }
+        */
+
+
+
+        //2.
+        /*
+        Écrire une fonction JavaScript qui prend une chaîne des caractères en paramètre et renvoie la même chaîne avec des lettres dans l'ordre alphabétique.
+        Exemple : Chaîne : « exercice » => Résultat attendu : « cceeeirx »
+
+        
+        var tab = prompt("Input a word");
+        while (!isNaN(tab)) {
+            tab = prompt("Error, there is not a word! Input again :");
+        }
+
+        function divideWordRec(word) {
+            if (word.length <= 1) {
+                return word;
+            }
+            else {
+                var mid = Math.floor(word.length / 2);
+                var leftPart = word.slice(0, mid);
+                var rightPart = word.slice(mid);
+
+                var leftPartDivided = divideWordRec(leftPart);
+                var rightPartDivided = divideWordRec(rightPart);
+
+                var j = 0, i = 0;
+                var sortedWord = [];
+
+                while (i < leftPartDivided.length && j < rightPartDivided.length) {
+                    if (leftPartDivided[i] < rightPartDivided[j]) {
+                        sortedWord += leftPartDivided[i];
+                        i++
+                    }
+                    else {
+                        sortedWord += rightPartDivided[j];
+                        j++;
+
+                    }
+                }
+
+            }
+
+            // Ajouter les caractères restants
+            sortedWord += leftPartDivided.slice(i) + rightPartDivided.slice(j);
+
+            return sortedWord;
+        }
+
+        alert("Before : " + tab + " ; After : " + divideWordRec(tab));
+        */
+
+
+    </script>
+
+</body>
