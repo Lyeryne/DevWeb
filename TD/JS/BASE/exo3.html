@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo3_JS</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        //1.2.3.
+        /*
+        1. En utilisant la fonction constructrice, définir un objet nomme Rectangular_ prism pouvant
+        contenir 4 propriétés : nom (le nom cylindre), L (la longueur du prisme), W (la largeur du
+        prisme) et H (la hauteur du prisme).
+        2. Ajouter une méthode sur l'objet Rectangular_prism pour calculer le volume d'un
+        Rectangular_ prism V = L*H*W.
+        3. Créer une instance de l'objet Rectangular_ prism avec les valeurs suivantes (A, 5, 10,
+        20), puis afficher le volume de ce cylindre.
+        
+        
+        1+2+3 =>
+
+        function Rectangular_prism(nom, L, W, H) {
+            this.nom = nom;
+            this.L = L;
+            this.W = W;
+            this.H = H;
+
+
+            this.volume = function () {
+                return this.L * this.W * this.H;
+            };
+            this.display = function () {
+                console.log(" Nom = " + this.nom + ", Longueur = " + this.L + "m, Largeur = " + this.W + "m, Hauteur = " + this.H + "m    => Volume = " + this.volume() + " m3");
+            };
+        }
+
+        let prism = new Rectangular_prism("A", 5, 10, 20);
+
+        prism.display();
+        */
+
+        //4.
+        /* 
+        Ecrire une fonction JavaScript nomme objsize pour obtenir la longueur d'un objet JavaScript.
+        
+        var stdt = {
+            name: "David Rayy",
+            sclass: "VI",
+            rollno: 12
+        };
+
+
+
+        function objsize(student) {
+            var size = 0;
+            for (var key in student) {
+                if (student.hasOwnProperty(key)) {
+                    size++;
+                }
+                else if (typeof student[key] === 'function') {
+                    studentbis = student[key];
+                    for (var keybis in studentbis) {
+                        size++;
+                    }
+                }
+            }
+            return size;
+        }
+
+        console.log("Size = " + objsize(stdt));
+        */
+        
+    </script>
+
+</body>
+
+</html>
