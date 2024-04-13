@@ -31,7 +31,7 @@ console.log(min_majv1("wELCome pRenOm NoM"));
 */
 
 //2.
-/* 
+/*
 Écrire une fonction JavaScript min_majv2(str1) qui prend une chaîne des caractères avec des lettres minuscules et majuscules en tant que paramètre, et convertit les lettres majuscules en minuscules et les minuscules en majuscules.
 
 Testez cela avec : console.log(min_majv2("wELCome pRenOm NoM "));
@@ -58,7 +58,46 @@ function min_majv2(str1) {
 console.log(min_majv2("wELCome pRenOm NoM"));
 */
 
+//3.
+/*
+Écrire une fonction JavaScript freqvoyelles(str1) qui prend une chaîne des caractères en paramètre (ne contient que des caractères alphabétiques) et qui indique combien de fois sont présentes chacune des voyelles a, e, i, o, u ou y, que celles-ci soient écrites en majuscules ou en minuscules.
+
+Testez cela avec le code suivant :
+
+var voyelles =freqvoyelles("AAEEee iiIIAA YY uY Naya");
+for(var lettr in voyelles ){
+    var value = voyelles [lettr];
+    document.write(lettr + " = " + value + '<br>');
+}
+
+Résultat attendu : a = 6; o = 0; e = 4; i = 4; u = 1; y = 4
 
 
+function freqvoyelles(str1) {
+    str1 = str1.toLowerCase();
 
+    var frequencies = {
+        'a': 0,
+        'e': 0,
+        'i': 0,
+        'o': 0,
+        'u': 0,
+        'y': 0
+    }
+
+    for (var i = 0; i < str1.length; i++) {
+        var char = str1.charAt(i);
+        if ('aeiouy'.indexOf(char) !== -1) {
+            frequencies[char]++;
+        }
+    }
+    return frequencies;
+}
+
+var voyelles = freqvoyelles("AAEEee iiIIAA YY uY Naya");
+for (var lettr in voyelles) {
+    var value = voyelles[lettr];
+    console.log(lettr + " = " + value);
+}
+*/
 

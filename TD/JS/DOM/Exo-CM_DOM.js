@@ -45,7 +45,6 @@ console.log(hour + "h" + minute);
 Créez la fonction constructeur pour un objet Cercle. La fonction
 doit ajouter deux méthode sur l'objet pour calculer la
 circonférence et l'aire.
-*/
 
 function circle(n, r) {
     this.r = r;
@@ -61,3 +60,4 @@ function circle(n, r) {
 var c = new circle("Circle", 5);
 console.log(c.name + " aire : " + c.getAir());
 console.log(c.name + " circonference : " + c.getCircumference());
+*/
