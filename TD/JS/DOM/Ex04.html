@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Create a table</title>
+    <style type="text/css">
+        table {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1">
+        <table id="myTable" border="2">
+            <tr>
+                <td>PreNom1: <input type="text"></td>
+                <td>Nom1: <input type="text"></td>
+        </table>
+        <input type="button" onclick="addRow()" value="Add Row">
+        <input type="button" onclick="deleteRow()" value="delete row">
+        <input type="button" onclick="deleteAll()" value="delete all">
+        <input type="button" onclick="addRows()" value="Add rows">
+    </form>
+
+    <script src="Exo4.js"></script>
+</body>
+
+</html>
